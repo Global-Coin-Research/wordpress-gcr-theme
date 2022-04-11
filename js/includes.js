@@ -1,5 +1,5 @@
 jQuery(document).ready(function () {   
-    jQuery('.header-slider').slick({
+    jQuery('.content-slider').slick({
         dots: false,
         infinite: true,
         speed: 300,
@@ -45,6 +45,7 @@ jQuery(document).ready(function () {
         });
         jQuery('.dropdown > a, .menu-item-has-children > a').removeAttr('href');
         jQuery('.dropdown, .menu-item-has-children').click(function(){
+            jQuery(".dropdown.active, .menu-item-has-children.active").removeClass("active");
             jQuery(this).toggleClass('active');  
         });
         // Search button start

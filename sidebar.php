@@ -13,10 +13,10 @@
                 $small_thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'post-thumb-small');
             ?>
         
-            <div class="live-news clearfix">
+            <div class="single_wire clearfix">
                 <p class="date"><i class="far fa-clock"></i> <?php the_time('F d'); ?></p>
                 <h3 class="headline"><a href="<?php the_permalink(); ?>"><?php echo wp_trim_words( get_the_title(), 20, ' ...' ); ?></a></h3>
-                <img class="image" src="<?php echo $small_thumb[0]; ?>?crop=1" alt="<?php the_title(); ?>">
+                <img class="image" src="<?php echo $small_thumb[0]; ?>" alt="<?php the_title(); ?>">
             </div>
             <?php endwhile; ?>
         </div>

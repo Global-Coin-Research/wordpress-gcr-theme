@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
     
-    $('.header-slider').slick({
+    $('#slider-content').slick({
         dots: false,
         infinite: true,
         speed: 300,
@@ -8,7 +8,7 @@ jQuery(document).ready(function($){
         slidesToScroll: 1
     });
     
-    $('.image-slider').slick({
+    $('#slider-landing').slick({
         dots: false,
         infinite: true,
         speed: 300,
@@ -36,8 +36,9 @@ jQuery(document).ready(function($){
             e.stopPropagation();
             e.preventDefault();
             
-            console.log( "Clicked: ", $(this).text() );
+            // console.log( "Clicked: ", $(this).text() );
             
+            jQuery('.menu-item-has-children.active').removeClass("active");
             
             $(this).parent().toggleClass('active');  
         

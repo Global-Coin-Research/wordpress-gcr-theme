@@ -54,110 +54,115 @@ function pol_widget_areas(){
 		'after_title' => '</h3></div>',
 	));
 	
-	register_sidebar( array(
-		'name' => __( 'Footer Social Links', 'gcr' ),
-		'id' => 'bottom_social',
-		'before_widget' => '<div class="socials">',
-		'after_widget' => '</div>',
-		'before_title' => '<h5>',
-		'after_title' => '</h5>',
-	) );
-	register_sidebar( array(
-		'name' => __( 'Minimal Social Links', 'gcr' ),
-		'id' => 'bottom_social_2',
-		'before_widget' => '<div class="socials minimal">',
-		'after_widget' => '</div>',
-		'before_title' => '<h5>',
-		'after_title' => '</h5>',
-	) );
-	register_sidebar( array(
-		'name' => __( 'Subscription Header', 'gcr' ),
-		'id' => 'subscription_header',
-		'before_widget' => '<div class="subscribe-text">',
-		'after_widget' => '</div>',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
-	) );
-	register_sidebar( array(
-		'name' => __( 'Contributor Widget', 'gcr' ),
-		'id' => 'contribution_widget',
-		'before_widget' => '<div class="widget">',
-		'after_widget' => '</div>',
-		'before_title' => '<h4 class="headline">',
-		'after_title' => '</h4>',
-	) );
-	register_sidebar( array(
-		'name' => __( 'Bottom Footer Links Area', 'gcr' ),
-		'id' => 'bottom_footer',
-		'before_widget' => '<div class="widget">',
-		'after_widget' => '</div>',
-		'before_title' => '<h5>',
-		'after_title' => '</h5>',
-	) );
-	register_sidebar( array(
-		'name' => __( 'Bottom Corner Footer Links', 'gcr' ),
-		'id' => 'bottom_corner_nav',
-		'before_widget' => '<div class="bottom_links">',
-		'after_widget' => '</div>',
-		'before_title' => '<h5>',
-		'after_title' => '</h5>',
-	) );
-	register_sidebar( array(
-		'name' => __( 'Community Widget 1', 'gcr' ),
-		'id' => 'community_widget_1',
-		'before_widget' => '<div class="flagship">',
-		'after_widget' => '</div>',
-		'before_title' => '<h5>',
-		'after_title' => '</h5>',
-	) );
-	register_sidebar( array(
-		'name' => __( 'Community Widget 2', 'gcr' ),
-		'id' => 'community_widget_2',
-		'before_widget' => '<div class="flagship">',
-		'after_widget' => '</div>',
-		'before_title' => '<h5>',
-		'after_title' => '</h5>',
-	) );
-	register_sidebar( array(
-		'name' => __( 'Community Widget 3', 'gcr' ),
-		'id' => 'community_widget_3',
-		'before_widget' => '<div class="flagship">',
-		'after_widget' => '</div>',
-		'before_title' => '<h5>',
-		'after_title' => '</h5>',
-	) );
-	register_sidebar( array(
-		'name' => __( 'Community Widget 4', 'gcr' ),
-		'id' => 'community_widget_4',
-		'before_widget' => '<div class="flagship">',
-		'after_widget' => '</div>',
-		'before_title' => '<h5>',
-		'after_title' => '</h5>',
-	) );
-	register_sidebar( array(
-		'name' => __( 'Tier Wiget 1', 'gcr' ),
-		'id' => 'tier_1',
-		'before_widget' => '<div class="single-pricing">',
-		'after_widget' => '</div>',
-		'before_title' => '<div class="head"><h3>',
-		'after_title' => '</h5>',
-	) );
-	register_sidebar( array(
-		'name' => __( 'Tier Wiget 2', 'gcr' ),
-		'id' => 'tier_2',
-		'before_widget' => '<div class="single-pricing">',
-		'after_widget' => '</div>',
-		'before_title' => '<div class="head"><h3>',
-		'after_title' => '</h5>',
-	) );
-	register_sidebar( array(
-		'name' => __( 'Tier Wiget 3', 'gcr' ),
-		'id' => 'tier_3',
-		'before_widget' => '<div class="single-pricing">',
-		'after_widget' => '</div>',
-		'before_title' => '<div class="head"><h3>',
-		'after_title' => '</h5>',
-	) );
+	// register_sidebar( array(
+	// 	'name' => __( 'Footer Social Links', 'gcr' ),
+	// 	'id' => 'footer_social',
+	// 	'before_widget' => '<div class="socials">',
+	// 	'after_widget' => '</div>',
+	// 	'before_title' => '<h5>',
+	// 	'after_title' => '</h5>',
+	// ) );
+	
+	// register_sidebar( array(
+	// 	'name' => __( 'Footer Minimal Social Links', 'gcr' ),
+	// 	'id' => 'footer_social_minimal',
+	// 	'before_widget' => '<div class="socials minimal">',
+	// 	'after_widget' => '</div>',
+	// 	'before_title' => '<h5>',
+	// 	'after_title' => '</h5>',
+	// ) );
+	
+	// register_sidebar( array(
+	// 	'name' => __( 'Subscription Header', 'gcr' ),
+	// 	'id' => 'subscription_header',
+	// 	'before_widget' => '<div class="subscribe-text">',
+	// 	'after_widget' => '</div>',
+	// 	'before_title' => '<h3>',
+	// 	'after_title' => '</h3>',
+	// ) );
+	
+
+	
+	// register_sidebar( array(
+	// 	'name' => __( 'Footer widgets Area', 'gcr' ),
+	// 	'id' => 'footer_widgets',
+	// 	'before_widget' => '<div class="widget">',
+	// 	'after_widget' => '</div>',
+	// 	'before_title' => '<h5>',
+	// 	'after_title' => '</h5>',
+	// ) );
+	
+	// register_sidebar( array(
+	// 	'name' => __( 'Footer Corner Footer Links', 'gcr' ),
+	// 	'id' => 'footer_corner_nav',
+	// 	'before_widget' => '<div class="widget">',
+	// 	'after_widget' => '</div>',
+	// 	'before_title' => '<h5>',
+	// 	'after_title' => '</h5>',
+	// ) );
+	
+	// register_sidebar( array(
+	// 	'name' => __( 'Community Widget 1', 'gcr' ),
+	// 	'id' => 'community_widget_1',
+	// 	'before_widget' => '<div class="flagship">',
+	// 	'after_widget' => '</div>',
+	// 	'before_title' => '<h5>',
+	// 	'after_title' => '</h5>',
+	// ) );
+	
+	// register_sidebar( array(
+	// 	'name' => __( 'Community Widget 2', 'gcr' ),
+	// 	'id' => 'community_widget_2',
+	// 	'before_widget' => '<div class="flagship">',
+	// 	'after_widget' => '</div>',
+	// 	'before_title' => '<h5>',
+	// 	'after_title' => '</h5>',
+	// ) );
+	
+	// register_sidebar( array(
+	// 	'name' => __( 'Community Widget 3', 'gcr' ),
+	// 	'id' => 'community_widget_3',
+	// 	'before_widget' => '<div class="flagship">',
+	// 	'after_widget' => '</div>',
+	// 	'before_title' => '<h5>',
+	// 	'after_title' => '</h5>',
+	// ) );
+	
+	// register_sidebar( array(
+	// 	'name' => __( 'Community Widget 4', 'gcr' ),
+	// 	'id' => 'community_widget_4',
+	// 	'before_widget' => '<div class="flagship">',
+	// 	'after_widget' => '</div>',
+	// 	'before_title' => '<h5>',
+	// 	'after_title' => '</h5>',
+	// ) );
+	
+	// register_sidebar( array(
+	// 	'name' => __( 'Tier Wiget 1', 'gcr' ),
+	// 	'id' => 'tier_1',
+	// 	'before_widget' => '<div class="single-tier">',
+	// 	'after_widget' => '</div>',
+	// 	'before_title' => '<div class="head"><h3>',
+	// 	'after_title' => '</h5>',
+	// ) );
+	
+	// register_sidebar( array(
+	// 	'name' => __( 'Tier Wiget 2', 'gcr' ),
+	// 	'id' => 'tier_2',
+	// 	'before_widget' => '<div class="single-tier">',
+	// 	'after_widget' => '</div>',
+	// 	'before_title' => '<div class="head"><h3>',
+	// 	'after_title' => '</h5>',
+	// ) );
+	
+	// register_sidebar( array(
+	// 	'name' => __( 'Tier Wiget 3', 'gcr' ),
+	// 	'id' => 'tier_3',
+	// 	'before_widget' => '<div class="single-tier">',
+	// 	'after_widget' => '</div>',
+	// 	'before_title' => '<div class="head"><h3>',
+	// 	'after_title' => '</h5>',
+	// ) );
 }
 add_action('widgets_init', 'pol_widget_areas');
 

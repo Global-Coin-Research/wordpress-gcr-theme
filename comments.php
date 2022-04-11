@@ -9,9 +9,4 @@
         }
     ?>
     <?php comment_form();?>
-    <!-- <h4 class="headline">Leave a Reply</h4>
-    <form action="#" class="comment-form" method="post">
-        <textarea name="comment" id="" cols="30" rows="5" placeholder="Enter Your Comment Here..."></textarea>
-        <button type="submit">Comment</button>
-    </form> -->
 </div>

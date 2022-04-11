@@ -23,30 +23,6 @@
                         </form>
                     </div>
                 </div>
-                <div class="sidebar">
-                    <div class="section-title">
-                        <h3>Related News</h3>
-                    </div>
-                    <div class="news column">
-                        <div class="news-thumb">
-                            <img src="img/news-thumb-2.jpg" alt="">
-                        </div>
-                        <div class="news-text">
-                            <a href="#" class="tag"><i class="icon icon-tag"></i> Insight</a>
-                            <h3 class="news-headline">Ethereum Layer 2 Needs a Token, discover the new infos</h3>
-                            <p>Ethereum Layer 2. It is set to solve major issues that the Ethereum ecosystem faces right now, by providing cheaper fees and faster transactions- that is the value proposition.</p>
-                            <div class="meta-data">
-                                <div class="meta-img">
-                                    <img src="img/thumb.png" alt="">
-                                </div>
-                                <div class="meta-text">
-                                    <h5><a href="#">Yuri Antomv</a></h5>
-                                    <p class="date">October 23</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
