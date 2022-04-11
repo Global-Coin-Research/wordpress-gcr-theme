@@ -1,0 +1,17 @@
+before_script:
+  - apt-get update -qy
+  - apt-get install -y lftp
+
+deploy_live:
+  stage: deploy
+  script:
+    - lftp -e "set sftp:auto-confirm yes; set ftp:ssl-allow true; set ftp:ssl-force true; open -u $LIVE_FTP_USER,$LIVE_FTP_PASS sftp://$LIVE_FTP_HOST; mirror -X .* -X .*/ --reverse --verbose --delete ./ $LIVE_FTP_PATH  --ignore-time --parallel=10 --exclude-glob .git* --exclude .git/; bye"
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'
+
+deploy_staging:
+  stage: deploy
+  script:
+    - lftp -e "set sftp:auto-confirm yes; set ftp:ssl-allow true; set ftp:ssl-force true; open -u $STAGING_FTP_USER,$STAGING_FTP_PASS sftp://$STAGING_FTP_HOST; mirror -X .* -X .*/ --reverse --verbose --delete ./ $STAGING_FTP_PATH  --ignore-time --parallel=10 --exclude-glob .git* --exclude .git/; bye"
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "staging"'
