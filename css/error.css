@@ -1,0 +1,103 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*********** Custom ************/
+.error-content{min-height:100%;position:relative;display: flex;flex-direction: column;flex-wrap: nowrap;align-content: center;justify-content: center;align-items: center;margin-top: -33px;}
+.four-not-four{
+    width:70%;
+    margin: 0 auto;
+    display:flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.four-not-four h2{
+	font-size: 12em;
+	/* font-weight: 700; */
+	line-height: 1em;
+	color: #ff7676;
+	text-shadow: 1px 0px 3px #ec4c4c;
+}
+.four-not-four p{
+	font-size: 2em;
+	letter-spacing:2px;
+	line-height: 1.25em;
+	color: #d56262;
+	font-weight: 700;
+}
+.four-not-four .btn{
+	display:inline-block;
+	padding: 14px 21px;
+	font-size: 1.1em;
+	background: #2649F5;
+	color: #fff;
+	margin-top: 45px;
+	border: 1px solid #142fb4;
+	cursor: pointer;
+}
+.four-not-four .btn:hover{
+	text-decoration:none;
+	background: #0b2dd4;
+}
+.fnt{
+	font-size:2em;
+	padding: 15px 30px;
+	/* float:left; */
+	/* width:200px; */
+	border-right: 1px solid #999;
+}
+.ftext{
+	font-size: 1.1em;
+	/* float:left; */
+	/* width:300px; */
+	padding: 15px 30px;
+}
