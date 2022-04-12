@@ -1,0 +1,77 @@
+/********font icons*********/
+@font-face {
+    font-family: "fontello";
+    src: url("fonts/fontello/fontello.eot?57019010");
+    src: url("fonts/fontello/fontello.eot?57019010#iefix")
+            format("embedded-opentype"),
+        url("fonts/fontello/fontello.woff2?57019010") format("woff2"),
+        url("fonts/fontello/fontello.woff?57019010") format("woff"),
+        url("fonts/fontello/fontello.ttf?57019010") format("truetype"),
+        url("fonts/fontello/fontello.svg?57019010#fontello") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: 0.2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: 0.2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-mail:before{content: "\e800"}
+.icon-user:before{content: "\e801"}
+.icon-star:before{content: "\e802"}
+.icon-cancel:before{content: "\e803"}
+.icon-ok-circled2:before{content: "\e804"}
+.icon-comment:before{content: "\e805"}
+.icon-tags:before{content: "\e806"}
+.icon-chat:before{content: "\e807"}
+.icon-up-open:before{content: "\e808"}
+.icon-right-open:before{content: "\e809"}
+.icon-left-open:before{content: "\e80a"}
+.icon-down-open:before{content: "\e80b"}
+.icon-check:before{content: "\e80c"}
+.icon-bookmark:before{content: "\e80d"}
+.icon-eye:before{content: "\e80e"}
+.icon-tag:before{content: "\e80f"}
+.icon-link:before{content: "\e810"}
+.icon-attach:before{content: "\e811"}
+.icon-cog:before{content: "\e812"}
+.icon-down-dir:before{content: "\e813"}
+.icon-up-dir:before{content: "\e814"}
+.icon-bookmark-empty:before{content: "\f097"}
+.icon-twitter:before{content: "\f099"}
+.icon-facebook:before{content: "\f09a"}
+.icon-mail-alt:before{content: "\f0e0"}
+.icon-linkedin:before{content: "\f0e1"}
+.icon-angle-double-left:before{content: "\f100"}
+.icon-angle-double-right:before{content: "\f101"}
+.icon-angle-left:before{content: "\f104"}
+.icon-angle-right:before{content: "\f105"}
+.icon-angle-up:before{content: "\f106"}
+.icon-angle-down:before{content: "\f107"}
+.icon-ok-squared:before{content: "\f14a"}
+.icon-youtube-play:before{content: "\f16a"}
+.icon-tumblr:before{content: "\f173"}
+.icon-tumblr-squared:before{content: "\f174"}
+.icon-skype:before{content: "\f17e"}
+.icon-wordpress:before{content: "\f19a"}
+.icon-paper-plane:before{content: "\f1d8"}
+.icon-paper-plane-empty:before{content: "\f1d9"}
+.icon-commenting-o:before{content: "\f27b"}
+.icon-snapchat-ghost:before{content: "\f2ac"}
+.icon-user-circle:before{content: "\f2bd"}
+.icon-user-circle-o:before{content: "\f2be"}
+.icon-telegram:before{content: "\f2c6"}
+.icon-facebook-squared:before{content: "\f308"}

@@ -1,0 +1,129 @@
+.btn{
+    display:inline-block;
+    padding: 12px 14px;
+    font-size: 1.1em;
+    margin:2px 3px;
+    border:1px solid $blue;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align:center;
+    font-family: $gilroybold;
+    background:$blue;
+    color:$white;
+    .btn-dark{
+        background: $blue-dark;
+        color:$white;
+        &:hover{
+            background:$blue;
+            
+        }
+    }
+}
+.btn-primary{
+    @extend .btn;
+}
+input.submit, input[type="submit"]{
+    @extend .btn;
+}
+.btn-white{background:$white;color:$blue;}
+
+.btn:hover, .btn-primary:hover,input.submit:hover,input[type="submit"]:hover,
+.btn-white:hover{
+    background:$blue-dark;
+    color:$white;
+    text-decoration: none;
+}
+
+.action_btn{
+    display:inline-block;
+    padding:20px 25px;
+    border: 2px solid $bluish;
+    font-size:1.25em;
+    border-radius:2px;
+    position:relative;
+    z-index:1;
+    &:before{
+        content:"";
+        display:block;
+        background:$blue;
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:0;
+        transition:all 0.2s ease;
+    }
+    &:hover{
+        text-decoration:none;
+        &:before{
+            height:calc(100% + 1px);
+            z-index:-2;
+        }
+    }
+}
+
+.call-to-action{
+    padding:50px 0;
+    text-align:center;
+    margin-bottom: 50px;
+    height: auto;
+    .get_gcr{
+        width:260px;
+        margin:0 auto;
+        position:relative;
+        height: auto;
+        .btn{
+            display:inline-block;
+            border:1px solid $white;
+            padding:15px 20px;
+            width: 100%;
+            color:$white;
+            font-size: 1.5em;
+            line-height: 130%;
+            &:hover{
+                text-decoration:none;
+                background:$white;
+                color:$blue; 
+                .sub_gcr{display:block;}
+            }
+        }
+        &:hover{
+            .btn{
+                background:$white;
+                color:$blue; 
+            }
+        }
+        .sub_gcr{
+            width:90%;
+            margin:0 auto;
+            padding-top:5px;
+            display:none;
+            background:$blue;
+            position:absolute;
+            top:100%;
+            left:5%;
+            z-index: 5556;
+            li{
+                border: 1px solid $bluish;
+                &+li{
+                    border-top:0;
+                }
+                a{
+                    display:block;
+                    color:$white;
+                    padding:10px;
+                    font-size:1.2em;
+                    &:hover{
+                        text-decoration:none;
+                        background:$white;
+                        color:$blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

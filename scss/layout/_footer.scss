@@ -1,0 +1,195 @@
+.footer {
+    background-color: $black;
+    color: $white;
+    padding: 70px 0;
+    .socials{
+        .discord_link{
+            display:inline-block;
+            width:30px;
+            height:34px;
+            .discord{
+                display: inline-block;
+                background:url('img/discord.png') no-repeat;
+                background-size:30px;
+                background-position:0 -34px;
+                border-radius: 5px 5px 0px 8px !important;
+                width:29px;
+                height:33px;
+            }
+            
+        }
+    }
+    .footer-top {
+        padding-right: 38%;
+        border-bottom: 1px solid $gray-light;
+        .headline {
+            font-size: 1em;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            font-family: $gilroybold;
+        }
+        p {
+            font-family:$gilroybold;
+            font-size: 1.5em;
+            line-height: 1.5em;
+        }
+        .subscribe-form {
+            margin-top: 40px;
+            margin-bottom: 100px;
+            fieldset {
+                position: relative;
+            }
+            input {
+                width: 100%;
+            }
+            label {
+                color: $white;
+            }
+            button {
+                background: $black;
+                margin-top: 30px;
+                &:hover {
+                    background: $white;
+                    color: $gray-dark;
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        padding-top: 80px;
+        .logo-area {
+            width: 32%;
+            float: left;
+            img {
+                width: 70px;
+            }
+            .tag {
+                color: $gray-light;
+                margin: 12px 0px 25px;
+            }
+            .socials li {
+                float: left;
+                display: inline-block;
+                margin-right: 10px;
+                a {
+                    display: block;
+                    border-radius: 5px;
+                    color: $gray-dark;
+                    font-size: 1.1em;
+                    padding: 5px;
+                    background: $white;
+                    &:hover {
+                        background: $blue;
+                        color: $white;
+                    }
+                    &.discord_link{
+                        padding:0;
+                        background: none;
+                        .discord{
+                            background-position:0 -69px;
+                            &:hover{
+                                background-position:0 -34px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+        .widget {
+            float: left;
+            width: 21%;
+            margin-left: 1.5%;
+            h5 {
+                font-family: $gilroybold;
+                font-weight: 700;
+                margin-bottom: 30px;
+                letter-spacing: 1px;
+                font-size: 1em;
+            }
+            ul li {
+                margin-bottom: 10px;
+                a {
+                    color: $footer-link-color;
+                }
+            }
+            address {
+                color: $footer-link-color;
+                line-height: 1.5em;
+            }
+        }
+    }
+    &.minimal{
+        background:$site-background;
+        padding: 40px;
+        padding-bottom: 80px;
+        .container{border-top: 2px solid $footer-link-color;}
+        .footer-row{
+            margin-top:80px;
+        }
+        .logo-area{
+            width: 32%;
+            float: left;
+            .sitename{
+                color:$black;
+                font-size: 36.47px;
+                line-height: 103%;
+                color: $black;
+                font-family:$gilroybold;
+                &:hover{text-decoration:none;}
+            }
+            .tag{
+                margin: 12px 0px 25px;
+                color: $footer-link-color;
+            }
+        }
+        .socials{
+            .icon{background:$blue;color:$white;width:30px;padding:5px;height:30px;display:inline-block;border-radius:5px;text-align:center;}
+            li{
+                width:34px;
+                float:left;
+                display: inline-block;
+            }
+            a{
+                padding:0 !important;
+                &:hover{
+                    .icon{background:$black;}
+                }
+                &.discord_link{
+                    height:36px;
+                    .discord{
+                        display: inline-block;
+                        background:url('img/discord.png') no-repeat ;
+                        background-size: 29px;
+                        background-position: 0 -33px;
+                        width: 29px;
+                        height: 32px;
+                    }
+                    &:hover {
+                        .discord{                            
+                            background-position:0 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+        .bottom_links{
+            float:right;
+            margin-top:40px;
+            font-weight:700;
+            font-family:$gilroybold;
+            margin-right: 100px;
+            li{
+                margin-bottom:5px;
+                a{
+                    color:$black;font-size: 20px;line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

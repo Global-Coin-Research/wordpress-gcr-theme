@@ -1,0 +1,112 @@
+
+.subscription-section {
+    background-color: $blue-dark;
+    color: $white;
+    padding: 40px 0;
+    .subscribe-text {
+        float: left;
+        width: 50%;
+        margin-right: 5%;
+        h3 {
+            font-family: $gilroybold;
+            font-size: 2.25em;
+            line-height: 1.5em;
+            text-transform: capitalize;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom:0;
+        }
+    }
+}
+.subscribe-form {
+    float: right;
+    position: relative;
+    width: 45%;
+    
+    button, input{
+        border: none;
+        border-bottom: 1px solid $white;
+        background: none;
+        padding: 2px 0px 5px;
+        color: $white;
+        font-size: 1em;
+        position: relative;
+        border-radius: 0;
+    }
+    button {
+        display: inline-block;
+        padding: 15px 40px;
+        background-color: $blue-dark;
+        color: $white;
+        text-transform: capitalize;
+        font-size: 1.1em;
+        border: 2px solid $white;
+        cursor: pointer;
+        &:hover {
+            background-color: $white !important;
+            color: $gray-dark;
+        }
+    }
+    input{
+        height: 30px;
+        &+label{
+            position: absolute;
+            left: 0;
+            bottom: 10px;
+            &:hover{
+                display: none;
+            }
+        }
+        &:focus{
+            label{
+                display: none;
+            }
+        }
+    }
+    &.horizontal{
+        margin-top: 15px;
+        text-align: right;
+        display: block;
+        fieldset, button{
+            float: left;
+        }
+        fieldset {
+            width: 260px;
+            margin-right: 40px;
+        }
+        input {
+            width: 100%;
+            margin-top: 15px;
+        }
+    }
+    &.vertical{
+        float:left;
+        fieldset, button{
+            float: none;
+        }
+    }
+}
+
+.subs-form{
+    width:100%;margin-top:10px;
+    .field-side{
+        width: 260px;
+        float:left;
+        margin-right: 40px;
+        .response{text-align:left;}
+        .mce_inline_error{
+            text-align:left;
+            background:none !important;
+            color:$error !important;
+            margin:0;
+            font-weight:400 !important;
+            padding-left: 0 !important;
+        }
+    }
+    .button-side{
+        width:100px;
+        float:left;
+    }
+}
+ 
+ 

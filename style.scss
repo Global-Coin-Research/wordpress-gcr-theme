@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/*
+Theme Name: GCR
+Theme URI: https://globalcoinresearch.com/
+Author: GCR
+Author URI: https://globalcoinresearch.com/
+Description: GCR is a custom theme by GlobalCoinResearch.
+Version: 3.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: gcr
+Tags: responsive, bluish, custom, gcr
+*/
+@import "scss/base/variables";
+@import "scss/base/fonts";
+@import "scss/base/reset";
+@import "scss/base/preset";
+
+@import "scss/layout/grid";
+@import "scss/base/typography";
+@import "scss/component/buttons";
+@import "scss/component/navigations";
+@import "scss/layout/header";
+@import "scss/plugin/slick";
+@import "scss/component/slider";
+@import "scss/component/flagship"; // for flagship butotn area 
+@import "scss/component/article";
+
+// @import "scss/component/latest-post";
+@import "scss/component/subscription";
+@import "scss/layout/footer";
+@import "scss/layout/content";
+@import "scss/layout/sidebar";
+@import "scss/component/comment";
+@import "scss/component/auth";
+
+@import "scss/component/related-post";
+// @import "scss/plugin/iconfont";
+@import "scss/plugin/fontello";
+@import "scss/plugin/widgets";
+
+@import "scss/component/tiers";
+
+@import "scss/component/404";
+
+@import "scss/layout/media";
+@import "scss/layout/print";

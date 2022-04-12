@@ -1,0 +1,64 @@
+.related_post{
+    .heading{
+        text-align: center;
+        margin-bottom:20px;
+        border:1px solid $gray-lighter;
+        border-left:0;
+        border-right:0;
+        padding:10px 0;
+        h3{
+            font-size:1.3em;
+            margin:0;
+            color:$gray-mid;
+            font-weight: 700;
+        }
+    }
+    .article{
+        .text{
+            min-height:255px;
+        }
+        .headline{
+            font-size: 1em;
+            margin-bottom: 15px;
+            &:after{
+                content:"";
+                width: 80px;
+                height:1px;
+                display: block;
+                background:$blue;
+                margin-top: 15px;
+            }
+        }
+        .tag {
+            a{
+                background:$black;
+                padding:5px 5px;
+                color:$white;
+                font-size:0.65em;
+                &:hover{
+                    text-decoration:none; background:$blue;
+                }
+            }
+        }
+        .details {
+            p{
+                color:$gray-mid;
+                font-size:0.9em;
+                line-height: 1.5em;
+            }
+        }
+        .meta-data{
+            .meta-text{
+                h5{
+                    text-transform:uppercase;
+                    font-size:0.8em;
+                    margin-top:10px;
+                    color:$black;
+                }
+                .date{
+                    font-size:0.8em;
+                }
+            }
+        }
+    }
+}

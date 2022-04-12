@@ -1,0 +1,45 @@
+.signin-area{
+    form {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+    fieldset {
+        margin-bottom: 20px;
+    }
+    input {
+        width: 100%;
+        padding: 10px;
+        font-size: 1em;
+        outline: none;
+        border: 1px solid $gray-dark;
+        border-radius: 3px;
+        &:focus {
+            border-color: $blue;
+            -webkit-box-shadow: 0 0 2px $blue;
+            box-shadow: 0 0 2px $blue;
+        }
+    }
+    button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 1.2em;
+        background: $blue;
+        color: $white;
+        border: 1px solid $blue-dark;
+        border-radius: 3px;
+        &:hover {
+            background: $blue;
+        }
+    }
+    label {
+        font-size: 1.25em;
+        margin-bottom: 5px;
+        display: block;
+        span {
+            height: 15px;
+            display: inline-block;
+        }
+    }
+    
+}

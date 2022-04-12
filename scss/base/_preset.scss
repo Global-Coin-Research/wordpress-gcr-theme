@@ -1,0 +1,145 @@
+* {
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+
+.fleft {
+    float: left;
+}
+.fright {
+    float: right;
+}
+.tcenter {
+    text-align: center;
+}
+.tright {
+    text-align: right;
+}
+.central {
+    margin: 0 auto;
+}
+.allcaps {
+    text-transform: uppercase;
+}
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+section:before,
+section:after,
+header:after,
+footer:before {
+    clear: both;
+}
+/*Remove text-shadow in selection highlight: h5bp.com/i */
+::-moz-selection {
+    background: $selection-color;
+    text-shadow: none;
+}
+::selection {
+    background: $selection-color;
+    text-shadow: none;
+}
+/********* placeholder color **********/
+::-webkit-input-placeholder {
+    color: $placeholder-color;
+}
+:-moz-placeholder {
+    color: $placeholder-color;
+}
+::-moz-placeholder {
+    color: $placeholder-color;
+}
+:-ms-input-placeholder {
+    color: $placeholder-color;
+}
+
+.bold,
+strong {
+    font-weight: 700;
+}
+.italic,
+em {
+    font-style: italic;
+}
+.fix {
+    overflow: hidden;
+    *zoom: 1;
+}
+.overflow-hidden{overflow: hidden;position: relative;}
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after,
+.content-wrap:before,
+.content-wrap:after {
+    display: table;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    content: "";
+}
+.row:after,
+.clearfix:after,
+.content-wrap:after {
+    clear: both;
+}
+a {text-decoration: none;}
+a,
+button,
+select,
+input,
+label {
+    cursor: pointer;
+}
+img {
+    width: 100%;
+}
+input,
+select,
+textarea {
+    padding: 10px 15px;
+    border: 1px solid darken($white,50%);
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: $blue;
+}
+input[type="submit"],
+input[type="button"],
+select[type="submit"],
+select[type="button"],
+textarea[type="submit"],
+textarea[type="button"] {
+    background: $blue;
+    color: $white;
+}
+input{
+    &[type="checkbox"]{
+        width:auto;
+        transform: scale(1.75);
+        margin-right:10px;
+    }
+}
+/* custom scrollbar */
+::-webkit-scrollbar {width: 10px;}
+::-webkit-scrollbar-track {background: $scroll-track-color;}
+::-webkit-scrollbar-thumb {background: $scroll-thumb-color;}
+::-webkit-scrollbar-thumb:hover {background: $scroll-hover-color;}
+
+
+body {
+    font-family: $helvetica;
+    font-size: 14px;
+    line-height: 1.428571429em;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    font-weight: 400;
+    overflow-x: hidden;
+    color: $gray-dark;
+    background: $site-background;
+}
+

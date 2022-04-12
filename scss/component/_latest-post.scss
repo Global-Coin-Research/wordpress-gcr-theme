@@ -1,0 +1,76 @@
+.latest-post{
+    .section-title{border-color:$black;}
+    .article{
+        padding:20px;
+        background: $white;
+        border: 1px solid lighten($gray-lighter,6%);
+        border-top:4px solid $blue;
+        margin-bottom:30px;
+        .thumb{
+            margin-bottom:15px;
+            a{display: block;}
+        }
+        .text{
+            min-height:270px;
+            .tag{
+                color:$blue;
+                display: block;
+                text-transform: uppercase;
+                margin-bottom:15px;
+                a{
+                    text-decoration: none;
+                    font-size:1em;
+                    color:$blue;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .headline{
+                font-size:1.5em;
+                line-height: 1em;
+                margin-bottom:25px;
+                letter-spacing: 1px;
+                font-family: $gilroybold;
+                a{
+                    color:$black;
+                    text-decoration: none;
+                    display: block;
+                    font-weight: 700;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .details{
+                margin-bottom:15px;
+                p{
+                    color:$gray-mid;
+                    font-size:1em;
+                    line-height: 1.75em;
+                }
+            }
+            .meta{
+                .text{
+                    h5{
+                        margin-bottom:5px;
+                        font-size:1em;
+                        text-transform: capitalize;
+                        font-family: $gilroybold;
+                        font-weight: 700;
+                    }
+                    a{
+                        color:$gray-dark;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                    .date{
+                        color:$gray-light;
+                    }
+                }
+            }
+        }
+    }
+}

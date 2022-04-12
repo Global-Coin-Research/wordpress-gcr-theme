@@ -1,0 +1,125 @@
+.slider-area {
+    /* padding-top: 20px; */
+    position: relative;
+    overflow: hidden;
+    min-height: 150px;
+    .container{
+        position:relative; 
+    }
+    .slider-nav {
+        li {
+            display: inline-block;
+            float: left;
+        }
+        span {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 1px solid $white;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 50px;
+            position: relative;
+            color: $blue;
+            background:$white;
+            &.next {
+                margin-left: 15px;
+            }
+            &:hover {
+                background: $blue-dark;
+                border-color:$blue-dark;
+                color: $white;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    &.slider-landing{
+        .slider-wrapper{
+            position:relative;
+            width: 55%;
+            float:left;
+            padding-top: 0;
+            .slider{
+                margin: 40px 0;
+            }
+            .slick-arrow{
+                display:none !important;
+            }
+            .slider-nav{
+                position: absolute;
+                bottom: 55px;
+                left: 50%;
+                width: 115px;
+                margin-left: -50px;
+                display: none;
+            }
+            &:hover{
+                .slider-nav{
+                    display: block;
+                }
+            }
+        }
+        
+    }
+    
+    &.slider-content {
+        position: relative;
+        padding-bottom: 30px;
+        padding-top: 25px;
+        a {
+            color: $white;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .slide{
+            .slide-img {
+                width: 45%;
+                float: left;
+                margin-right: 5%;
+            }
+            .slide-text {
+                width: 50%;
+                float: left;
+                .tag {
+                    text-transform: uppercase;
+                    margin-bottom: 25px;
+                    font-size: 14px;
+                }
+                h2 {
+                    font-size: 2.8em;
+                    line-height: 1.2em;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                    font-family: $gilroybold;
+                }
+                p {
+                    font-size: 1.3em;
+                    line-height: 1.5em;
+                    font-weight: 300;
+                    &.date{
+                        font-size:1em;
+                    }
+                }
+            }
+            .meta-data {
+                margin-top: 30px;
+                .meta-text{
+                    .date{
+                        color:$gray-light;
+                    }
+                }
+            }
+        }
+        .slider-nav {
+            position: absolute;
+            bottom: 50px;
+            right: 15px;
+        }
+    }
+    
+    
+}
+
+

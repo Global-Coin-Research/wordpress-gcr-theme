@@ -1,0 +1,193 @@
+.guideline{
+    display:block;
+    margin-top:20px;
+    a{color: $whitish;}
+}
+
+.doubel_border{border:1px solid $gray-dark;border-left: 0;border-right: 0;display: block;height: 3px;margin-top: 30px;}
+.page-area {
+    margin-top: 35px;
+    margin-bottom: 50px;
+    font-family: $helvetica;
+    font-weight: 400;
+    font-size: 1.15em;
+    line-height: 1.5em;
+}
+.content{
+    @extend .site-content;
+    .header {
+        margin-bottom: 20px;
+        border-bottom: 1px solid $gray-light;
+        .title {
+            font-size: 2.4em;
+            line-height: 1.2em;
+            font-weight: 700;
+            padding-bottom: 10px;
+            font-family: $gilroybold;
+            margin-bottom:0;
+        }
+    }
+    h3 {
+        font-size: 2em;
+        font-weight: 700;
+        line-height: 1.6em;
+        margin-bottom: 15px;
+        color: $black;
+        margin-top: 30px;
+    }
+    p {
+        margin-bottom: 25px;
+        line-height: 1.75em;
+    }
+    ol{
+        list-style-type: disc;
+        list-style-position: outside;
+        margin-left: 15px;
+        margin-bottom: 30px; 
+    }
+    ul{
+        @extend  ol
+    }
+    li{
+        line-height:1.5em;
+        &+li{
+            margin-top: 20px;
+        }
+    }
+    a {
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .wp-block-buttons{
+        margin-top:30px;
+    }
+    .sharedaddy.sd-sharing-enabled{
+        margin:20px 0;
+        .share-customize-link{
+            display: none;
+        }
+    }
+}
+
+
+
+.post-meta {
+    margin-bottom: 20px;
+    .meta-data {
+        width: 30%;
+        margin-right: 5%;
+        float: left;
+        margin-top: 0;
+        h5{
+            font-size: 14px !important;
+            text-transform: uppercase;
+            margin-bottom:0px;
+            a {
+                color: $gray-dark !important;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+        p{
+           font-size:1em;
+        }
+    }
+    .tags-meta {
+        width: 32%;
+        margin-right: 3%;
+        float: left;
+        padding-left: 25px;
+        position:relative;
+        i{position:absolute;left:0; top:0}
+        a {
+            display: inline-block;
+            background: $blue;
+            font-size: 0.8em;
+            line-height: 1em;
+            padding: 4px 4px;
+            text-decoration: none;
+            color: $white;
+            margin-right: 3px;
+            &:hover {
+                background: $gray-dark;
+            }
+        }
+    }
+    .comment-meta {
+        width: 30%;
+        float: left;
+    }
+}
+
+
+
+
+.description {
+    margin-bottom: 30px;
+    .post-image {
+        width: 100%;
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+    .social-meta {
+        width: 50px;
+        float: left;
+        ul {
+            margin-left: 0;
+            li {
+                list-style-type: none;
+                a {
+                    display: block;
+                    font-size: 1.25em;
+                    width: 50px;
+                    height: 50px;
+                    background: $blue;
+                    color: $white;
+                    text-align: center;
+                    line-height: 50px;
+                    border-radius: 5px;
+                    &:hover {
+                        background: $gray-dark;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+span.red {color: red;}
+.highlight{
+    padding:50px 0;
+    p{
+        color:$white;
+    }
+    a{
+        color:$white;
+    }
+}
+
+.blank-section{
+    padding:0 40px 40px;
+    text-align:center;
+    h3{
+        font-family:$gilroybold;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 130%;
+        text-transform: capitalize;
+        color: $black;
+    }
+}
+.blue{
+    color:$blue;
+}
+.bg-blue {
+    background-color: $blue;
+    color: $white;
+}
+.bg-dark-blue{background: $blue-dark;}

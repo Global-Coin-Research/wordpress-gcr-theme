@@ -1,0 +1,204 @@
+.site-header {
+    background-color: $blue;
+    color: $white;
+    position: relative;
+    z-index: 10000;
+}
+
+
+.header-top {
+    padding: 20px 0;
+    .logo {
+        width: 10%;
+        float: left;
+        padding-top: 5px;
+    }
+    img {
+        max-width: 80px;
+    }
+    
+    .user-area {
+        float: right;
+        width: 15%;
+        margin-top: 10px;
+        a {
+            color: $white;
+            text-decoration: none;
+            cursor: pointer;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+a.logolink{
+    display:inline-block;
+    width: 80px;
+    height: 30px;
+    background:url('img/gcr-logo.svg') no-repeat;
+    text-indent: -999em;
+    &.blacklogo{
+        background:url('img/gcr-logo-black.svg') no-repeat;
+    }
+}
+
+/********** top serarch *********/
+.header-main {
+    .navigation{
+        width: calc(90% - 50px);
+    }
+    .searcharea{
+        float:right;
+        width: 28px;
+        height: 28px;
+        position: relative;
+        text-align: right;
+        margin-top: 5px;
+        .searchbar{
+            display: none;
+            position: absolute;
+            right: 0px;
+            top: 100%;
+            width: 220px;
+            z-index: 444;
+            background: black;
+            padding: 2px;
+            label, .wp-block-search__button{
+                display:none;
+            }
+        }
+        .search_btn{
+            font-size: 12px;
+            line-height: 28px;
+            border: 1px solid $white;
+            width: 28px;
+            height: 28px;
+            display: inline-block;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            position: relative;
+            background: #000;
+            &:before{
+                content:"";
+                display:block;
+                height: 15px;
+                width: 16px;
+                background: url("img/icons.png") no-repeat;
+                background-size: 70px;
+                background-position: 0px -55px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -8px;
+                margin-left: -8px;
+            }
+            &:hover, &.selected{
+                background:$black;
+            }
+        }
+        
+        .wp-block-search{
+            .wp-block-search__input{
+                margin-bottom:0;
+                width: 100%;
+                border: 1px solid $black;
+                cursor: text;
+                padding: 3px;
+                color: $black;
+            }
+        }
+        &.active{
+            .searchbar{
+                display: block;
+                -webkit-animation-name:search_appear;
+                animation-name:search_appear;
+            }
+        }
+        &.inactive{
+            .searchbar{
+                -webkit-animation-name:search_disappear;
+                animation-name:search_disappear;
+            }
+        }
+    }
+}
+.search-content{
+    .search-title{
+        font-size:1.75em;
+        margin-top:20px;
+        margin-bottom:20px;
+        border-bottom:2px solid $blue;
+        padding-bottom:10px;
+        .searchterm{font-weight:700;}
+    }
+    .no-result{
+        text-align:center;
+        font-size:1.25em;
+        color:red;
+    }
+    .search-item{
+        border-bottom:1px solid $gray-light;
+        h3{
+            font-size:1.5em;
+        }
+        img{width:70px;height:70px;float:left;margin-right:15px;margin-bottom:15px;}
+    }
+}
+.animated{
+    -webkit-animation-duration:0.5s;
+    animation-duration:0.5s;
+    -webkit-animation-duration:0.5s;
+    animation-duration:0.5s;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+}
+
+@keyframes search_appear{
+    0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);}
+    to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0);}
+}
+
+@keyframes search_disappear{
+    0%{opacity:1;}
+    to{opacity:0;}
+}
+/********** top serarch end*********/
+/************ Header -2 styles *************/
+.header-text{
+    width: 42%;
+    float:left;
+    margin-right: 3%;
+    color:$white;
+    margin-top: 0px;
+    padding-top: 100px;
+    h2{
+        font-family:"gilroybold";
+        font-size: 42px;
+        line-height: 120%;
+        color: $white;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size:23px;
+        line-height:120%;
+        margin-bottom:30px;
+    }
+    .button-area{margin-top: 60px;}
+}
+
+.header-minimal{
+    background:$white;
+    h1{
+        a{
+            color:$black;
+            font-size: 36.47px;
+            line-height: 103%;
+            font-family:$gilroybold;
+            &:hover{
+                color:$black;
+                text-decoration:none;
+            }
+        }
+    }
+}

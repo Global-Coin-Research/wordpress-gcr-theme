@@ -1,0 +1,60 @@
+.container,
+.blog-wrap {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+}
+.site-content {
+    width: 65%;
+    float: left;
+    margin-right: 4%;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.two-column{
+    @extend .flexbox;
+    .column {
+        float: left;
+        width: 47%;
+        margin-right: 6%;
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+} 
+
+.three-column{
+    @extend .flexbox;
+    .column{
+        flex:0 0 32%;
+        margin-right:2%;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+}
+
+.four-column{
+    @extend .flexbox;
+    .column{
+        flex: 0 0 25%;
+        padding: 0 15px;
+    }
+}
+
+.page-section, .section {
+    padding: 70px 0;
+    &.stepped {
+        margin-top: -150px;
+        position: relative;
+        z-index: 3;
+    }
+}

@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "helvetica";
+    src: url("fonts/helvetica/helvetica-webfont.woff2") format("woff2"),
+        url("fonts/helvetica/helvetica-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "gilroy";
+    src: url("fonts/gilroy/gilroy-regular-webfont.woff2") format("woff2"),
+        url("fonts/gilroy/gilroy-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "gilroybold";
+    src: url("fonts/gilroy/gilroy-bold-webfont.woff2") format("woff2"),
+        url("fonts/gilroy/gilroy-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "gilroymedium";
+    src: url("fonts/gilroy/gilroy-medium-webfont.woff2") format("woff2"),
+        url("fonts/gilroy/gilroy-medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+$girloy: "gilroy", Arial, sans-serif;
+$gilroymedium: "gilroymedium", Arial, sans-serif;
+$gilroybold: "gilroybold", Arial, sans-serif;
+$helvetica: "helvetica", Arial, sans-serif;
