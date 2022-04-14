@@ -108,5 +108,16 @@
         float:left;
     }
 }
+
+#mailchimp-top-bar {
+    .mctb-button, 
+    .mctb-email, 
+    input, 
+    input[type=email], d
+    input[type=text] {
+        border: 1px solid #8d5b5b !important;
+    }
+}
+
  
  

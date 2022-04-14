@@ -1792,6 +1792,13 @@ a.logolink.blacklogo {
   float: left;
 }
 
+#mailchimp-top-bar .mctb-button,
+#mailchimp-top-bar .mctb-email,
+#mailchimp-top-bar input,
+#mailchimp-top-bar input[type=email], #mailchimp-top-bar d input[type=text] {
+  border: 1px solid #8d5b5b !important;
+}
+
 .footer {
   background-color: #000;
   color: #fff;
