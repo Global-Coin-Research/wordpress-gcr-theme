@@ -3,27 +3,32 @@
 .tier-area{
     margin-top:70px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: stretch; */
+    align-content: stretch;
 }
 .single-tier{
-    flex:30%;
-    margin-right: 5%;
+    flex: 1;
+    margin-right: 10px;
     position:relative;
     border:1px solid $gray-lighter;
     padding-bottom:80px;
     background: $white;
-    &:nth-child(3){margin-right:0;}
+    &:last-child{margin-right:0;}
     .head{
-        padding:40px;
+        padding:40px 25px;
         border-bottom: 1px solid $gray-lighter;
         h3{
-            font-size: 31px;
+            font-size: 30px;
             line-height: 1em;
             font-family:$gilroybold;
+            margin-bottom:0;
         }
     }
     .body{
-        padding:40px 30px;
+        padding:40px 25px;
         li{
             background:url('img/tick.png') no-repeat;
             background-size:18px;

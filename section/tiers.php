@@ -6,6 +6,21 @@
                 <p class="section-moto">$GCR is the native token of the community. By holding a set number of $GCR in your cryptowallet, community members are able to enjoy and participate in various events, deals and resources.</p>
 			</div>
             <div class="tier-area clearfix">
+                <div class="single-tier">
+                    <div class="head">
+                        <h3>Tier 0 - Verified</h3>
+                    </div>
+                    <div class="body">
+                        <ul class="tick">
+                            <li>Research and Content on GCR</li>
+                            <li>Weekly Newsletter and Updates</li>
+                            <li>Educational and Research Calls (Public Events)</li>
+                            <li>Selected virtual and IRL events around the world</li>
+                            <li>Ongoing GCR Campaigns (earn $GCR tokens and free memberships)</li>
+                        </ul>
+                        <p><a href="//gcr.community" class="btn action">Start</a></p>
+                    </div>
+                </div>
                 <?php 
                     // if(is_active_sidebar('tier_1' )){ dynamic_sidebar('tier_1'); }else{ 
                 ?>
