@@ -39,6 +39,9 @@
                     text-decoration:none; background:$blue;
                 }
             }
+            span{
+                display: none;
+            }
         }
         .details {
             p{

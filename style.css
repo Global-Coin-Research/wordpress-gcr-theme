@@ -2538,6 +2538,9 @@ span.red {
   text-decoration: none;
   background: #2649f5;
 }
+.related_post .article .tag span {
+  display: none;
+}
 .related_post .article .details p {
   color: #7a747a;
   font-size: 0.9em;
