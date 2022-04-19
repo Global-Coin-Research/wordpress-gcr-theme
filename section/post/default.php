@@ -3,7 +3,7 @@
         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
     </div>
     <div class="text">
-        <p class="tag"><?php the_category(', '); ?></p>
+        <p class="tag"><?php the_category('<span>,</span> '); ?></p>
         <h3 class="headline">
             <a href="<?php the_permalink(); ?>"><?php echo wp_trim_words( get_the_title(), 5, '...' ); ?></a>
         </h3>

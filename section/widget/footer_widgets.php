@@ -17,7 +17,7 @@
     <h5>Media Mining</h5>
     <div class="textwidget">
         <ul>
-            <li><a href="https://globalcoinresearch.com/how-to-submit-contributor-posts/gcr-article-submission-guidelines/">GCR Media Mining Instructions</a></li>
+            <li><a href="https://globalcoinresearch.com/2021/04/14/gcr-media-mining/">GCR Media Mining Instructions</a></li>
             <li><a href="https://globalcoinresearch.com/wp-admin/edit.php?post_type=post">My Posts</a></li>
             <li><a href="https://globalcoinresearch.com/wp-admin/post-new.php">Write New Post</a></li>
         </ul>
