@@ -188,6 +188,7 @@
             }
             .sub-menu{
                 padding-top: 10px;
+                border:none;
                 &:after{
                     content: "";
                     width: 0;
@@ -204,7 +205,7 @@
                     content:none;
                 }
                 li{
-                    border: 1px solid $blue;border-top:0; border-bottom:0;
+                    
                     &:first-child{
                         border-top:1px solid $blue;
                     }
@@ -212,12 +213,14 @@
                         border-bottom:1px solid $blue;
                     }
                     &+li{
-                        border-top:1px solid darken($white,30%);
+                        // border-top:1px solid darken($white,30%);
                     }
                 }
                 .menu-item{
                     a{
                         margin: 0;border: 0;
+                        border: 1px solid $blue;
+                    border-top:0; border-bottom:0;
                         &:hover{
                             background:$blue; color:$white !important;
                         }
