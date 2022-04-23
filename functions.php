@@ -28,6 +28,7 @@ if ( ! function_exists( 'gcr_setup' ) ) {
 		add_image_size('post-thumb-small',270,290,true);
 		add_image_size('post-thumb-tall',410,640,true);
 		add_image_size('slider-image',545,725,true);
+		add_image_size('post-img-full', 800, 540, false );
 		
 		register_nav_menus(array(
 			'navigation' => 'Primary Menu',

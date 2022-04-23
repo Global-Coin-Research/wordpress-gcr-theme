@@ -6,7 +6,7 @@
             <div class="content">
                 <?php while(have_posts()) : the_post(); ?>
                 <?php 
-                    $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'post-thumb-large');
+                    $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'post-img-full');
                 ?>
                 <div class="header post-header">
                     <h2 class="title"><?php the_title(); ?></h2>
@@ -32,7 +32,7 @@
                     ?>
                     <div class="post-image-area clearfix">
                         <div class="post-image">
-                            <?php the_post_thumbnail(); ?>
+                            <img src="<?php echo $post_image[0]; ?>" alt="<?php the_title(); ?>">
                         </div>
                     </div>
                     <?php
