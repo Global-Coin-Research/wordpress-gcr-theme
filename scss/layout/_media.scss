@@ -833,9 +833,13 @@
         .article{
             p{
                 &.tag{
-                    font-size: 0.65em;
+                    font-size: 0.7em;
+                    line-height: 1em;
                     a{
                         color:$white;
+                        display: inline-block;
+                        padding: 6px;
+                        margin-bottom: 5px;
                     }
                 }
             }
