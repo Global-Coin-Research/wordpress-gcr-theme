@@ -7,7 +7,7 @@
             <div class="content">
                 <?php while(have_posts()) : the_post(); ?>
                     <div class="header">
-                        <h2><?php the_title(); ?></h2>
+                        <h2 class="title"><?php the_title(); ?></h2>
                     </div>
                     <div class="description">
                         <?php the_content(); ?>
