@@ -56,6 +56,7 @@
     }
     a {
         text-decoration: underline;
+        line-break: anywhere;
         &:hover {
             text-decoration: none;
         }
@@ -67,6 +68,13 @@
         margin:20px 0;
         .share-customize-link{
             display: none;
+        }
+    }
+    figure{
+        display: block !important;
+        figcaption {
+            display: inline-block !important;
+            line-break: anywhere;
         }
     }
 }

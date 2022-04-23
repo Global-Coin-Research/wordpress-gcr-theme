@@ -817,6 +817,7 @@
     .tier-area{
         width:100%;
         padding:0px;
+        flex-wrap: wrap;
         .single-tier{
             flex:100%;
             margin: 20px auto;
