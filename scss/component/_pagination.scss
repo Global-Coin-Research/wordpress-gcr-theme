@@ -1,0 +1,30 @@
+.posts_pagination{
+    display: block;
+    .pagination{
+        width:100%;
+        text-align:center;
+        .nav-links{
+            .page-numbers{
+                display: inline-block;
+                line-height: 32px;
+                border: 1px solid $blue-dark;
+                padding: 0 13px;
+                border-radius: 2px;
+                color:$white;
+                background-color: $blue;
+                cursor: pointer;
+                &:hover{
+                    text-decoration: none;
+                    background:$blue-dark;
+                }
+                &.current{
+                    cursor:default;
+                    background: $blue-dark;
+                    &:hover{
+                        background:$blue-dark;
+                    }
+                }
+            }
+        }
+    }
+}
