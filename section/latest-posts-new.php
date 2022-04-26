@@ -20,7 +20,7 @@
                 <?php endwhile; ?>
             </div>
             <div class="button_block tcenter">
-                <a href="/all-posts" class="btn btn-primary">All Posts</a>
+                <a href="all-posts" class="btn btn-primary">All Posts</a>
             </div>
         </div>
     </div>
