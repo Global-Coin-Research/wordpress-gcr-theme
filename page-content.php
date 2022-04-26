@@ -3,8 +3,10 @@
 /*
 Template Name: Content Page
 */
+get_header();
+?>
 
-get_header(); ?>
+<?php get_template_part('section/navigation-main') ?>
 
 
 <?php get_template_part('section/slider') ?>

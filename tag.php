@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php 
+get_header();
+
+get_template_part('section/navigation-main') 
+?>
 
 <div class="page-area tags category">
     <div class="container">

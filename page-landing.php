@@ -3,7 +3,11 @@
 Template Name: Landing Page Template
 */
 ?>
-<?php get_template_part('section/header-minimal') ?>
+<?php 
+get_header();
+
+get_template_part('section/navigation-minimal') 
+?>
 
 <?php get_template_part('section/slider-landing') ?>
 

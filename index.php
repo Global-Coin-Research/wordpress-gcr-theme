@@ -3,8 +3,10 @@
 /*
 Template Name: Latest Blog Page
 */
+get_header();
 
-get_header(); ?>
+get_template_part('section/navigation-main') 
+?>
 
 
 <div class="page-section">
