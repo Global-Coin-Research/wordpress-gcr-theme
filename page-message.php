@@ -13,8 +13,8 @@ Template Name: Message Template
     <?php wp_head(); ?>
 </head>
 <body>
-    <div class="error-content">
-        <div class="thank-you tcenter">
+    <div class="message-content">
+        <div class="message tcenter">
             <?php while(have_posts()) : the_post(); ?>
                 <div class="header">
                     <h2 class="title"><?php the_title(); ?></h2>
@@ -24,8 +24,8 @@ Template Name: Message Template
                 </div>
             <?php endwhile; ?>
         </div>
-        <div class="four-not-four">
-            <div id="back_button">
+        <div class="message">
+            <div class="tcenter" id="back_button">
             </div>            
         </div>
     </div>
