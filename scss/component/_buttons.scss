@@ -20,6 +20,11 @@
             
         }
     }
+    &.btn-large{
+        padding:15px 40px;
+        font-size:1.3em;
+        line-height: 1.25em;
+    }
 }
 .btn-primary{
     @extend .btn;

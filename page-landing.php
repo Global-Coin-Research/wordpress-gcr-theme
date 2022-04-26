@@ -17,6 +17,8 @@ get_template_part('section/navigation-minimal')
 
 <?php get_template_part('section/tiers') ?>
 
+<?php get_template_part('section/cta/fan-board') ?>
+
 <?php get_template_part('section/cta/learn-tokenomics') ?>
 
 <?php get_template_part('section/cta/get-gcr') ?>
