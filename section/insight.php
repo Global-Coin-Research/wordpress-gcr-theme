@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="section-title">
 				<h2>
-					Insights
+                    Industry Insights
 				</h2>
 			</div>
 		</div>
