@@ -42,13 +42,14 @@
 
     
     .text{
-        min-height:270px;
+        min-height:260px;
         position:relative;
         .tag{
             color:$blue;
             display: block;
             text-transform: uppercase;
             margin-bottom:15px;
+            font-size: 14px;
             a{
                 text-decoration: none;
                 font-size:1em;
@@ -59,7 +60,7 @@
             }
         }
         .headline{
-            font-size:1.5em;
+            font-size: 21px;
             line-height: 1em;
             margin-bottom:25px;
             letter-spacing: 1px;
@@ -78,7 +79,7 @@
             margin-bottom:15px;
             p{
                 color:$gray-mid;
-                font-size:1em;
+                font-size:14px;
                 line-height: 1.75em;
                 &.tag {
                     min-height: 0 !important;
@@ -91,7 +92,7 @@
             .meta-text{
                 h5{
                     margin-bottom:5px;
-                    font-size:1.15em;
+                    font-size:16px;
                     text-transform: capitalize;
                     font-family: $gilroybold;
                     font-weight: 700;
@@ -107,7 +108,7 @@
                     color:$gray-light;
                     text-transform: uppercase;
                     margin: 0;
-                    font-size: 1em;
+                    font-size: 14px;
                 }
             }
         }
@@ -118,6 +119,16 @@
     &.category{
         .text{
             min-height:200px;
+        }
+    }
+}
+.archive{
+    .article{
+        .text{
+            min-height:300px;
+            .headline{
+                margin-top:0;
+            }
         }
     }
 }

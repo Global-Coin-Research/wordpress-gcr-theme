@@ -15,19 +15,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 .two-column{
     @extend .flexbox;
     .column {
-        float: left;
-        width: 47%;
-        margin-right: 6%;
-        &:nth-child(2n) {
-            margin-right: 0;
-        }
+        flex: 0 48%;
+        // &:nth-child(2n) {
+        //     margin-right: 0;
+        // }
     }
 } 
 
