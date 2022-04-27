@@ -1,20 +1,9 @@
-.guideline{
-    display:block;
-    margin-top:20px;
-    a{color: $whitish;}
-}
-
-.doubel_border{border:1px solid $gray-dark;border-left: 0;border-right: 0;display: block;height: 3px;margin-top: 30px;}
-.page-area {
-    margin-top: 35px;
-    margin-bottom: 50px;
-    font-family: $helvetica;
+.content{
+    @extend .site-content;
+    
     font-weight: 400;
     font-size: 1.15em;
     line-height: 1.5em;
-}
-.content{
-    @extend .site-content;
     .header {
         margin-bottom: 20px;
         border-bottom: 1px solid $gray-light;
@@ -170,34 +159,4 @@
 
 
 
-span.red {color: red;}
-.highlight{
-    padding:50px 0;
-    p{
-        color:$white;
-    }
-    a{
-        color:$white;
-    }
-}
 
-.blank-section{
-    padding:0 40px 40px;
-    text-align:center;
-    h3{
-        font-family:$gilroybold;
-        font-weight: 800;
-        font-size: 30px;
-        line-height: 130%;
-        text-transform: capitalize;
-        color: $black;
-    }
-}
-.blue{
-    color:$blue;
-}
-.bg-blue {
-    background-color: $blue;
-    color: $white;
-}
-.bg-dark-blue{background: $blue-dark;}

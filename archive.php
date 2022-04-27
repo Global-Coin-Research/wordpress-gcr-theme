@@ -5,7 +5,7 @@ get_template_part('section/navigation-main')
 ?>
 
 
-<div class="page-area">
+<div class="page-section">
     <div class="container">
         <div class="row clearfix">
             <div class="content">

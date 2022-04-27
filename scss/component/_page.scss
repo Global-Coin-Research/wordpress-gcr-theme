@@ -1,0 +1,25 @@
+.page-area {
+    margin-top: 35px;
+    margin-bottom: 50px;
+    font-family: $helvetica;
+}
+.page-section, .section {
+    padding: 70px 0;
+    &.stepped {
+        margin-top: -150px;
+        position: relative;
+        z-index: 3;
+    }
+}
+.archive{
+    .page-section{
+        padding-top:30px;
+    }
+    .article{
+        .text{
+            .headline{
+                margin-top:0;
+            }
+        }
+    }
+}

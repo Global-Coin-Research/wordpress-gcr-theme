@@ -42,7 +42,7 @@
 
     
     .text{
-        min-height:260px;
+        min-height:270px;
         position:relative;
         .tag{
             color:$blue;
@@ -122,16 +122,7 @@
         }
     }
 }
-.archive{
-    .article{
-        .text{
-            min-height:300px;
-            .headline{
-                margin-top:0;
-            }
-        }
-    }
-}
+
 
 .article-block-vertical{
     .left-high-block {

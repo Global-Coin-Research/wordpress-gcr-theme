@@ -48,11 +48,3 @@
     }
 }
 
-.page-section, .section {
-    padding: 70px 0;
-    &.stepped {
-        margin-top: -150px;
-        position: relative;
-        z-index: 3;
-    }
-}
