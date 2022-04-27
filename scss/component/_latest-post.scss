@@ -13,14 +13,18 @@
         .text{
             min-height:270px;
             .tag{
-                color:$blue;
+                
                 display: block;
+                
                 text-transform: uppercase;
                 margin-bottom:15px;
                 a{
                     text-decoration: none;
                     font-size:1em;
-                    color:$blue;
+                    background:$blue;
+                    color:$white;
+                    display: block;
+                    padding:2px 3px;
                     &:hover{
                         text-decoration: underline;
                     }

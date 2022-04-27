@@ -3,12 +3,11 @@
 	margin-bottom:30px;
     transition:all 0.4s ease;
     padding:20px;
-    // border-top:4px solid $blue;
     border: 1px solid lighten($gray-lighter,6%);
     background: $white;
     &:hover{
         transform:scale(1.010);
-        box-shadow: 0 0 5px rgba($black,0.3);
+        box-shadow: 0 0 4px rgba($black,0.3);
     }
     .thumb {
         margin-bottom: 15px;
@@ -33,7 +32,6 @@
             }
         }
         img{
-            // border:1px solid $blue;
             transition: all 0.5s ease;
             overflow:hidden;
             box-sizing: border-box !important;
@@ -52,15 +50,19 @@
             font-size: 14px;
             a{
                 text-decoration: none;
-                font-size:1em;
-                color:$blue;
+                font-size:0.8em;
+                line-height:1.25em;
+                background:$blue;
+                color:$white;
+                display: inline-block;
+                padding:3px 5px;
                 &:hover{
-                    text-decoration: underline;
+                    background:$blue-dark;
                 }
             }
         }
         .headline{
-            font-size: 21px;
+            font-size: 1.5em;
             line-height: 1em;
             margin-bottom:25px;
             letter-spacing: 1px;
@@ -71,7 +73,7 @@
                 display: block;
                 font-weight: 700;
                 &:hover{
-                    text-decoration: underline;
+                    color:$blue;
                 }
             }
         }
