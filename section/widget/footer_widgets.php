@@ -26,15 +26,25 @@
 
 <div class="widget">
     <h5>Settings</h5>
-    <div class="textwidget">
+    <?php 
+        wp_nav_menu( array(
+            'theme_location' => 'footer-setting',
+            'container' => 'div',
+            'container_class' => 'textwidget',
+            'container_id' => 'footer-setting',
+            'fallback_cb' => false
+        ) ) 
+    ?>
+    <!-- <div class="textwidget">
         <ul>
             <li><a href="https://globalcoinresearch.com/register" rel="nofollow">Register</a></li>
             <li><a href="https://globalcoinresearch.com/login-3/" rel="nofollow">Log in</a></li>
             <li><a href="https://globalcoinresearch.com/wp-login.php?action=logout&amp;_wpnonce=e2f0c21445" rel="nofollow">Log Out</a></li>
             <li><a href="https://docs.google.com/presentation/u/1/d/19SKdjJsm5E97EdISDyiqMomHhoDxMH7VCJFapcOFlKU/edit#slide=id.p4">Brand Guidelines</a></li>
         </ul>
-    </div>
+    </div> -->
 </div>
+
 <?php
     // }
 ?>

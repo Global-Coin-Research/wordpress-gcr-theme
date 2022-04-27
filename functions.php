@@ -33,6 +33,7 @@ if ( ! function_exists( 'gcr_setup' ) ) {
 		register_nav_menus(array(
 			'navigation' => 'Primary Menu',
 			'navigation-button' => 'Button Menu ',
+			'footer-setting' => 'Footer Setting',
 		));
 	}
 	
