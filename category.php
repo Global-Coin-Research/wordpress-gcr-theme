@@ -17,16 +17,7 @@ get_template_part('section/navigation-main')
                         <?php get_template_part('section/post/category-post') ?>
                     <?php endwhile; ?>
                 </div>
-                <div class="posts_pagination clearfix">
-                <?php 
-                    the_posts_pagination( array(
-                        'mid_size' => 3,
-                        'prev_text' => __( '<<', 'textdomain' ),
-                        'next_text' => __( '>>', 'textdomain' ),
-                        ) );
-                
-                ?>
-            </div>
+                <?php get_template_part('section/pagination') ?>
             </div>
             <?php get_template_part( 'sidebar' ) ?>
         </div>
