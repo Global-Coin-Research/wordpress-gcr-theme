@@ -17,6 +17,7 @@ get_template_part('section/navigation-main')
                         <?php get_template_part('section/post/default') ?>
                     <?php endwhile; ?>
                 </div>
+                <?php get_template_part('section/pagination') ?>
             </div>
             <?php get_template_part( 'sidebar' ) ?>
         </div>

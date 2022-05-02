@@ -79,6 +79,7 @@
             border:1px solid $blue-dark;
             font-size:1em;
             height:36px;
+            color:$blue-dark;
             &:focus{
                 background-color: lighten($bluish,25%);
             }
