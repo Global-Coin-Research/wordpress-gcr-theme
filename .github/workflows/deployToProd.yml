@@ -19,5 +19,6 @@ jobs:
               port: ${{ secrets.PORT }}
               script: |
                whoami
-               ls -al
+               cd /var/www/globalcoinresearch/wp-content/themes/gcr/
+               ls -la
             
