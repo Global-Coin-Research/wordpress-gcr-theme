@@ -1,0 +1,26 @@
+name: Deploy to Development
+
+on:
+  push:
+    branches: [ dev ]
+
+jobs:
+
+  Deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Deploy in EC2
+        uses: appleboy/ssh-action@master
+        with:
+              host: ${{ secrets.HOST_NAME_DEV  }}
+              username: ${{ secrets.USER_NAME  }}
+              key: ${{ secrets.AWS_PRIVATE_KEY  }}
+              port: ${{ secrets.PORT }}
+              script: |
+               whoami
+               cd /var/www/dev.globalcoinresearch.com/wp-content/themes/wordpress-gcr-theme
+               ls -la
+               git pull
+               git status
+            
