@@ -1,4 +1,7 @@
 <?php 
+@ini_set( 'upload_max_size' , '128M' );
+@ini_set( 'post_max_size', '128M');
+@ini_set( 'max_execution_time', '600' );
 
 function gcr_scripts(){
 	wp_enqueue_style( 'style',     get_template_directory_uri() . '/style.css',       array(), wp_get_theme()->get( 'Version' ) );
