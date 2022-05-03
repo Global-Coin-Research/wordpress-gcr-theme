@@ -8,7 +8,7 @@ get_header();
 
 get_template_part('section/navigation-minimal') 
 ?>
-
+<p>Test</p>
 <?php get_template_part('section/slider-landing') ?>
 
 <?php get_template_part('section/flagship') ?>
