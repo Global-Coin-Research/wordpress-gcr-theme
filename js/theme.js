@@ -5,7 +5,9 @@ jQuery(document).ready(function($){
         infinite: true,
         speed: 300,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        fade: true,
+        cssEase: 'linear'
     });
     
     $('#slider-landing').slick({
@@ -15,7 +17,9 @@ jQuery(document).ready(function($){
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000
+        autoplaySpeed: 3000,
+        fade: true,
+        cssEase: 'linear'
     });
     
     $('.prev').click(function(){$('.slick-prev').click();});
