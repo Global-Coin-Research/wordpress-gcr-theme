@@ -28,6 +28,7 @@
 }
 .btn-primary{
     @extend .btn;
+    text-transform: capitalize;
 }
 input.submit, input[type="submit"]{
     @extend .btn;
