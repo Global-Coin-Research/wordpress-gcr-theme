@@ -4,9 +4,7 @@
             <div class="header section-title">
                 <h2>GCR Fan Board</h2>
             </div>
-            <?php 
-                if ( function_exists( 'envira_gallery' ) ) { envira_gallery( 'fan-board-summary', 'slug' ); }
-            ?>
+            [lightgallery id="114"]
             <a class="btn btn-primary btn-large" href="fan-board">Check them all</a>
         </div>
     </div>
