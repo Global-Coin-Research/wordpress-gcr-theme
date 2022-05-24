@@ -1,14 +1,7 @@
 <div class="fan-board mt0">
     <div class="container">
         <div class="row clearfix">
-            <div class="header section-title">
-                <h2>GCR Fan Board</h2>
-            </div>
-            <?php 
-                echo do_shortcode('[lightgallery id="114"]');
-            ?>
-            
-            <a class="btn btn-primary btn-large" href="fan-board">Check them all</a>
+            <a class="btn btn-primary btn-large" href="https://globalcoinresearch.com/fan-board/">GCR Fan Board</a>
         </div>
     </div>
 </div>
