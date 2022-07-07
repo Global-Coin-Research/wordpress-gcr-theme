@@ -9,7 +9,7 @@
         <li><a href="https://twitter.com/globalcoinrsrch"><i class="icon icon-twitter"></i></a></li>
         <li><a href="https://www.youtube.com/channel/UCUOCAjg-10s_GBLchoERxzg/"><i class="icon icon-youtube-play"></i></a></li>
         <li><a href="https://www.facebook.com/globalcoinresearch"><i class="icon icon-facebook"></i></a></li>
-        <li><a href="https://www.instagram.com/globalcoinresearch_official/"><i class="icon icon-instagram"></i></i></a></li>
+        <li><a href="https://www.instagram.com/globalcoinresearch/"><i class="icon icon-instagram"></i></i></a></li>
     </ul>
 </div>
 <?php
