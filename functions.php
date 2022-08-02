@@ -168,6 +168,6 @@ function pol_widget_areas(){
 }
 add_action('widgets_init', 'pol_widget_areas');
 
-
+add_filter( 'uploads_directory_is_public_notice', '__return_false' );
 
 ?>
