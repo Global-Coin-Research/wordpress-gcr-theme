@@ -34,9 +34,9 @@
                             <li>Weekly Newsletter and Updates</li>
                             <li>Educational and Research Calls (Public & Private Events)</li>
                             <li>Virtual and IRL Community Hangouts Around the World</li>
+                            <li>Ongoing GCR Campaigns (earn $GCR tokens and free memberships)</li>
                             <li>Access to All Community Investment Calls</li>
                             <li>Governance Discussions</li>
-                            <li>Ongoing GCR Campaigns (earn $GCR tokens and free memberships)</li>
                         </ul>
                         <p><a href="//gcr.community" class="btn action">Start</a></p>
                     </div>
@@ -55,11 +55,11 @@
                             <li>Weekly Newsletter and Updates</li>
                             <li>Educational and Research Calls (Public & Private Events)</li>
                             <li>Virtual and IRL Community Hangouts Around the World</li>
+                            <li>Ongoing GCR Campaigns (earn $GCR tokens and free memberships)</li>
                             <li>Access to All Community Investment Calls</li>
                             <li>Governance Discussions</li>
                             <li>Access to Investment Threads and Discussions</li>
                             <li>Sponsorships and Complimentary Pioneer Referrals</li>
-                            <li>Ongoing GCR Campaigns (earn $GCR tokens and free memberships)</li>
                         </ul>
                         <p><a href="//gcr.community" class="btn action">Start</a></p>
                     </div>
@@ -78,6 +78,7 @@
                             <li>Weekly Newsletter and Updates</li>
                             <li>Educational and Research Calls (Public & Private Events)</li>
                             <li>Virtual and IRL Community Hangouts Around the World</li>
+                            <li>Ongoing GCR Campaigns (earn $GCR tokens and free memberships)</li>
                             <li>Access to All Community Investment Calls</li>
                             <li>Governance Discussions</li>
                             <li>Access to Investment Threads and Discussions</li>
@@ -86,7 +87,6 @@
                             <li>Monthly Airdrops</li>
                             <li>Deal Recap Calls</li>
                             <li>Participate in the Exclusive GCR Angel Network</li>
-                            <li>Ongoing GCR Campaigns (earn $GCR tokens and free memberships)</li>
                         </ul>
                         <p><a href="//gcr.community" class="btn action">Start</a></p>
                     </div>
