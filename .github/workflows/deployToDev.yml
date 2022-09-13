@@ -21,6 +21,6 @@ jobs:
                whoami
                cd /var/www/dev.globalcoinresearch.com/wp-content/themes/wordpress-gcr-theme
                ls -la
-               git pull
-               git status
+               sudo git pull
+               sudo git status
             
