@@ -1,0 +1,26 @@
+.wp-dark-mode-active{
+    a{
+        &.logolink{
+            &.blacklogo{
+                background: url(img/gcr-logo.svg) no-repeat;
+            }
+        }
+    }
+    .navigation{
+        ul{
+            li{
+                .sub-menu{
+                    li{
+                        &.menu-item-has-children{
+                            a{
+                                &:after{
+                                    background-position: -16px -33px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
