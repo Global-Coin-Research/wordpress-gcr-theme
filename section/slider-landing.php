@@ -3,7 +3,7 @@
         <div class="header-text">
             <h2>Global Coin Research is a tokenized, decentralized community of learners and investors in <span class="blue">Web3.</span></h2>
             <div class="button-area">
-                <a class="btn btn-primary" href="https://globalcoinresearch.us17.list-manage.com/subscribe/post?u=859b0d423a7f7baa4cdb46f26&id=3419cb7d6e">Subscribe to GCR Weekly</a>
+                <a class="btn btn-primary" href="http://eepurl.com/dvD3FH">Subscribe to GCR Weekly</a>
                 <a class="btn btn-white" href="https://discord.gg/globalcoinresearch">Join the Community</a>
             </div>
         </div>
