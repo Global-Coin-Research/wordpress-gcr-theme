@@ -9,11 +9,11 @@
             }
         }
     }
-    #navigation.navigation{
+    .navigation{
         ul{
             li{
                 .sub-menu{
-                    background-color: #1a30a2;
+                    
                     li{
                         &.menu-item-has-children{
                             a{
@@ -28,7 +28,7 @@
         }
         &.navigation-button{
             a{
-                border-color:#fff !important;
+                border-color:#000 !important;
                 color: #fff !important;
             }
             ul{
@@ -40,7 +40,11 @@
                             }
                         }
                     }
+                    .menu-item{
+                        
+                    }
                     .sub-menu{
+                        background-color: transparent;
                         li{
                             border-color:#fff !important;
                             &:last-child{
@@ -52,6 +56,7 @@
                         }
                         .menu-item{
                             a{
+                                background-color: #1a30a2;
                                 border-color:#fff !important;
                                 &:hover{
                                     color:#2649f5 !important;
