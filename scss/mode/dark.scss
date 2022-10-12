@@ -9,11 +9,11 @@
             }
         }
     }
-    .navigation{
+    #navigation.navigation{
         ul{
             li{
                 .sub-menu{
-                    background-color: #2649f5;
+                    background-color: #1a30a2;
                     li{
                         &.menu-item-has-children{
                             a{
@@ -28,7 +28,7 @@
         }
         &.navigation-button{
             a{
-                border-color:#fff;
+                border-color:#fff !important;
                 color: #fff !important;
             }
             ul{
