@@ -193,17 +193,34 @@ $dm-grey: #4d4d4d;
         width:50px;
         height:50px;
         background: url('img/mode-switch-4.png') no-repeat;
-        background-position: bottom right;
         background-size: 128px;
         border-radius:100px;
-        text-indent: -999em;
-        &.dark{
+        line-height: 50px;
+        font-size: 11px;
+        padding-left: 8px;
+        &.night{
+            background-position: bottom right;
+            display:none;
+        }
+        &.day{
+            display: block;
             background-position: top left;
-            
+            span{
+                padding-left: 46px
+            }
+        }
+        span{
+            display: none;
+            font-family: $gilroybold;
         }
         &:hover{
             width:125px;
+            span{display: block;}
         }
+    }
+    &.dark{
+        .day{display: none;}
+        .night{display:block}
     }
 }
 

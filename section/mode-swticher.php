@@ -1,3 +1,4 @@
 <span id="mode_switch">
-    <span class="icon">Dark</span>
+    <span class="icon day"><span>DAYMODE</span></span>
+    <span class="icon night"><span>NIGHTMODE</span></span>
 </span>

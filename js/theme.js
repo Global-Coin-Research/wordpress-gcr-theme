@@ -71,7 +71,7 @@ jQuery(document).ready(function($){
     // color mode switcher
     jQuery('#mode_switch').click(function(){
         jQuery('html').toggleClass('dark'); 
-        jQuery('#mode_switch .icon').toggleClass('dark'); 
+        jQuery(this).toggleClass('dark'); 
         
         // change favicon
         var link = document.querySelector("link[rel~='icon']");   
