@@ -7,7 +7,7 @@
     <meta name="description" content="GCR is a Community of Investors & Researchers in Web3">
     <meta name="twitter:data1" content="GCR">
     <link rel="canonical" href="https://globalcoinresearch.com/">
-    <link rel="icon" href="<?php echo get_template_directory_uri() ?>/img/favicon-blue.ico" type="image/x-icon">
+    <link rel="icon" href="<?php echo get_template_directory_uri() ?>/img/favicon-black.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <?php wp_head(); ?>
 </head>

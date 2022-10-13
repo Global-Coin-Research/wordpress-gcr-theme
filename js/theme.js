@@ -75,10 +75,9 @@ jQuery(document).ready(function($){
         
         // change favicon
         var link = document.querySelector("link[rel~='icon']");   
-        if(link.href.indexOf( "black" ) !=-1){
+        if(link.href.indexOf( "black" ) ===-1){
             link.href = 'https://dev.globalcoinresearch.com/wp-content/themes/wordpress-gcr-theme/img/favicon-blue.ico';
-        }
-        if(link.href.indexOf( "blue" ) !=-1){
+        }else if(link.href.indexOf( "blue" ) ===-1){
             link.href = 'https://dev.globalcoinresearch.com/wp-content/themes/wordpress-gcr-theme/img/favicon-black.ico';
         }
     });
