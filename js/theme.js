@@ -72,6 +72,15 @@ jQuery(document).ready(function($){
     jQuery('#mode_switch').click(function(){
         jQuery('html').toggleClass('dark'); 
         jQuery('#mode_switch .icon').toggleClass('dark'); 
+        
+        // change favicon
+        var link = document.querySelector("link[rel~='icon']");   
+        if(link.href.indexOf( "black" ) !=-1){
+            link.href = 'https://globalcoinresearch.com/img/favicon-blue.ico';
+        }
+        if(link.href.indexOf( "blue" ) !=-1){
+            link.href = 'https://globalcoinresearch.com/img/favicon-black.ico';
+        }
     });
     
 });
