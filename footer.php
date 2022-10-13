@@ -21,6 +21,7 @@
             </div>
         </div>
     </footer>
+    <?php include_once('section/mode-swticher.php') ?>
     <?php wp_footer(); ?>
 </body>
 </html>

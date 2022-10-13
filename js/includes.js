@@ -34,7 +34,11 @@ jQuery(document).ready(function () {
     jQuery('.prev').click(function(){jQuery('.slick-prev').click();});
     jQuery('.next').click(function(){jQuery('.slick-next').click();});
     
-    
+    // color mode switcher
+    jQuery('#mode_switch').click(function(){
+        jQuery('html').toggleClass('dark'); 
+        jQuery(this).toggleClass('dark'); 
+    });
     
     // trigger jquery with the window width
     if (jQuery(window).width() < 769) {

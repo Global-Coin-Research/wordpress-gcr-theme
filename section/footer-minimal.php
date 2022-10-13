@@ -12,6 +12,7 @@
             </div>
         </div>
     </footer>
+    <?php include_once('mode-swticher.php') ?>
     <?php wp_footer(); ?>
 </body>
 </html>

@@ -1,6 +1,17 @@
-.wp-dark-mode-active{
+$dm-blue: #1a30a2;
+$dm-text: #f1f1f1;
+$dm-grey: #4d4d4d;
+
+.wp-dark-mode-active, .dark{
+    .mctb-bar, .mctb-response, .mctb-close {
+        background-color: rgb(41, 43, 43) !important;
+    }
+    body{
+        background-color: rgb(39, 40, 39);
+        color:$dm-text;
+    }
     .header-minimal{
-        background-color: #2649f5;
+        background-color: $blue;
     }
     a{
         &.logolink{
@@ -28,8 +39,11 @@
         }
         &.navigation-button{
             a{
-                border-color:#000 !important;
+                border-color:#fff !important;
                 color: #fff !important;
+                &:hover{
+                    background-color: $dm-blue;
+                }
             }
             ul{
                 li{
@@ -68,8 +82,125 @@
                             border-bottom-color:#fff;
                         }
                     }
+                    &:hover{
+                        a{
+                            background-color: $dm-blue;
+                        }
+                    }
                 }
             }
         }
     }
+    
+    .bg-dark-blue{
+        background-color: rgb(19, 26, 50);
+    }
+    
+    .section-title-2{
+        .section-moto{
+            color:$dm-text;
+        }
+    }
+    
+    .flagship{
+        p{
+            &.category,&.excerpt{
+                color:$dm-text;
+            }
+        }
+    }
+    .single-tier{
+        background-color: #353535;
+        .body{
+            ul{
+                li{
+                    color:$dm-text;
+                    background: url('img/tick-white.png') no-repeat;
+                    background-size: 18px;
+                }
+            }
+            .btn{
+                background-color: $dm-text;
+                color:$dm-blue;
+                &:hover{
+                    background-color: $dm-blue;
+                    color:#fff;
+                }
+            }
+        }
+    }
+    
+    .blank-section{
+        h3{
+            color:$dm-text;
+        }
+    }
+    
+    .article{
+        background-color: $dm-grey;
+        .text{
+            .headline{
+                a{
+                    &:hover{
+                        color:$dm-text;
+                    }
+                }
+            }
+            .details{
+                p{
+                    color:$dm-text;
+                }
+            }
+        }
+    }
+    
+    footer{
+        color:$dm-text;
+        &.minimal{
+            background:$dm-grey;
+            .logo_area{
+                .tag{
+                    color:$dm-text;
+                }
+            }
+            .bottom_links{
+                li{
+                    a{
+                        color:$dm-text;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#mode_switch{
+    position: fixed;
+    right:20px;
+    bottom:20px;
+    // display: block;
+    // width:50px;
+    // height:50px;
+    cursor:pointer;
+    .icon{
+        display: block;
+        width:50px;
+        height:50px;
+        background: url('img/mode-switch-4.png') no-repeat;
+        background-position: bottom right;
+        background-size: 128px;
+        border-radius:100px;
+        text-indent: -999em;
+        &.dark{
+            background-position: top left;
+            
+        }
+        &:hover{
+            width:125px;
+        }
+    }
+}
+
+.dark{
+    
 }
