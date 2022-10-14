@@ -11,9 +11,11 @@ $dm-darkblue: #061237;
         background-color: rgb(39, 40, 39);
         color:$dm-text;
     }
+    .site-header,.footer{
+        background-color: $blue;
+    }
     
     .header-minimal{
-        background-color: $dm-darkblue;
         .navigation{ 
             ul{
                 li{
@@ -68,7 +70,6 @@ $dm-darkblue: #061237;
     }
     
     .header-main{
-        background-color: $dm-darkblue;
         .navigation{
             ul{
                 li{
@@ -219,18 +220,76 @@ $dm-darkblue: #061237;
     }
     
     footer{
-        color:$dm-text;
+        color:$whitish;
         &.minimal{
-            background:$dm-grey;
+            background:$blue;
             .logo_area{
                 .tag{
-                    color:$dm-text;
+                    color:$whitish;
                 }
             }
             .bottom_links{
                 li{
                     a{
-                        color:$dm-text;
+                        color:$whitish;
+                    }
+                }
+            }
+            .socials{
+                a{
+                    .icon{
+                        color:$blue;
+                        background-color: $white;
+                    }
+                    &:hover{
+                        .icon{
+                            background-color: $black;
+                            color:$white;
+                        }
+                    }
+                }
+                li{
+                    a{
+                        &.discord_link{
+                            .discord{
+                                background-position: 0 -69px !important;
+                                &:hover{
+                                    background-position: 0 -0px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-bottom{
+            .logo-area{
+                .tag{
+                    color:$whitish;
+                }
+                .socials{
+                    li{
+                        a{
+                            color:$blue;
+                            &:hover{
+                                background-color: $black;
+                                color:$white;
+                            }
+                            &.discord_link{
+                                .discord{
+                                    &:hover{
+                                        background-position: 0 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .widget{
+                ul li{
+                    a{
+                        color:$whitish;
                     }
                 }
             }
