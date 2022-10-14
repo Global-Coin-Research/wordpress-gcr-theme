@@ -1,6 +1,3 @@
-if(localStorage.mode=="night"){
-    jQuery('html').addClass('dark');
-}
 jQuery(document).ready(function($){
     
     $('#slider-content').slick({
