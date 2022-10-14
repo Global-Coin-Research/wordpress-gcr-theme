@@ -237,9 +237,21 @@ $dm-darkblue: #061237;
         }
     }
     .call-to-action .get_gcr .sub_gcr{
-        background-color: #061237;
+        background-color: $dm-darkblue;
     }
     
+    .livewire{
+        background-color: $dm-darkblue;
+        .title{
+            h3{
+                color:#fff;
+                border-color:#fff;
+            }
+        }
+        a{
+            color:$dm-text;
+        }
+    }
 }
 
 #mode_switch{
