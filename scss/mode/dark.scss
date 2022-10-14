@@ -1,6 +1,7 @@
 $dm-blue: #1a30a2;
 $dm-text: #f1f1f1;
 $dm-grey: #4d4d4d;
+$dm-darkblue: #061237;
 
 .wp-dark-mode-active, .dark{
     .mctb-bar, .mctb-response, .mctb-close {
@@ -10,52 +11,26 @@ $dm-grey: #4d4d4d;
         background-color: rgb(39, 40, 39);
         color:$dm-text;
     }
+    
     .header-minimal{
-        background-color: $blue;
-    }
-    a{
-        &.logolink{
-            &.blacklogo{
-                background: url(img/gcr-logo.svg) no-repeat;
-            }
-        }
-    }
-    .navigation{
-        ul{
-            li{
-                .sub-menu{
-                    
-                    li{
-                        &.menu-item-has-children{
-                            a{
-                                &:after{
-                                    background-position: -16px -33px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        &.navigation-button{
-            a{
-                border-color:#fff !important;
-                color: #fff !important;
-                &:hover{
-                    background-color: $dm-blue;
-                }
-            }
+        background-color: $dm-darkblue;
+        .navigation{ 
             ul{
                 li{
+                    &>a{
+                        border-color:#fff !important;
+                        color: #fff !important;
+                        background-color: $blue;
+                        &:hover{
+                            background-color: $dm-darkblue;
+                        }
+                    }
                     &.dropdown,&.menu-item-has-children{
                         &>a{
                             &:after{
                                 background-position: -37px -44px;
                             }
                         }
-                    }
-                    .menu-item{
-                        
                     }
                     .sub-menu{
                         background-color: transparent;
@@ -70,11 +45,11 @@ $dm-grey: #4d4d4d;
                         }
                         .menu-item{
                             a{
-                                background-color: #1a30a2;
+                                background-color: $blue;
                                 border-color:#fff !important;
                                 &:hover{
-                                    color:#2649f5 !important;
-                                    background-color: #fff;
+                                    color:#fff !important;
+                                    background-color: $dm-darkblue;
                                 }
                             }
                         }
@@ -84,15 +59,88 @@ $dm-grey: #4d4d4d;
                     }
                     &:hover{
                         a{
-                            background-color: $dm-blue;
+                            background-color: $dm-darkblue;
                         }
                     }
                 }
             }
         }
     }
+    
+    .header-main{
+        background-color: $dm-darkblue;
+        .navigation{
+            ul{
+                li{
+                    .sub-menu{
+                        
+                        li{
+                            background-color: $blue;
+                            a{
+                                color:$white;
+                            }
+                            &.menu-item-has-children{
+                                a{
+                                    &:after{
+                                        background-position: -16px -33px;
+                                    }
+                                }
+                            }
+                            &:hover{
+                                background-color: $dm-darkblue;
+                                &>a{
+                                    background-color: $dm-darkblue;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .slider-area{
+        .slider-nav{
+            span{
+                background:$blue;
+                border-color:$dm-blue;
+                color:$white;
+                &:hover{
+                    background:$white;
+                    color:$dm-blue;
+                }
+            }
+        }
+    }
+    .content h3{
+        color:$whitish;
+    }
+    
+    .post-meta{
+        .meta-data{
+            h5{
+                a{
+                    color:$whitish !important;
+                }
+            }
+        }
+    }
+    
+    .sidebar{
+        form label, .widget .title{
+            border-bottom-color:$blue;
+        }
+    }
+    
+    a{
+        &.logolink{
+            &.blacklogo{
+                background: url(img/gcr-logo.svg) no-repeat;
+            }
+        }
+    }
+    
     .bg-blue{
-        background-color: #061237;
+        background-color: $dm-darkblue;
     }
     
     .bg-dark-blue{
@@ -102,6 +150,19 @@ $dm-grey: #4d4d4d;
     .section-title-2{
         .section-moto{
             color:$dm-text;
+        }
+    }
+    
+    .doubel_border{
+        border-color:$whitish;
+    }
+    
+    .related_post {
+        .heading{
+            border-color:$whitish;
+            h3{
+                color:$whitish;
+            }
         }
     }
     
@@ -178,6 +239,7 @@ $dm-grey: #4d4d4d;
     .call-to-action .get_gcr .sub_gcr{
         background-color: #061237;
     }
+    
 }
 
 #mode_switch{
@@ -198,6 +260,10 @@ $dm-grey: #4d4d4d;
         line-height: 50px;
         font-size: 11px;
         padding-left: 8px;
+        span{
+            display: none;
+            font-family: $gilroybold;
+        }
         &.night{
             background-position: bottom right;
             display:none;
@@ -206,12 +272,8 @@ $dm-grey: #4d4d4d;
             display: block;
             background-position: top left;
             span{
-                padding-left: 46px
+                padding-left: 46px;
             }
-        }
-        span{
-            display: none;
-            font-family: $gilroybold;
         }
         &:hover{
             width:125px;
@@ -222,8 +284,4 @@ $dm-grey: #4d4d4d;
         .day{display: none;}
         .night{display:block}
     }
-}
-
-.dark{
-    
 }

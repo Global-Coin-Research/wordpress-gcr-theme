@@ -9,6 +9,12 @@
     <link rel="canonical" href="https://globalcoinresearch.com/">
     <link rel="icon" href="<?php echo get_template_directory_uri() ?>/img/favicon-day.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script>
+        if(localStorage.mode=="night"){
+            const html = document.getElementsByTagName("html")
+            html.className = 'dark';
+        }
+    </script>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
