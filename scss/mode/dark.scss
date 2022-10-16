@@ -3,7 +3,59 @@ $dm-text: #f1f1f1;
 $dm-grey: #4d4d4d;
 $dm-darkblue: #061237;
 
+
+#mode_switch{
+    position: fixed;
+    right:20px;
+    bottom:20px;
+    // display: block;
+    // width:50px;
+    // height:50px;
+    cursor:pointer;
+    .icon{
+        display: block;
+        width:50px;
+        height:50px;
+        background: url('img/mode-switch-4.png') no-repeat;
+        background-size: 128px;
+        border-radius:100px;
+        line-height: 50px;
+        font-size: 11px;
+        padding-left: 8px;
+        span{
+            display: none;
+            font-family: $gilroybold;
+        }
+        &.night{
+            display:block;
+            background-position: bottom right;
+            span{
+                color:$whitish;
+            }
+        }
+        &.day{
+            display: none;
+            background-position: top left;
+            span{
+                padding-left: 46px;
+                color:$dm-darkblue;
+            }
+        }
+        &:hover{
+            width:125px;
+            span{display: block;}
+        }
+    }
+}
+
 .wp-dark-mode-active, .dark{
+    #mode_switch{
+        .icon{
+            &.day{display: block;}
+            &.night{display:none}
+        }
+    }
+    
     .mctb-bar, .mctb-response, .mctb-close {
         background-color: rgb(41, 43, 43) !important;
     }
@@ -11,11 +63,9 @@ $dm-darkblue: #061237;
         background-color: rgb(39, 40, 39);
         color:$dm-text;
     }
-    .site-header,.footer{
-        background-color: $blue;
-    }
     
     .header-minimal{
+        background-color: $blue;
         .navigation{ 
             ul{
                 li{
@@ -70,6 +120,7 @@ $dm-darkblue: #061237;
     }
     
     .header-main{
+        background-color: $dm-darkblue;
         .navigation{
             ul{
                 li{
@@ -218,14 +269,21 @@ $dm-darkblue: #061237;
             }
         }
     }
+    // .subscription-vertical{
+    //     background-color: $dm-darkblue;
+    // }
     
-    footer{
+    .footer{
         color:$whitish;
+        background-color: $dm-darkblue;
         &.minimal{
             background:$blue;
-            .logo_area{
+            .container{
+                border-color:$white;
+            }
+            .logo-area{
                 .tag{
-                    color:$whitish;
+                    color:$white;
                 }
             }
             .bottom_links{
@@ -243,8 +301,7 @@ $dm-darkblue: #061237;
                     }
                     &:hover{
                         .icon{
-                            background-color: $black;
-                            color:$white;
+                            color:$black;
                         }
                     }
                 }
@@ -262,7 +319,7 @@ $dm-darkblue: #061237;
                 }
             }
         }
-        .footer-bottom{
+        .footer-large{
             .logo-area{
                 .tag{
                     color:$whitish;
@@ -270,15 +327,15 @@ $dm-darkblue: #061237;
                 .socials{
                     li{
                         a{
-                            color:$blue;
+                            color:$dm-darkblue;
                             &:hover{
-                                background-color: $black;
+                                background-color: $blue;
                                 color:$white;
                             }
                             &.discord_link{
                                 .discord{
                                     &:hover{
-                                        background-position: 0 0;
+                                        background-position: 0 -34px;
                                     }
                                 }
                             }
@@ -313,46 +370,4 @@ $dm-darkblue: #061237;
     }
 }
 
-#mode_switch{
-    position: fixed;
-    right:20px;
-    bottom:20px;
-    // display: block;
-    // width:50px;
-    // height:50px;
-    cursor:pointer;
-    .icon{
-        display: block;
-        width:50px;
-        height:50px;
-        background: url('img/mode-switch-4.png') no-repeat;
-        background-size: 128px;
-        border-radius:100px;
-        line-height: 50px;
-        font-size: 11px;
-        padding-left: 8px;
-        span{
-            display: none;
-            font-family: $gilroybold;
-        }
-        &.night{
-            background-position: bottom right;
-            display:none;
-        }
-        &.day{
-            display: block;
-            background-position: top left;
-            span{
-                padding-left: 46px;
-            }
-        }
-        &:hover{
-            width:125px;
-            span{display: block;}
-        }
-    }
-    &.dark{
-        .day{display: none;}
-        .night{display:block}
-    }
-}
+

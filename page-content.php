@@ -22,5 +22,7 @@ get_header();
 <?php get_template_part('section/cta/apply-gcr') ?>
 
 <?php get_template_part('section/gcr-announcement') ?>
+
+<?php get_template_part('section/subscription-vertical') ?>
     
 <?php get_footer(); ?>

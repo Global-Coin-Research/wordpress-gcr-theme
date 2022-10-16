@@ -119,5 +119,48 @@
     }
 }
 
+
+.subscription-vertical{
+    background-color: $black;
+    color:$white;
+    padding-bottom:0 !important;
+    .subscription_large {
+        padding-right: 38%;
+        .headline {
+            font-size: 1em;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            font-family: $gilroybold;
+            color:$white;
+        }
+        p {
+            font-family:$gilroybold;
+            font-size: 1.5em;
+            line-height: 1.5em;
+        }
+        .subscribe-form {
+            margin-top: 40px;
+            margin-bottom: 100px;
+            fieldset {
+                position: relative;
+            }
+            input {
+                width: 100%;
+            }
+            label {
+                color: $white;
+            }
+            button {
+                background: $black;
+                margin-top: 30px;
+                &:hover {
+                    background: $white;
+                    color: $gray-dark;
+                }
+            }
+        }
+    }
+}
+
  
  

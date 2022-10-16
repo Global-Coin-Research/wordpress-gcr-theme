@@ -1,5 +1,5 @@
 .footer {
-    background-color: $black;
+    background-color: $blue;
     color: $white;
     padding: 70px 0;
     .socials{
@@ -19,43 +19,11 @@
             
         }
     }
-    .footer-top {
-        padding-right: 38%;
-        border-bottom: 1px solid $gray-light;
-        .headline {
-            font-size: 1em;
-            text-transform: uppercase;
-            margin-bottom: 30px;
-            font-family: $gilroybold;
-        }
-        p {
-            font-family:$gilroybold;
-            font-size: 1.5em;
-            line-height: 1.5em;
-        }
-        .subscribe-form {
-            margin-top: 40px;
-            margin-bottom: 100px;
-            fieldset {
-                position: relative;
-            }
-            input {
-                width: 100%;
-            }
-            label {
-                color: $white;
-            }
-            button {
-                background: $black;
-                margin-top: 30px;
-                &:hover {
-                    background: $white;
-                    color: $gray-dark;
-                }
-            }
-        }
+    
+    .border{
+        border-top: 1px solid $gray-light;
     }
-    .footer-bottom {
+    .footer-large {
         padding-top: 80px;
         .logo-area {
             width: 32%;
@@ -64,22 +32,22 @@
                 width: 70px;
             }
             .tag {
-                color: $gray-light;
+                color: $white;
                 margin: 12px 0px 25px;
             }
             .socials li {
                 float: left;
-                display: inline-block;
+                // display: inline-block;
                 margin-right: 10px;
                 a {
                     display: block;
                     border-radius: 5px;
-                    color: $gray-dark;
+                    color: $blue;
                     font-size: 1.1em;
                     padding: 5px;
                     background: $white;
                     &:hover {
-                        background: $blue;
+                        background: $black;
                         color: $white;
                     }
                     &.discord_link{
@@ -88,7 +56,7 @@
                         .discord{
                             background-position:0 -69px;
                             &:hover{
-                                background-position:0 -34px;
+                                background-position:0 0px;
                             }
                         }
                     }
@@ -123,7 +91,7 @@
         background:$site-background;
         padding: 40px;
         padding-bottom: 80px;
-        .container{border-top: 2px solid $footer-link-color;}
+        .container{border-top: 2px solid $gray-dark;}
         .footer-row{
             margin-top:80px;
         }
@@ -140,7 +108,7 @@
             }
             .tag{
                 margin: 12px 0px 25px;
-                color: $footer-link-color;
+                color: $black;
             }
         }
         .socials{
@@ -148,7 +116,7 @@
             li{
                 width:34px;
                 float:left;
-                display: inline-block;
+                // display: inline-block;
             }
             a{
                 padding:0 !important;
