@@ -48,7 +48,7 @@ $dm-darkblue: #061237;
     }
 }
 
-.wp-dark-mode-active, .dark{
+.dark{
     #mode_switch{
         .icon{
             &.day{display: block;}
@@ -270,9 +270,6 @@ $dm-darkblue: #061237;
             }
         }
     }
-    // .subscription-vertical{
-    //     background-color: $dm-darkblue;
-    // }
     
     .footer{
         color:$whitish;
@@ -367,6 +364,26 @@ $dm-darkblue: #061237;
         }
         a{
             color:$dm-text;
+        }
+    }
+    .widget{
+        li{
+            a{
+                color:$white;
+            }
+        }
+    }
+
+    #respond{
+        p{
+            &.comment-form-subscribe{
+                label{
+                    color:$white;
+                    a{
+                        color:$whitish;
+                    }
+                }
+            }
         }
     }
 }
