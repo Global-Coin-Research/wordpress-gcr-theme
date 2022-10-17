@@ -257,8 +257,9 @@ $dm-darkblue: #061237;
         .text{
             .headline{
                 a{
+                    color:$white;
                     &:hover{
-                        color:$dm-text;
+                        color:$black;
                     }
                 }
             }
