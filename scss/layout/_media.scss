@@ -434,6 +434,11 @@
         border:1px solid $blue;
         border-top:0;
     }
+    .four-flagship{
+        .flagship{
+            max-width:45%;
+        }
+    }
 }
     
 @media only screen and (max-width: 767px) {
