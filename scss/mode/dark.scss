@@ -59,6 +59,22 @@ $dm-darkblue: #061237;
     .mctb-bar, .mctb-response, .mctb-close {
         background-color: rgb(41, 43, 43) !important;
     }
+    #mailchimp-top-bar {
+        .mctb-label {
+            color: #fff !important;
+        }
+        .mctb-button{
+            background:$blue !important;
+            border-color:$dm-darkblue !important;
+            &:hover{
+                background:#000 !important;
+                border-color:$blue !important;
+            }
+        }
+        .mctb-close{
+            background-color: $white !important;
+        }
+    }
     body{
         background-color: rgb(39, 40, 39);
         color:$dm-text;
