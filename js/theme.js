@@ -80,10 +80,10 @@ jQuery(document).ready(function($){
         var link = document.querySelector("link[rel~='icon']");   
         if(link.href.indexOf( "day" ) ===-1){
             localStorage.setItem('mode', 'day');
-            link.href = 'https://globalcoinresearch.com/wp-content/themes/wordpress-gcr-theme/img/favicon-day.ico';
+            link.href = 'https://dev.globalcoinresearch.com/wp-content/themes/wordpress-gcr-theme/img/favicon-day.ico';
         }else if(link.href.indexOf( "night" ) ===-1){
             localStorage.setItem('mode', 'night');
-            link.href = 'https://globalcoinresearch.com/wp-content/themes/wordpress-gcr-theme/img/favicon-night.ico';
+            link.href = 'https://dev.globalcoinresearch.com/wp-content/themes/wordpress-gcr-theme/img/favicon-night.ico';
         }
     });
     
