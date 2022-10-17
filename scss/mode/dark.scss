@@ -374,17 +374,11 @@ $dm-darkblue: #061237;
         }
     }
 
-    #respond{
-        p{
-            &.comment-form-subscribe{
-                label{
-                    color:$white;
-                    a{
-                        color:$whitish;
-                    }
-                }
-            }
-        }
+    .subscribe-label {
+        color: #fff !important;
+    }
+    .subscribe-label a {
+        color: #fff;
     }
 }
 
