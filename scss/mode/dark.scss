@@ -410,7 +410,24 @@ $yellow: #ffdb00;
         color: #fff !important;
     }
     .post-meta .tags-meta a:hover{
-        background-color: #061237;
+        background-color: $dm-darkblue;
+    }
+    .comment-area{
+        border-color:$yellow;
+        .comments_list{
+            .comment{
+                .reply{
+                    .comment-reply-link{
+                        color:$dm-darkblue;
+                        background-color: $white;
+                        &:hover{
+                            color: $white;
+                            background-color: $blue;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
