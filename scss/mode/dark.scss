@@ -195,7 +195,7 @@ $dm-darkblue: #061237;
     
     .sidebar{
         form label, .widget .title{
-            border-bottom-color:$blue;
+            border-bottom-color:$white;
         }
     }
     
@@ -232,6 +232,9 @@ $dm-darkblue: #061237;
                 color:$whitish;
             }
         }
+    }
+    .related_post .article .headline:after{
+        background-color: #fff;
     }
     
     .flagship{
@@ -395,6 +398,9 @@ $dm-darkblue: #061237;
     }
     .subscribe-label a {
         color: #fff !important;
+    }
+    .post-meta .tags-meta a:hover{
+        background-color: #061237;
     }
 }
 
