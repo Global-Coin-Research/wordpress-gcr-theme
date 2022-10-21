@@ -2,7 +2,7 @@ $dm-blue: #1a30a2;
 $dm-text: #f1f1f1;
 $dm-grey: #4d4d4d;
 $dm-darkblue: #061237;
-
+$yellow: #ffdb00;
 
 #mode_switch{
     position: fixed;
@@ -179,8 +179,13 @@ $dm-darkblue: #061237;
             }
         }
     }
-    .content h3{
-        color:$whitish;
+    .content {
+        h3{
+            color:$whitish;
+        }
+        a{
+            color:$yellow;
+        }
     }
     
     .post-meta{
@@ -189,6 +194,11 @@ $dm-darkblue: #061237;
                 a{
                     color:$whitish !important;
                 }
+            }
+        }
+        .tags-meta{
+            a{
+                color:$white;
             }
         }
     }
@@ -276,9 +286,10 @@ $dm-darkblue: #061237;
         .text{
             .headline{
                 a{
-                    color:$white;
+                    color:$yellow;
                     &:hover{
-                        color:$black;
+                        color:$white;
+                        text-decoration: underline;
                     }
                 }
             }
