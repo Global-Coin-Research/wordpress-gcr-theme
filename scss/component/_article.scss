@@ -40,7 +40,7 @@
 
     
     .text{
-        min-height:270px;
+        min-height:280px;
         position:relative;
         .tag{
             color:$blue;
@@ -56,6 +56,7 @@
                 color:$white;
                 display: inline-block;
                 padding:3px 5px;
+                margin-bottom: 2px;
                 &:hover{
                     background:$blue-dark;
                 }
