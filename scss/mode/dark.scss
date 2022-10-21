@@ -286,10 +286,9 @@ $yellow: #ffdb00;
         .text{
             .headline{
                 a{
-                    color:$yellow;
+                    color:$white;
                     &:hover{
-                        color:$white;
-                        text-decoration: underline;
+                        color:$yellow;
                     }
                 }
             }
