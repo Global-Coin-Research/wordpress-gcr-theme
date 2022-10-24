@@ -16,8 +16,11 @@
             margin-bottom:0;
         }
     }
-    h3 {
-        font-size: 2em;
+    h1{font-size:34px !important;}
+    h1{font-size:32px !important;}
+    h3{font-size: 30px !important;}
+    h4{font-size: 26px !important;}
+    h1,h2,h3,h4 {
         font-weight: 700;
         line-height: 1.6em;
         margin-bottom: 15px;
@@ -38,6 +41,7 @@
         list-style-position: outside;
         margin-left: 15px;
         margin-bottom: 15px; 
+        font-size: 1em !important;
     }
     li{
         line-height:1.5em;
