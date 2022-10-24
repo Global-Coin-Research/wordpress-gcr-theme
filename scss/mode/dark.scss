@@ -178,6 +178,11 @@ $yellow: #ffdb00;
                 }
             }
         }
+        .header-text{
+            .blue{
+                color:$yellow;
+            }
+        }
     }
     .content {
         h3{
@@ -185,6 +190,14 @@ $yellow: #ffdb00;
         }
         a{
             color:$yellow;
+        }
+    }
+    
+    .flagship{
+        .tag{
+            .taglink{
+                color:$yellow;
+            }
         }
     }
     
@@ -295,6 +308,29 @@ $yellow: #ffdb00;
             .details{
                 p{
                     color:$dm-text;
+                }
+            }
+            .meta-data{
+                .meta-text{
+                    .date{
+                        color:$whitish;
+                    }
+                }
+            }
+        }
+    }
+    .article-block-vertical{
+        .left-high-block{
+            .article{
+                .text{
+                    &.overlay-text{
+                        background-color: $dm-darkblue;
+                        h3{
+                            a{
+                                color:$white;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -428,6 +464,12 @@ $yellow: #ffdb00;
                 }
             }
         }
+    }
+    
+    
+    // wp preset
+    .has-black-color{
+        color: $white !important;
     }
 }
 
