@@ -195,8 +195,8 @@ $yellow: #ffdb00;
         }
     }
     .content {
-        h3{
-            color:$whitish;
+        h1,h2,h3,h4{
+            color:$whitish !important;
         }
         a{
             color:$yellow;
