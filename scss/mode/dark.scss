@@ -49,6 +49,16 @@ $yellow: #ffdb00;
 }
 
 .dark{
+    ::-moz-selection {
+        background: $yellow;
+        color:$dm-darkblue;
+        text-shadow: none;
+    }
+    ::selection {
+        background: $yellow;
+        color:$dm-darkblue;
+        text-shadow: none;
+    }
     #mode_switch{
         .icon{
             &.day{display: block;}
