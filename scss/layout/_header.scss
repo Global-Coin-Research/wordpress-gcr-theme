@@ -106,6 +106,18 @@ a.logolink{
                 cursor: text;
                 padding: 3px;
                 color: $black;
+                &::-webkit-input-placeholder {
+                    color: $placeholder-color-dark;
+                }
+                &:-moz-placeholder {
+                    color: $placeholder-color-dark;
+                }
+                &::-moz-placeholder {
+                    color: $placeholder-color-dark;
+                }
+                &:-ms-input-placeholder {
+                    color: $placeholder-color-dark;
+                }
             }
         }
         &.active{

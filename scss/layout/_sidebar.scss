@@ -83,6 +83,21 @@
             &:focus{
                 background-color: lighten($bluish,25%);
             }
+            
+        }
+        .wp-block-search__input{
+            &::-webkit-input-placeholder {
+                color: $placeholder-color-dark;
+            }
+            &:-moz-placeholder {
+                color: $placeholder-color-dark;
+            }
+            &::-moz-placeholder {
+                color: $placeholder-color-dark;
+            }
+            &:-ms-input-placeholder {
+                color: $placeholder-color-dark;
+            }
         }
         button{
             padding:5px;
