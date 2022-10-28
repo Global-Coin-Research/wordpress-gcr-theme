@@ -10,11 +10,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="GCR is a Community of Investors & Researchers in Web3">
-    <meta property="og:image" content="<?php echo $post_opengraph_image[0]; ?>" />
-	<meta property="og:image:secure_url" content="<?php echo $post_opengraph_image[0]; ?>" />
-    <meta property="og:image:secure_url" content="<?php echo $post_opengraph_image[0]; ?>" />
-	<meta property="og:image:width" content="270" />
-	<meta property="og:image:height" content="290" />
+    <meta property="og:image" content="<?php echo $post_image[0]; ?>" />
+	<meta property="og:image:secure_url" content="<?php echo $post_image[0]; ?>" />
+    <meta property="og:image:secure_url" content="<?php echo $post_image[0]; ?>" />
+	<meta property="og:image:width" content="800" />
+	<meta property="og:image:height" content="540" />
     <meta name="twitter:data1" content="GCR">
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
