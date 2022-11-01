@@ -167,5 +167,10 @@ function pol_widget_areas(){
 }
 add_action('widgets_init', 'pol_widget_areas');
 
+function wpms_no_wordpress_hints(){
+return 'Something is wrong!';
+}
+add_filter( 'login_errors', 'wpms_no_wordpress_hints' );
+
 
 ?>
