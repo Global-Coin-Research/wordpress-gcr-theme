@@ -167,5 +167,14 @@ function pol_widget_areas(){
 }
 add_action('widgets_init', 'pol_widget_areas');
 
+function wpms_no_wordpress_hints(){
+return 'Something is wrong!';
+}
+add_filter( 'login_errors', 'wpms_no_wordpress_hints' );
+
+function tg_enable_strict_transport_security_hsts_header_wordpress() {
+    header( 'Strict-Transport-Security: max-age=31536000; includeSubDomains; preload' );
+}
+add_action( 'send_headers', 'tg_enable_strict_transport_security_hsts_header_wordpress' );
 
 ?>
