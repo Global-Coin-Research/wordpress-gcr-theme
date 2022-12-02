@@ -8,7 +8,7 @@ get_template_part('section/navigation-main')
     <div class="page area">
         <div class="container">
             <div class="row clearfix">
-                <div class="content">
+                <div class="content post-details">
                     <div class="header">
                         <h2>Register/Sign In</h2>
                     </div>
