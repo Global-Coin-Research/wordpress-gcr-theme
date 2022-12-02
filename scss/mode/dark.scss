@@ -227,6 +227,9 @@ $yellow: #ffdb00;
     }
     
     .sidebar{
+        a{
+            color:$yellow;
+        }
         form label, .widget .title{
             border-bottom-color:$white;
         }

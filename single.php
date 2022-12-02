@@ -27,7 +27,7 @@
 <div class="page-area single-post">
     <div class="container">
         <div class="row clearfix">
-            <div class="content">
+            <div class="content post-details">
                 
                 <div class="header post-header">
                     <h2 class="title"><?php the_title(); ?></h2>
