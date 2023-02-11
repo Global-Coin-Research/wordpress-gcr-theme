@@ -10,7 +10,7 @@ get_template_part('section/navigation-main')
         <div class="row clearfix">
             <div class="content">
                 <div class="header post-header">
-                    <h2 class="title">Archive: <?php the_archive_title() ?></h2>
+                    <h2 class="title">Archive - <?php the_archive_title() ?></h2>
                 </div>  
                 <div class="two-column">
                     <?php while(have_posts()) : the_post(); ?>

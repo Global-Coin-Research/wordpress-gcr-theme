@@ -36,7 +36,7 @@
                     <div class="meta-data">
                         <div class="meta-text">
                             <h5><a href="<?php echo esc_url(get_the_author_meta('user_url') ); ?>"><?php the_author(); ?></a></h5>
-                            <p class="date"><?php the_time('F d'); ?></p>
+                            <p class="date"><?php the_time('F d, Y'); ?></p>
                         </div>
                     </div>
                     <div class="tags-meta">
