@@ -10,7 +10,7 @@
             <div class="meta-data">
                 <div class="meta-text">
                     <h5><?php the_author(); ?></h5>
-                    <p class="date"><?php the_time('F d'); ?></p>
+                    <p class="date"><?php the_time('F d, Y'); ?></p>
                 </div>
             </div>
         </div>
