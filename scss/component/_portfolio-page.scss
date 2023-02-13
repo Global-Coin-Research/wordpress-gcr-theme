@@ -76,10 +76,14 @@
             }
             &:hover{
                 text-decoration: none;
+                
             }
             a{
               display: block;
               padding:10px 15px;  
+              &:hover{
+                background-color: rgba( $blue,0.1);
+              }
             }
         }
     }

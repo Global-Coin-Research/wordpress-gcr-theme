@@ -37,12 +37,6 @@ $portfolios = [
         'image' => 'mtcelium.png',
     ],
     [
-        'brand' => 'Metropolis',
-        'cat'   => 'other',
-        'link'  => 'https://www.metropolis.space/',
-        'image' => 'metropolis.png',
-    ],
-    [
         'brand' => 'Apollo',
         'cat'   => 'other',
         'link'  => 'https://apollo.farm/',
@@ -65,12 +59,6 @@ $portfolios = [
         'cat'   => 'other',
         'link'  => 'https://parcel.money/',
         'image' => 'parcel.png',
-    ],
-    [
-        'brand' => 'Nifty Comedians',
-        'cat'   => 'other',
-        'link'  => 'https://www.niftycomedians.io/',
-        'image' => 'niftycomedians.png',
     ],
     [
         'brand' => 'Aurora',
