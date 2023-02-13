@@ -7,7 +7,7 @@ $portfolios = [
         'image' => 'lens.png',
     ],
     [
-        'brand' => 'Structure Financ',
+        'brand' => 'Structure Finance',
         'cat'   => 'consumer',
         'link'  => 'https://structure.finance/',
         'image' => 'structure-finance.png',
