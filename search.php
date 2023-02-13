@@ -8,7 +8,7 @@ get_template_part('section/navigation-main')
     <div class="container">
         <div class="row clearfix">
             <div class="content search-content">
-				<h2 class="search-title">Search result for <span class="searchterm"><?php echo get_search_query(); ?></span></h2>
+				<h2 class="search-title">Search result for <span class="searchterm">"<?php echo get_search_query(); ?>"</span></h2>
 				<?php if ( have_posts() ) : ?>
 					<div class="two-column">
 						<?php while(have_posts()) : the_post(); ?>
