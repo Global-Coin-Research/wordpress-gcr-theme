@@ -45,7 +45,7 @@
                 
                 ?>
                 <div class="flagship">
-                    <h2 class="title"><span class="larger">+31mn</span>Invested</h2>
+                    <h2 class="title"><span class="larger">+41mn</span>Invested</h2>
                     <p class="tag"><span class="taglink">Investment</span></p>
                     <p class="category">Deal Flow</p>
                     <p class="excerpt">The sizes of over $1mn for Pre-Seed and Seed fundraises, $5mn+in Liquidity Mining rounds, and over $25m in Growth Equity.</p>

@@ -87,5 +87,21 @@ jQuery(document).ready(function($){
         }
     });
     
+    // portfoli sorting
+    jQuery('.portsort').click(function(){
+        jQuery('.portsort, .item').removeClass('active');
+        jQuery(this).addClass('active');
+        var showTarget = jQuery(this).data('show');
+        jQuery('.'+showTarget).addClass('active');
+    });
+    
+    // portfolio slider
+    jQuery(function () {
+        $('.scroll1').infiniteslide(
+            {
+                'pauseonhover': false,
+            }
+        );
+    });
 });
 
