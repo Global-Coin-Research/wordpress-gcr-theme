@@ -130,6 +130,9 @@
 @mixin white-gradient {
 	background: linear-gradient(to right,  rgba(#fafafa,1) 0%,rgba(#fafafa,0) 100%);
 }
+@mixin dark-gradient {
+	background: linear-gradient(to right,  rgba(#272827,1) 0%,rgba(#272827,0) 100%);
+}
 .portfolio-slider-section{
     margin:60px 0 0px;
     padding-bottom:80px;

@@ -484,6 +484,25 @@ $yellow: #ffdb00;
     .has-black-color{
         color: $white !important;
     }
+    
+    .portfolio-slider-section{
+        .heading{
+        }
+        .help-text{
+            .tick-notes{
+                li{
+                    color: #f1f1f1;
+                }
+            }
+        }
+    }
+    .module{
+        &::before,
+        &::after {
+            @include dark-gradient;
+        }
+    }
+
 }
 
 
