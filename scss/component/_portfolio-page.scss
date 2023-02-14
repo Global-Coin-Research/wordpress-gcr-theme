@@ -15,11 +15,17 @@
             color:rgba(#000,0.5);
             border-radius: 2px;
             cursor:pointer;
+            .dark & {
+                color:#f1f1f1;
+            }
             &.active, &:hover{
                 // border-color:$blue-dark;
                 // background: $blue;
                 // color:#fff;
                 color:$blue;
+                .dark & {
+                    color:yellow;
+                }
             }
         }
         .links{
@@ -30,12 +36,19 @@
                     margin-left:20px;
                     a{
                         color:rgba(#000,0.5);
+                        .dark & {
+                            color:yellow;
+                        }
                         &:hover{
                             text-decoration: none;
                             color:$blue;
                         }
                         &.linker{
                             background-color: $blue;
+                            .dark & {
+                                background-color:yellow;
+                                color:black
+                            }
                             padding:5px 15px;
                             color:#fff;
                             border:0;
@@ -88,3 +101,4 @@
         }
     }
 }
+
