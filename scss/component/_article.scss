@@ -45,6 +45,12 @@
             &:hover{
                 background:$blue-dark;
             }
+            .dark &{
+                &:hover{
+                    background-color: $yellow;
+                    color:$dm-darkblue;
+                }
+            }
         }
     }
     

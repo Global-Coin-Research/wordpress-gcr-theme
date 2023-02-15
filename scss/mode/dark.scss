@@ -1,8 +1,4 @@
-$dm-blue: #1a30a2;
-$dm-text: #f1f1f1;
-$dm-grey: #4d4d4d;
-$dm-darkblue: #061237;
-$yellow: #ffdb00;
+@import '../base/variables';
 
 #mode_switch{
     position: fixed;
@@ -494,12 +490,6 @@ $yellow: #ffdb00;
                     color: #f1f1f1;
                 }
             }
-        }
-    }
-    .module{
-        &::before,
-        &::after {
-            @include dark-gradient;
         }
     }
     

@@ -24,7 +24,7 @@
                 // color:#fff;
                 color:$blue;
                 .dark & {
-                    color:yellow;
+                    color:$yellow;
                 }
             }
         }
@@ -37,7 +37,10 @@
                     a{
                         color:rgba(#000,0.5);
                         .dark & {
-                            color:yellow;
+                            color:$white;
+                            &:hover{
+                                color:$yellow;
+                            }
                         }
                         &:hover{
                             text-decoration: none;
@@ -46,8 +49,11 @@
                         &.linker{
                             background-color: $blue;
                             .dark & {
-                                background-color:yellow;
-                                color:black
+                                background-color:$yellow;
+                                color:black;
+                                &:hover{
+                                    background-color: $dm-text; 
+                                }
                             }
                             padding:5px 15px;
                             color:#fff;
@@ -83,6 +89,10 @@
                 font-weight: 700;
                 border-top:2px solid $blue-border;
                 color:$blue-border;
+                .dark &{
+                    color: $yellow;
+                    border-color: $yellow;
+                }
             }
             &:not(.active){
                 display:none;
@@ -96,6 +106,12 @@
               padding:10px 15px;  
               &:hover{
                 background-color: rgba( $blue,0.1);
+              }
+              .dark & {
+                    background: #fff;
+                    &:hover{
+                        background-color: #ffffda;
+                    }
               }
             }
         }
