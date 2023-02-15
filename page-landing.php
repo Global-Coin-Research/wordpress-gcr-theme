@@ -10,7 +10,9 @@ get_template_part('section/navigation-minimal')
 ?>
 <?php get_template_part('section/slider-landing') ?>
 
-<?php get_template_part('section/widget/portfolio-slider') ?>
+<?php 
+// get_template_part('section/widget/portfolio-slider'); 
+?>
 
 <?php get_template_part('section/flagship') ?>
 
