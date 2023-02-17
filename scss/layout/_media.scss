@@ -875,5 +875,23 @@
             }
         }
     }
+    .portfolio-section {
+        .linking-area {
+            .sorting{
+                margin-bottom:15px;
+            }
+            .links{
+                float:left;
+                ul{
+                    li{
+                        float:right;
+                        margin-left:0;
+                        // margin-right:20px;
+                    }
+                }
+            }
+        }
+    } 
+    
 
 } /* media end */
