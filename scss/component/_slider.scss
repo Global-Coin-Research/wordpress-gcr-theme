@@ -291,7 +291,8 @@ $logo_slider_width: 1230px;
         align-items: center;
         text-align: center;
         .p-slide{
-            padding:0 25px;
+            display: block;
+            padding:10px 15px;
         }
         img{
             width: 100%;
