@@ -18,6 +18,17 @@
                     <?php
                     }
                     ?>
+                    <?php
+                    foreach ($slider_images as $image) {
+                    ?>
+                        <li>
+                            <a href="https://globalcoinresearch.com/portfolio" class="p-slide">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/slider/<?php echo $image; ?>.png" />
+                            </a>
+                        </li>
+                    <?php
+                    }
+                    ?>
                 </ul>
             </div>
             <div class="help-text">
