@@ -96,12 +96,12 @@ jQuery(document).ready(function($){
     });
     
     // portfolio slider
-    jQuery(function () {
-        $('.scroll1').infiniteslide(
-            {
-                'pauseonhover': false,
-            }
-        );
-    });
+    // jQuery(function () {
+    //     $('.scroll1').infiniteslide(
+    //         {
+    //             'pauseonhover': false,
+    //         }
+    //     );
+    // });
 });
 

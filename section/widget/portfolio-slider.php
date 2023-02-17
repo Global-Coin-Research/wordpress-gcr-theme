@@ -4,13 +4,13 @@
             <div class="heading">
                 <h3>GCR has deployed $41M+ in community-sourced capital across 65+ projects to-date</h3>
             </div>
-            <div class="module">
-                <ul class="scroll1">
+            <div class="logo-slider">
+                <ul class="logo-track">
                     <?php
                     $slider_images = ['aurora', 'scroll', 'gnosis-safe', 'sui', 'layerzero', 'magic-eden', 'sweat-economy', 'lense', 'decrypt', 'syndicate'];
                     foreach ($slider_images as $image) {
                     ?>
-                        <li>
+                        <li class="logo-slide">
                             <a href="https://globalcoinresearch.com/portfolio" class="p-slide">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/slider/<?php echo $image; ?>.png" />
                             </a>
@@ -21,7 +21,7 @@
                     <?php
                     foreach ($slider_images as $image) {
                     ?>
-                        <li>
+                        <li class="logo-slide">
                             <a href="https://globalcoinresearch.com/portfolio" class="p-slide">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/slider/<?php echo $image; ?>.png" />
                             </a>

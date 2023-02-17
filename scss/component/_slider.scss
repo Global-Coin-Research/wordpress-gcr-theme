@@ -208,41 +208,41 @@
         }
     }
 }
-.module{
-    position: relative;
-    &::before,
-	&::after {
-		@include white-gradient;
-		content: "";
-		height: 100px;
-		position: absolute;
-		width: 300px;
-		z-index: 2;
-        .dark &{
-            @include dark-gradient;
-        }
-	}
+// .module{
+//     position: relative;
+//     &::before,
+// 	&::after {
+// 		@include white-gradient;
+// 		content: "";
+// 		height: 100px;
+// 		position: absolute;
+// 		width: 300px;
+// 		z-index: 2;
+//         .dark &{
+//             @include dark-gradient;
+//         }
+// 	}
 
-	&::after {
-		right: 0;
-		top: 0;
-		transform: rotateZ(180deg);
-	}
+// 	&::after {
+// 		right: 0;
+// 		top: 0;
+// 		transform: rotateZ(180deg);
+// 	}
 
-	&::before {
-		left: 0;
-		top: 0;
-	}
-    li{
-        margin:0 10px;
-        .p-slide{
-            display: block;
-            padding:10px 15px;
-            max-height: 100px;
-            max-width:220px;
-        }
-    }
-}
+// 	&::before {
+// 		left: 0;
+// 		top: 0;
+// 	}
+//     li{
+//         margin:0 10px;
+//         .p-slide{
+//             display: block;
+//             padding:10px 15px;
+//             max-height: 100px;
+//             max-width:220px;
+//         }
+//     }
+// }
 
 $logo_image_no : 10;
 $logo_image_width : 220px;
@@ -250,7 +250,7 @@ $logo_image_height:100px;
 $logo_slider_width: 1230px;
 
 .logo-slider {
-    background: #efeef2;
+    // background: #efeef2;
     height: $logo_image_height;
     margin: 0 auto;
     overflow: hidden;
@@ -268,12 +268,16 @@ $logo_slider_width: 1230px;
         transform: rotateZ(180deg);
     }
     &:after, &:before{
-        background: linear-gradient(to right, #efeef2 0, hsla(0, 0%, 100%, 0) 100%);
+        // background: linear-gradient(to right, #efeef2 0, hsla(0, 0%, 100%, 0) 100%);
+        @include white-gradient;
         content: "";
         height: $logo_image_height;
         position: absolute;
         width: $logo_image_width;
-        z-index: 2
+        z-index: 2;
+        .dark &{
+            @include dark-gradient;
+        }
     }
     .logo-track{
         animation: scroll 30s linear infinite;
@@ -286,6 +290,9 @@ $logo_slider_width: 1230px;
         display: flex;
         align-items: center;
         text-align: center;
+        .p-slide{
+            padding:0 25px;
+        }
         img{
             width: 100%;
             padding: 0;
