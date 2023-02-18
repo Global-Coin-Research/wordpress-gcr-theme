@@ -13,6 +13,7 @@
         </div>
     </footer>
     <?php include_once('mode-swticher.php') ?>
+    <span class="scroll-up">Scroll</span>
     <?php wp_footer(); ?>
 </body>
 </html>

@@ -175,3 +175,21 @@ span.red {color: red;}
     color: $white;
 }
 .bg-dark-blue{background: $blue-dark;}
+
+.scroll-up {
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 90px;
+    right: 25px;
+    display: none;
+    text-indent: -9999px;
+    background: url('img/to-top.png') no-repeat;
+    background-size: 40px;
+    background-position: 0 0;
+    cursor: pointer;
+    &:hover{
+        opacity: 1;
+    }
+}
