@@ -275,6 +275,9 @@ $logo_slider_width: 1230px;
         position: absolute;
         width: $logo_image_width;
         z-index: 2;
+        @include for-phone{
+            width:50px;
+        }
         .dark &{
             @include dark-gradient;
         }
