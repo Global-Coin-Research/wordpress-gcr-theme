@@ -5,7 +5,7 @@
         </div>
         <div class="slide-text">
             <p class="tag"><?php the_category(', '); ?></p>
-            <h2><a href="<?php the_permalink(); ?>"><?php echo wp_trim_words( get_the_title(), 10, '' ); ?></a></h2>
+            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             <p><?php the_excerpt() ?></p>
             <div class="meta-data">
                 <div class="meta-text">
