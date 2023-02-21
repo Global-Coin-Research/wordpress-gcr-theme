@@ -7,16 +7,8 @@
             <div class="logo-slider">
                 <ul class="logo-track">
                     <?php
-                    $slider_images = ['aurora', 'scroll', 'gnosis-safe', 'sui', 'layerzero', 'magic-eden', 'sweat-economy', 'lense', 'decrypt', 'syndicate'];
-                    foreach ($slider_images as $image) {
-                    ?>
-                        <li class="logo-slide">
-                            <a href="portfolio" class="p-slide">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/slider/<?php echo $image; ?>.png" />
-                            </a>
-                        </li>
-                    <?php
-                    }
+                    $images = ['aurora', 'scroll', 'gnosis-safe', 'sui', 'layerzero', 'magic-eden', 'sweat-economy', 'lense', 'decrypt', 'syndicate'];
+                    $slider_images = array_merge($images,$images);
                     foreach ($slider_images as $image) {
                     ?>
                         <li class="logo-slide">
