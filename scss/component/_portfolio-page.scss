@@ -72,12 +72,14 @@
     }
     
     .portfolios{
-        display: flex;
-        justify-content: flex-start;
-        align-items: stretch;
-        flex-wrap: wrap;
-        flex-direction: row;
-        
+        // display: flex;
+        // justify-content: flex-start;
+        // align-items: stretch;
+        // flex-wrap: wrap;
+        // flex-direction: row;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 30px;
         .item{
             flex-basis: 25%;
             text-align: center;
