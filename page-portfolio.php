@@ -12,7 +12,7 @@ get_header();
     <div class="container clearfix">
         <div class="row clearfix">
             <div class="section-title">
-                <h2>Porfolio</h2>
+                <h2>Portfolio</h2>
             </div>
         </div>
         <div class="portfolio-area">
@@ -27,7 +27,7 @@ get_header();
                 </div>
                 <div class="links">
                     <ul>
-                        <li><a href="https://portfolio.globalcoinresearch.com/">All PortCos (doc)</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1VyZaQP7xrDL_0Xlofe2qPikjNdWY4Hu2_ojG_IWvGTY/">All PortCos (doc)</a></li>
                         <li><a href="https://globalcoinresearch.com/jobs" class="linker portsort">PortCo Jobs</a></li>
                     </ul>
                 </div>
@@ -39,7 +39,7 @@ get_header();
                 
                 foreach ($portfolios as $portfolio) {
                 ?>
-                    <div class="item active <?php echo $portfolio['cat'] ?>">
+                    <div class="item active <?php echo $portfolio['cat'] ?>" id="<?php echo $portfolio['id'] ?>">
                         <a href="<?php echo $portfolio['link'] ?>" target="_blank">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/<?php echo $portfolio['image'] ?>" alt="">
                         </a>
