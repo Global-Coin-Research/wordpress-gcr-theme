@@ -2,24 +2,28 @@
 $portfolios = [
     [
         'brand' => 'Coinvise',
+        'id'    => 'coinvise',
         'cat'   => 'other',
         'link'  => 'https://www.coinvise.co/',
         'image' => 'coinvise.png',
     ],
     [
         'brand' => 'Structure Finance',
+        'id'    => '',
         'cat'   => 'defi',
         'link'  => 'https://structure.finance/',
         'image' => 'structure-finance.png',
     ],
     [
         'brand' => 'Dystopia Labs',
+        'id'    => '',
         'cat'   => 'other',
         'link'  => 'https://dystopialabs.com/',
         'image' => 'dystopialabs.png',
     ],
     [
         'brand' => 'Mycelium',
+        'id' => '',
         'cat'   => 'infrastructure',
         'link'  => 'https://tracer.finance/',
         'image' => 'mycelium.png',

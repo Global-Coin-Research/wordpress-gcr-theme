@@ -12,7 +12,7 @@
                     foreach ($slider_images as $image) {
                     ?>
                         <li class="logo-slide">
-                            <a href="/portfolio" class="p-slide">
+                            <a href="/portfolio?#<?php echo $image; ?>" class="p-slide">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/slider/<?php echo $image; ?>.png" />
                             </a>
                         </li>
