@@ -39,7 +39,7 @@ get_header();
                 
                 foreach ($portfolios as $portfolio) {
                 ?>
-                    <div id="<?php echo $portfolio['id'] ?>" class="item active <?php echo $portfolio['cat'] ?>" >
+                    <div class="item active <?php echo $portfolio['cat'] ?>" >
                         <a href="<?php echo $portfolio['link'] ?>" target="_blank">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/<?php echo $portfolio['image'] ?>" alt="">
                         </a>
