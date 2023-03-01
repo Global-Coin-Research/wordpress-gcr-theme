@@ -95,14 +95,8 @@ jQuery(document).ready(function($){
         jQuery('.'+showTarget).addClass('active');
     });
     
-    // portfolio slider
-    // jQuery(function () {
-    //     $('.scroll1').infiniteslide(
-    //         {
-    //             'pauseonhover': false,
-    //         }
-    //     );
-    // });
+    $('a[href^="#"]').on('click', function(e) { e.preventDefault(); var target = this.hash,
+        $target = $(target); var position_scroll = $target.offset().top - 20 + "px"; if ($(window).width() > 769) { var position_scroll = $target.offset().top - 60 + "px"; } $('html, body').stop().animate({ 'scrollTop': position_scroll }, 900, 'swing', function() { window.location.hash = target; }); });
     
     // scroll up
     $(window).scroll(function() {
