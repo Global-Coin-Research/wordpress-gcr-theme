@@ -1,4 +1,4 @@
-<div class="tier-section">
+<div class="tier-section" id="membership">
     <div class="container clearfix">
         <div class="row">
             <div class="section-title-2">
