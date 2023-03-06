@@ -190,7 +190,7 @@ $portfolios = [
         'image' => 'blast.png',
     ],
     [
-        'brand' => 'PrePO',
+        'brand' => 'prePO',
         'id'    => '',
         'cat'   => 'consumer',
         'link'  => 'https://prepo.io/',
