@@ -2,6 +2,7 @@
     display: none;
     background:$black;
     float: right;
+    cursor: pointer;
     &.cross {
         background-position: left bottom;
     }
@@ -146,6 +147,12 @@
                         background: url("img/icons.png") no-repeat;
                         background-size: 56px;
                         background-position: -31px -36px;
+                    }
+                }
+                &.active{
+                    .sub-menu{
+                        display:block;
+                        opacity:1;
                     }
                 }
             }

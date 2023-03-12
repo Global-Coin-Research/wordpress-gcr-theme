@@ -259,6 +259,13 @@
         position: absolute;
         right: 65px;
         top: 0px;
+        border:1px solid $blue;
+        .home &{
+            right:16px;
+        }
+        .dark &{
+            border-color: $white;
+        }
     }
     #navigation {
         width: calc(70% - 50px);
@@ -295,6 +302,11 @@
                     display: block;
                     text-align: left;
                 }
+                &.active{
+                    a{
+                        background-color: lighten($color: $blue, $amount: 10);
+                    }
+                }
             }
             .dropdown, .menu-item-has-children{
                 ul, .sub-menu{
@@ -305,13 +317,14 @@
                     }
                 }
                 &>a{
-                    background: $nav-bg !important;
+                    // background: $nav-bg !important;
                     color: $white;
                     &:after{
                         position: absolute;
                         right: 15px;
                         top: 20px;
                         transition: all 0.5s ease;
+                        background-position: -31px -36px;
                     }
                 }
                 &.active{
@@ -323,7 +336,7 @@
                     }
                     &>a{
                         &:after{
-                            transform: rotate(180deg);
+                            // transform: rotate(180deg);
                         }
                     }
                 }
@@ -344,6 +357,11 @@
                 a{
                     color:$white !important;
                     margin: 0; 
+                }
+                .menu-item-has-children{
+                    &.active{
+                        
+                    }
                 }
             }
             ul{

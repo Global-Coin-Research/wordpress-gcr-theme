@@ -92,7 +92,7 @@
             ul{
                 li{
                     &>a{
-                        border-color:#fff !important;
+                        // border-color:#fff !important;
                         color: #fff !important;
                         background-color: $blue;
                         &:hover{
@@ -119,7 +119,7 @@
                         }
                         .menu-item{
                             a{
-                                background-color: $blue;
+                                background-color: lighten($color: $blue, $amount: 10);
                                 border-color:#fff !important;
                                 &:hover{
                                     color:#fff !important;
