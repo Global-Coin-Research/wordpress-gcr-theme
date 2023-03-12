@@ -92,7 +92,10 @@
             ul{
                 li{
                     &>a{
-                        // border-color:#fff !important;
+                        border-color:#fff !important;
+                        @include bleow-pc{
+                            border:0;
+                        }
                         color: #fff !important;
                         background-color: $blue;
                         &:hover{
@@ -119,8 +122,7 @@
                         }
                         .menu-item{
                             a{
-                                background-color: lighten($color: $blue, $amount: 10);
-                                border-color:#fff !important;
+                                background-color: $blue;                                
                                 &:hover{
                                     color:#fff !important;
                                     background-color: $dm-darkblue;

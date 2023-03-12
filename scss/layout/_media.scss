@@ -324,7 +324,7 @@
                         right: 15px;
                         top: 20px;
                         transition: all 0.5s ease;
-                        background-position: -31px -36px;
+                        background-position: -37px -44px;
                     }
                 }
                 &.active{
@@ -336,7 +336,7 @@
                     }
                     &>a{
                         &:after{
-                            // transform: rotate(180deg);
+                            transform: rotate(180deg);
                         }
                     }
                 }
@@ -360,7 +360,11 @@
                 }
                 .menu-item-has-children{
                     &.active{
-                        
+                        .submenu{
+                            a{
+                                // background: lighen($blue,10);
+                            }
+                        }
                     }
                 }
             }
