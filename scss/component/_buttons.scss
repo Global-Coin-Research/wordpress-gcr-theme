@@ -92,11 +92,26 @@ input.submit, input[type="submit"]{
                 color:$blue; 
                 .sub_gcr{display:block;}
             }
+            i{
+                display: inline-block;
+                width: 16px;
+                height: 17px;
+                background: url(img/icons.png) no-repeat;
+                background-position-x: 0%;
+                background-position-y: 0%;
+                background-size: auto;
+                background-size: 93px;
+                background-position: -49px -52px;
+                margin-left: 5px;
+            }
         }
         &:hover{
             .btn{
                 background:$white;
                 color:$blue; 
+                i{
+                    background-position: -72px -30px;
+                }
             }
         }
         .sub_gcr{

@@ -145,8 +145,21 @@
         top:-35px;
         left:-8px;
         font-family:$gilroymedium;
-        i{
-            font-size:1.25em;
+        padding-left:20px;
+        &:before{
+            content:"";
+            display: block;
+            width:16px;
+            height: 16px;
+            background: url(img/icons.png) no-repeat;
+            background-size: 71px;
+            background-position: -36px -57px;
+            position: absolute;
+            left: 0px;
+            top: 4px;
+            .dark &{
+                background-position-x: -54px;
+            }
         }
     }
     .headline{
