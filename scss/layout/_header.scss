@@ -190,6 +190,10 @@ a.logolink{
         line-height: 120%;
         color: $white;
         margin-bottom: 20px;
+        span{
+            background-color: #fff;
+            padding:0 3px;
+        }
     }
     p{
         font-size:23px;
