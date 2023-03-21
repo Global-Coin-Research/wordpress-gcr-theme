@@ -177,3 +177,10 @@ function tg_enable_strict_transport_security_hsts_header_wordpress() {
     header( 'Strict-Transport-Security: max-age=31536000; includeSubDomains; preload' );
 }
 add_action( 'send_headers', 'tg_enable_strict_transport_security_hsts_header_wordpress' );
+
+
+// remove dashicons
+function garbageremoval() {
+	wp_dequeue_style('dashicons');
+}
+add_action('wp_enqueue_scripts', 'garbageremoval', 100);
