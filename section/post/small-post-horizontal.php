@@ -3,7 +3,7 @@
 ?>
 <div class="article">
     <div class="thumb">
-        <img src="<?php echo $small_thumb[0]; ?>" alt="<?php the_title(); ?>">
+        <img class="lazy" src="<?php echo $small_thumb[0]; ?>" alt="<?php the_title(); ?>">
     </div>
     <div class="text">
         <h3 class="headline">

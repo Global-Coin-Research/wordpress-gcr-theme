@@ -1,7 +1,7 @@
 <div class="slide">
     <div class="container">
         <div class="slide-img">
-            <?php the_post_thumbnail() ?>
+            <?php the_post_thumbnail('post-thumb', array('class'=>'lazy')); ?>
         </div>
         <div class="slide-text">
             <p class="tag"><?php the_category(', '); ?></p>

@@ -1,6 +1,6 @@
 <div class="column article category">
     <div class="thumb">
-        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post-thumb', array('class'=>'lazy')); ?></a>
     </div>
     <div class="text">
         <h3 class="headline">

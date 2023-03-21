@@ -13,7 +13,7 @@
                     ?>
                         <li class="logo-slide">
                             <a href="/portfolio" class="p-slide">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/slider/<?php echo $image; ?>.png" alt=""/>
+                                <img class="lazy" src="<?php echo get_template_directory_uri(); ?>/img/portfolio/slider/<?php echo $image; ?>.png" alt=""/>
                             </a>
                         </li>
                     <?php

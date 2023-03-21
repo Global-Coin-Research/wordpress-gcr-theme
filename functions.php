@@ -4,7 +4,7 @@ function gcr_scripts(){
 	wp_enqueue_style( 'style',     get_template_directory_uri() . '/style.css',       array(), wp_get_theme()->get( 'Version' ) );
 	wp_enqueue_script('jquery',     get_template_directory_uri() . '/js/jquery-3.6.0.min.js', array(), wp_get_theme()->get( 'Version' ), true);
 	wp_enqueue_script('slick',     get_template_directory_uri() . '/js/slick.min.js', array(), wp_get_theme()->get( 'Version' ), true);
-	// wp_enqueue_script('infinite',     get_template_directory_uri() . '/js/infiniteslidev2.min.js', array(), wp_get_theme()->get( 'Version' ), true);
+	wp_enqueue_script('lazyload',     get_template_directory_uri() . '/js/lazyload.min.js', array(), wp_get_theme()->get( 'Version' ), true);
 	wp_enqueue_script('gcr_theme', get_template_directory_uri() . '/js/theme.js',     array(), wp_get_theme()->get( 'Version' ), true);
 }
 add_action( 'wp_enqueue_scripts', 'gcr_scripts' );
@@ -169,7 +169,7 @@ function pol_widget_areas(){
 add_action('widgets_init', 'pol_widget_areas');
 
 function wpms_no_wordpress_hints(){
-return 'Something is wrong!';
+	return 'Something is wrong!';
 }
 add_filter( 'login_errors', 'wpms_no_wordpress_hints' );
 
@@ -177,5 +177,3 @@ function tg_enable_strict_transport_security_hsts_header_wordpress() {
     header( 'Strict-Transport-Security: max-age=31536000; includeSubDomains; preload' );
 }
 add_action( 'send_headers', 'tg_enable_strict_transport_security_hsts_header_wordpress' );
-
-?>
