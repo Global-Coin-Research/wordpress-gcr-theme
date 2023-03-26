@@ -1,7 +1,7 @@
 .article {
     overflow: hidden;
 	margin-bottom:30px;
-    transition:all 0.4s ease;
+    transition:all 0.35s cubic-bezier(.77,0,.18,1);
     padding:20px;
     border: 1px solid lighten($gray-lighter,6%);
     background: $white;
