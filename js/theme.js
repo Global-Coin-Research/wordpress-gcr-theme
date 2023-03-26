@@ -15,7 +15,8 @@ jQuery(document).ready(function($){
     $('#slider-landing').slick({
         dots: false,
         infinite: true,
-        speed: 300,
+        speed: 600,
+        fade: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
