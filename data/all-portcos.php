@@ -62,15 +62,7 @@ $portfolios = [
         'cat'   => 'other',
         'link'  => 'https://mtx.gg/',
         'image' => 'matrix.png',
-    ],
-    [
-        'brand' => 'Lens',
-        'id'    => 'lense',
-        'cat'   => 'consumer',
-        'link'  => 'https://lens.xyz/',
-        'image' => 'lens.png',
-    ],
-    
+    ],    
     [
         'brand' => 'Aurora',
         'id'    => 'aurora',
