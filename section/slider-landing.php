@@ -6,6 +6,7 @@
                 <a class="btn btn-primary" href="http://eepurl.com/dvD3FH">Subscribe to GCR Weekly</a>
                 <a class="btn btn-white" href="https://discord.gg/globalcoinresearch">Join the Community</a>
             </div>
+            <?php get_template_part('section/widget/testimonial-slideshow'); ?>
         </div>
         <div class="slider-wrapper"> 
             <div id="slider-landing" class="slider clearfix">

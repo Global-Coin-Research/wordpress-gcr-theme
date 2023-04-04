@@ -6,11 +6,15 @@ Template Name: Landing Page Template
 <?php 
 get_header();
 
-get_template_part('section/navigation-minimal') 
-?>
-<?php get_template_part('section/slider-landing') ?>
+get_template_part('section/navigation-minimal');
 
-<?php get_template_part('section/widget/portfolio-slider'); ?>
+get_template_part('section/slider-landing');
+
+
+
+get_template_part('section/widget/portfolio-slider'); 
+
+?>
 
 <?php get_template_part('section/flagship') ?>
 

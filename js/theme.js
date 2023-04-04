@@ -23,6 +23,16 @@ jQuery(document).ready(function($){
         autoplaySpeed: 3000
     });
     
+    $('#testimonial-slideshow').slick({
+        dots: true,
+        infinite: true,
+        speed: 600,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000
+    });
+    
     $('.prev').click(function(){$('.slick-prev').click();});
     $('.next').click(function(){$('.slick-next').click();});
     
