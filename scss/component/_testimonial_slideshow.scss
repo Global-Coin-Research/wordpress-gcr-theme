@@ -27,6 +27,7 @@
             p{
                 font-style: italic;
                 font-size:12px;
+                font-family: $gilroy;
                 color:#a7a7a7;
                 margin-bottom:0;
             }
@@ -34,8 +35,10 @@
         .testimonial{
             border-left: 2px solid #434343;
             padding-left:15px;
+            font-family: $gilroy;
             p{
-                font-size:13px;
+                font-family: $gilroy;
+                font-size:14px;
                 margin-bottom:0;
                 color:#fff;
                 &:after, &:before{
