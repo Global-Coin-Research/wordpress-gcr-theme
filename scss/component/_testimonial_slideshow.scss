@@ -1,10 +1,15 @@
 .testimonial-slideshow{
+    @include bleow-pc{
+        max-width: 500px;
+        margin: 0 auto;
+    }
     .slide{
-        margin:30px 0 20px;
+        margin-bottom:20px;
         display: grid !important;
         align-items: center;
         grid-gap: 15px;
         grid-template-columns: 11fr 25fr 64fr;
+        
         .user-image{
             float:left;
             // width:10%;
