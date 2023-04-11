@@ -12,33 +12,59 @@
 
     .testimonials {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 35px;
 
         .item {
             text-align: center;
             text-transform: capitalize;
+            border:1px solid #e0e0e0;
+            padding:10px;
 
             .image {
-                margin-bottom: 10px;
-                border:1px solid #e0e0e0;
-                padding:10px;
+                margin-bottom: 15px;
+                img{
+                    max-width: 200px;
+                }
             }
             .text{
-                padding:0 10px;
-            }
-            .author {
-                font-size: 18px;
-                line-height: 24px;
-                margin-top: 10px;
-                color:$blue-dark;
-                font-weight: 700;
-            }
-
-            .position {
-                font-size: 14px;
-                line-height: 20px;
-                color:#000;
+                padding:0 10px 10px;
+                padding-left:50px;
+                blockquote{
+                    color:#000;
+                    text-align: left;
+                    position: relative;
+                    margin-bottom: 10px;
+                    &:before{
+                        content:"";
+                        display:block;
+                        width:35px;
+                        height:30px;
+                        position: absolute;
+                        left:-45px;
+                        top:0;
+                        background: url('img/blockquote.png') no-repeat;
+                        background-size:35px;
+                    }
+                }
+                .author{
+                    text-align: right;
+                    .name {
+                        font-size: 16px;
+                        line-height: 24px;
+                        margin-top: 10px;
+                        color:$blue-dark;
+                        font-weight: 700;
+                        margin-bottom:0;
+                    }
+        
+                    .position {
+                        font-size: 14px;
+                        line-height: 20px;
+                        color:#000;
+                        font-style: italic;
+                    }
+                }
             }
             &:hover{
                 text-decoration: none;

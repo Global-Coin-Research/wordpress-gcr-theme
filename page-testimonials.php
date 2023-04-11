@@ -22,15 +22,18 @@ get_template_part('section/navigation-main');
                 
                 foreach ($testimonials as $testimonial) {
                 ?>
-                    <a class="item" href="<?php echo $testimonial['link'] ?>" target="_blank">
+                    <div class="item">
                         <div class="image">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/testimonials/<?php echo $testimonial['image'] ?>" alt="">
                         </div>
                         <div class="text">
-                            <h4 class="author"><?php echo $testimonial['author'] ?></h4>
-                            <p class="position"><?php echo $testimonial['position'] ?></p>
+                            <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab laboriosam atque quidem debitis. Reprehenderit maiores iusto omnis, laboriosam amet.</blockquote>
+                            <div class="author">
+                                <h4 class="name"><?php echo $testimonial['author'] ?></h4>
+                                <p class="position"><?php echo $testimonial['position'] ?></p>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                 <?php
                 }
                 ?>
