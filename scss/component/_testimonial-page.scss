@@ -14,7 +14,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 35px;
-
+        @include for-phone{
+            grid-template-columns: 1fr;
+        }
         .item {
             text-align: center;
             text-transform: capitalize;
