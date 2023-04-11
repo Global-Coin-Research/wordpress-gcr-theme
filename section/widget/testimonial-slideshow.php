@@ -5,7 +5,7 @@
         </div>
         <div class="user-info">
             <h4>Sweatcoin</h4>
-            <p>Investor Since 2018</p>
+            <p>PortCo Since 2021</p>
         </div>
         <blockquote class="testimonial">
             <p>@Globalcoinrsrch has been really helpful as an investor!</p>
