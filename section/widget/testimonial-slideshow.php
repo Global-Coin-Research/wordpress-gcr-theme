@@ -1,5 +1,5 @@
 <div id="testimonial-slideshow" class="testimonial-slideshow clearfix">
-    <div class="slide">
+    <a class="slide" href="https://globalcoinresearch.com/partners/">
         <div class="user-image">
             <img class="lazy" src="<?php echo get_template_directory_uri(); ?>/img/testimonials/sweatcoin.png" alt=""/>
         </div>
@@ -10,5 +10,5 @@
         <blockquote class="testimonial">
             <p>@Globalcoinrsrch has been really helpful as an investor!</p>
         </blockquote>
-    </div>
+    </a>
 </div>
