@@ -19,10 +19,10 @@
         }
         .item {
             text-align: center;
-            text-transform: capitalize;
             border:1px solid #e0e0e0;
             padding:10px;
-
+            position: relative;
+            padding-bottom: 40px;
             .image {
                 margin-bottom: 15px;
                 img{
@@ -51,6 +51,9 @@
                 }
                 .author{
                     text-align: right;
+                    position: absolute;
+                    right: 20px;
+                    bottom: 20px;
                     .name {
                         font-size: 16px;
                         line-height: 24px;
