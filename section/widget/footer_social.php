@@ -10,7 +10,6 @@
         <li><a href="https://www.youtube.com/channel/UCUOCAjg-10s_GBLchoERxzg/"><i class="icon icon-youtube-play"></i></a></li>
         <li><a href="https://www.facebook.com/globalcoinresearch"><i class="icon icon-facebook"></i></a></li>
         <li><a href="https://www.instagram.com/globalcoinresearch/"><i class="icon icon-instagram"></i></a></li>
-        <li class="egg">🥚</li>
     </ul>
 </div>
 <?php
