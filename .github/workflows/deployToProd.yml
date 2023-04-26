@@ -11,7 +11,7 @@ jobs:
     
     steps:
       - name: Deploy in EC2
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v0.1.4
         with:
               host: ${{ secrets.HOST_NAME  }}
               username: ${{ secrets.USER_NAME  }}
@@ -19,7 +19,7 @@ jobs:
               port: ${{ secrets.PORT }}
               script: |
                whoami
-               cd /var/www/globalcoinresearch/wp-content/themes/gcr/
+               cd stack/wordpress/wp-content/themes/wordpress-gcr-theme/
                ls -la
                git pull
                git status
