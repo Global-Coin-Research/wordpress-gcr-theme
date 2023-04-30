@@ -24,7 +24,7 @@ get_template_part('section/navigation-main');
                 ?>
                     <div class="item">
                         <div class="image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/testimonials/<?php echo $testimonial['image'] ?>" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/partners/<?php echo $testimonial['image'] ?>" alt="">
                         </div>
                         <div class="text">
                             <blockquote><?php echo $testimonial['text'] ?></blockquote>
