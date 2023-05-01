@@ -3,19 +3,19 @@ $testimonials = [
     [
         'text'  => 'GCR has been an invaluable design partner for Share. They were fully engaged and provided critical feedback. They also helped us think about our own strategy and connect with future partners. Amazing team & community!',
         'image' => 'share.png',
-        'author' => 'Moshe',
+        'author' => 'Moshe (Share)',
         'position' => 'Share',
     ],
     [
         'text'  => 'We&apos;re grateful to have GCR in our corner - their dedication to staying ahead of the curve in the investment space is impressive, and they&apos;ve helped us with tons of awesome product feedback. Their insights have helped us develop a more sophisticated payroll platform that meets the needs of the Web3 community.',
         'image' => 'utopia.png',
-        'author' => 'Kaito',
+        'author' => 'Kaito (Utopia)',
         'position' => 'Utopia',
     ],
     [
         'text'  => 'GCR came out of SC02 and has been a great alum and a valuable partner for us at Seed Club. We look forward to having them continuing pushing the forefront of investment DAOs.',
         'image' => 'seed-club.png',
-        'author' => 'Jess Sloss',
+        'author' => 'Jess Sloss (Seed Club)',
         'position' => 'Seed Club',
     ],
     [
