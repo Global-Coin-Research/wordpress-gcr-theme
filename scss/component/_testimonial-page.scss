@@ -1,7 +1,7 @@
 .testimonial-section {
     margin: 50px auto 60px;
     max-width: 900px;
-
+    font-family: $gilroy;
     .section-text {
         text-align: center;
         font-size: 28px;
@@ -37,6 +37,8 @@
                     text-align: left;
                     position: relative;
                     margin-bottom: 10px;
+                    font-family: $gilroy;
+                    font-size: 15px;
                     &:before{
                         content:"";
                         display:block;

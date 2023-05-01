@@ -11,7 +11,7 @@ get_template_part('section/navigation-main');
     <div class="container clearfix">
         <div class="row clearfix">
             <div class="section-text">
-                <p>This is what our members said about us</p>
+                <p>This is what our partners and community members said about us</p>
             </div>
         </div>
         <div class="testimonial-area">
