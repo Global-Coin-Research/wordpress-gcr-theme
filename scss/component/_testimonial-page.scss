@@ -23,8 +23,13 @@
             padding:10px;
             position: relative;
             padding-bottom: 40px;
+            
             .image {
                 margin-bottom: 15px;
+                padding:7px 0;
+                .dark &{
+                    background-color: #fff;
+                }
                 img{
                     max-width: 200px;
                 }
@@ -34,6 +39,9 @@
                 padding-left:50px;
                 blockquote{
                     color:#000;
+                    .dark &{
+                        color: #fff;
+                    }
                     text-align: left;
                     position: relative;
                     margin-bottom: 10px;
@@ -63,6 +71,9 @@
                         color:$blue-dark;
                         font-weight: 700;
                         margin-bottom:0;
+                        .dark &{
+                            color: #e3e3e3;
+                        }
                     }
         
                     .position {
@@ -70,6 +81,9 @@
                         line-height: 20px;
                         color:#000;
                         font-style: italic;
+                        .dark &{
+                            color: #fff;
+                        }
                     }
                 }
             }
