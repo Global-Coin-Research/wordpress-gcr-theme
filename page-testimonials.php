@@ -21,16 +21,20 @@ get_template_part('section/navigation-main');
                 require_once('data/all-testimonials.php');
                 
                 foreach ($testimonials as $testimonial) {
+                    $type = $testimonial['type'];
+                    $logo = "<img src='".get_template_directory_uri()."/img/partners/".$testimonial['image']."' alt=''>";
                 ?>
                     <div class="item">
-                        <div class="image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/partners/<?php echo $testimonial['image'] ?>" alt="">
-                        </div>
+                        <?php if($type=="company"){ ?>
+                            <a class="image" href="<?php echo $testimonial['logo_link']; ?>"><?php echo $logo; ?></a>
+                        <?php }else{ ?>
+                            <div class="image"><?php echo $logo; ?></div>
+                        <?php } ?>
+                            
                         <div class="text">
                             <blockquote><?php echo $testimonial['text'] ?></blockquote>
                             <div class="author">
-                                <h4 class="name"><?php echo $testimonial['author'] ?></h4>
-                                <!-- <p class="position"><?php // echo $testimonial['position'] ?></p> -->
+                                <a href="<?php echo $testimonial['author_link']; ?>" class="name"><?php echo $testimonial['author'] ?></a>
                             </div>
                         </div>
                     </div>

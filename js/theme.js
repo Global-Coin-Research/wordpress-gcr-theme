@@ -24,7 +24,7 @@ jQuery(document).ready(function($){
     });
     
     $('#testimonial-slideshow').slick({
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 600,
         slidesToShow: 1,
