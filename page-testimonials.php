@@ -26,7 +26,7 @@ get_template_part('section/navigation-main');
                 ?>
                     <div class="item">
                         <?php if($type=="company"){ ?>
-                            <a class="image" href="<?php echo $testimonial['logo_link']; ?>"><?php echo $logo; ?></a>
+                            <a class="image" href="<?php echo $testimonial['logo_link']; ?>" target="_blank"><?php echo $logo; ?></a>
                         <?php }else{ ?>
                             <div class="image"><?php echo $logo; ?></div>
                         <?php } ?>
@@ -34,7 +34,7 @@ get_template_part('section/navigation-main');
                         <div class="text">
                             <blockquote><?php echo $testimonial['text'] ?></blockquote>
                             <div class="author">
-                                <a href="<?php echo $testimonial['author_link']; ?>" class="name"><?php echo $testimonial['author'] ?></a>
+                                <a href="<?php echo $testimonial['author_link']; ?>" class="name" target="_blank"><?php echo $testimonial['author'] ?></a>
                             </div>
                         </div>
                     </div>
