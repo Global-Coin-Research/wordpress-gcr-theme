@@ -14,7 +14,7 @@ $testimonials = [
     [
         'text'  => 'We&apos;re grateful to have GCR in our corner - their dedication to staying ahead of the curve in the investment space is impressive, and they&apos;ve helped us with tons of awesome product feedback. Their insights have helped us develop a more sophisticated payroll platform that meets the needs of the Web3 community.',
         'image' => 'utopia.png',
-        'author' => 'Kaito (Utopia)',
+        'author' => 'Kaito (Utopia Labs)',
         'position' => 'Utopia',
         'type' => 'company',
         'showable'=>true,
@@ -24,7 +24,7 @@ $testimonials = [
     [
         'text'  => 'GCR came out of SC02 and has been a great alum and a valuable partner for us at Seed Club. We look forward to having them continuing pushing the forefront of investment DAOs.',
         'image' => 'seed-club.png',
-        'author' => 'Jess Sloss (Seed Club)',
+        'author' => 'Jess Sloss (SC)',
         'position' => 'Seed Club',
         'type' => 'company',
         'showable'=>true,
@@ -45,7 +45,7 @@ $testimonials = [
     [
         'text'  => 'GCR is the Web3 version of added-value investors, they just get the new Internet, what Talent Protocol is all about and help us hit our goals.',
         'image' => 'talent-protocol.png',
-        'author' => 'Talent Protocol',
+        'author' => 'Pedro (Talent Protocol)',
         'position' => 'lorem, Ipsum',
         'type' => 'company',
         'showable'=>true,
