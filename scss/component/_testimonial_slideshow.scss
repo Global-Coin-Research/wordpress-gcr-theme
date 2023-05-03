@@ -2,7 +2,7 @@
     height:155px;
     overflow:hidden;
     @include bleow-pc{
-        // max-width: 100%;
+        max-width: 90%;
         margin: 0 auto;
         height:auto;
     }
@@ -55,10 +55,10 @@
             border-left: 2px solid #434343;
             padding-left:15px;
             font-family: $gilroy;
+            text-align: left;
             @include bleow-pc{
                 border-left:0;
                 padding-left:0;
-                text-align:center;
             }
             p{
                 font-family: $gilroy;
