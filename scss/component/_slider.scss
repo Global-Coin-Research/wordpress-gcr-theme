@@ -49,7 +49,9 @@
             .slider {
                 margin: 40px 0;
                 max-height: 456px;
-
+                @include bleow-pc{
+                    margin-top:20px;
+                }
                 .slick-list {
                     max-height: 100%;
                     overflow: hidden;

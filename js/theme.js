@@ -1,6 +1,7 @@
 if(localStorage.mode=="night"){
     jQuery('html').addClass('dark');
-}
+};
+
 
 jQuery(document).ready(function($){
     
@@ -22,9 +23,8 @@ jQuery(document).ready(function($){
         autoplay: true,
         autoplaySpeed: 3000
     });
-    
     $('#testimonial-slideshow').slick({
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 600,
         slidesToShow: 1,
@@ -32,6 +32,8 @@ jQuery(document).ready(function($){
         autoplay: true,
         autoplaySpeed: 3000
     });
+    
+    
     
     $('.prev').click(function(){$('.slick-prev').click();});
     $('.next').click(function(){$('.slick-next').click();});

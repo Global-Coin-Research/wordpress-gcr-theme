@@ -1,27 +1,41 @@
 .testimonial-slideshow{
+    height:155px;
+    overflow:hidden;
     @include bleow-pc{
-        max-width: 500px;
+        // max-width: 100%;
         margin: 0 auto;
+        height:auto;
     }
     .slide{
         margin-bottom:20px;
         display: grid !important;
         align-items: center;
         grid-gap: 15px;
-        grid-template-columns: 11fr 25fr 64fr;
         
+        grid-template-columns: 11fr 25fr 64fr;
+        @include bleow-pc{
+            grid-template-columns: 1fr;
+        }
         .user-image{
             float:left;
-            // width:10%;
-            // margin-right:2%;
+            background: #fff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
             img{
                 width:50px;
                 height:50px;
                 border-radius:50%;
             }
+            @include bleow-pc{
+                margin:0 auto;
+            }
         }
         .user-info{
             text-align:right;
+            @include bleow-pc{
+                text-align:center;
+            }
             h4{
                 font-family:"gilroybold";
                 margin-bottom:0;
@@ -41,6 +55,11 @@
             border-left: 2px solid #434343;
             padding-left:15px;
             font-family: $gilroy;
+            @include bleow-pc{
+                border-left:0;
+                padding-left:0;
+                text-align:center;
+            }
             p{
                 font-family: $gilroy;
                 font-size:14px;
