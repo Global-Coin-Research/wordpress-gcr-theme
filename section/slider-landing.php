@@ -1,4 +1,4 @@
-<div class="slider-wrapper"> 
+<div class="slider-area slider-landing"> 
     <div id="slider-landing" class="slider clearfix">
         <div class="slide">
             <img class="lazy" src="<?php echo get_template_directory_uri(); ?>/img/slider/1.jpg" alt="">

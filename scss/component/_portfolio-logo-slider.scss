@@ -1,0 +1,137 @@
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(#fafafa,1) 0%,rgba(#fafafa,0) 100%);
+}
+@mixin dark-gradient {
+	background: linear-gradient(to right,  rgba(#272827,1) 0%,rgba(#272827,0) 100%);
+}
+.portfolio-slider-section{
+    margin:60px 0 0px;
+    padding-bottom:80px;
+    border-bottom: 1px solid #dedede;
+    .heading{
+        text-align: center;
+        margin: 20px 0;
+        h3{
+            @include font(3em,50px,700);
+            font-family: $gilroymedium;
+            @include for-phone{
+                @include font(30px,36px,700)
+            }
+        }
+    }
+    .help-text{
+        text-align: center;
+        // max-width: 920px;
+        margin:20px auto;
+        @include for-phone{
+            text-align: left;
+        }
+        .tick-notes{
+            li{
+                margin-bottom:20px;
+                font-size: 1.45em;
+                line-height: 1.25em;
+                color: rgba(0,0,0,0.5);
+                font-family: $gilroy;
+                .dark &{
+                    color:$dm-text;
+                }
+                &:before{
+                    content:"";
+                    display: inline-block;
+                    height: 12px;
+                    width: 14px;
+                    margin-right:15px;
+                    background:url('img/tick-blue.png') no-repeat;
+                    background-size: 14px;
+                }
+            }
+            .full{
+                width:100%;
+            }
+            .half{
+                width:46%;
+                margin:0 2%;
+                float:left;
+                @include for-phone{
+                    width:100%;
+                    margin:0 0 20px 0;
+                }
+            }
+        }
+    }
+}
+$logo_image_no : 9;
+$logo_image_width : 220px;
+$logo_image_height:100px;
+
+.logo-slider {
+    // background: #efeef2;
+    height: $logo_image_height;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+    user-select: none;
+    touch-action: none;
+    &:before{
+        left: 0;
+        top: 0
+    }
+    &:after{
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+    &:after, &:before{
+        // background: linear-gradient(to right, #efeef2 0, hsla(0, 0%, 100%, 0) 100%);
+        @include white-gradient;
+        content: "";
+        height: $logo_image_height;
+        position: absolute;
+        width: $logo_image_width;
+        z-index: 2;
+        @include for-phone{
+            width:50px;
+        }
+        .dark &{
+            @include dark-gradient;
+        }
+    }
+    .logo-track{
+        animation: scroll 30s linear infinite;
+        display: flex;
+        width: $logo_image_no * 2 * $logo_image_width;
+    }
+    .logo-slide{
+        height: $logo_image_height;
+        width:$logo_image_width;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        .p-slide{
+            display: block;
+            padding:10px 15px;
+        }
+        img{
+            width: 100%;
+            padding: 0;
+            vertical-align: middle;
+            margin: 0 auto;
+            display: inline-block;
+            max-width: 100%;
+            height: auto
+        }
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(- $logo_image_no * $logo_image_width);
+    }
+}

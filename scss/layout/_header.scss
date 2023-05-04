@@ -177,33 +177,7 @@ a.logolink{
 }
 /********** top serarch end*********/
 /************ Header -2 styles *************/
-.header-text{
-    width: 42%;
-    float:left;
-    margin-right: 3%;
-    color:$white;
-    margin-top: 0px;
-    padding-top: 40px;
-    h2{
-        font-family:"gilroybold";
-        font-size: 40px;
-        line-height: 120%;
-        color: $white;
-        margin-bottom: 20px;
-        span{
-            background-color: #fff;
-            padding:0 3px;
-        }
-    }
-    p{
-        font-size:23px;
-        line-height:120%;
-        margin-bottom:30px;
-    }
-    .button-area{
-        margin: 40px 0 30px;
-    }
-}
+
 
 .header-minimal{
     background:$white;
@@ -218,5 +192,158 @@ a.logolink{
                 text-decoration:none;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .site-header{height: 75px;}
+    .header-top{
+        .logo{
+            margin-bottom: 0;
+        }
+        .navigation{
+            li{
+                width: 100%;
+                float: none;
+                border-bottom: 1px solid $white;
+                a{
+                    display: block;
+                    text-align: left;
+                }
+                &.active{
+                    a{
+                        background-color: lighten($color: $blue, $amount: 10);
+                    }
+                }
+            }
+            .dropdown, .menu-item-has-children{
+                ul, .sub-menu{
+                    display: none !important;
+                    .sub-menu{
+                        left:0;
+                        top:0;
+                    }
+                }
+                &>a{
+                    // background: $nav-bg !important;
+                    color: $white;
+                    &:after{
+                        position: absolute;
+                        right: 15px;
+                        top: 20px;
+                        transition: all 0.5s ease;
+                        background-position: -37px -44px;
+                    }
+                }
+                &.active{
+                    ul, .sub-menu{
+                        display: block !important;
+                        position: relative;
+                        border-left: 0;
+                        width: 100%;
+                    }
+                    &>a{
+                        &:after{
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+                
+            }
+            ul{
+                li{
+                    ul, .sub-menu{
+                        &:before{
+                            left: 30%;
+                        }
+                    }
+                }
+            }
+        }
+        .navigation-button{
+            li{
+                a{
+                    color:$white !important;
+                    margin: 0; 
+                }
+                .menu-item-has-children{
+                    &.active{
+                        .submenu{
+                            a{
+                                // background: lighen($blue,10);
+                            }
+                        }
+                    }
+                }
+            }
+            ul{
+                ul{
+                    li{
+                        clear:both !important;float:none; 
+                        a{
+                            color: $nav-bg !important;
+                        }
+                    }
+                }
+            }
+        }
+        .user-area{
+            display: none;
+        }
+    }
+    
+    .logged-in {
+        .site-header{
+            /* padding-top:50px; */
+        }
+        .header-top{
+            .navigation{
+                top: 95px;
+            }
+        }
+        .header-2{
+            .navigation{
+                top: 95px;
+            }
+        }
+    }
+    
+    .header-main{
+        .searcharea{
+            float: none;
+            position: absolute;
+            right: 15px;
+            z-index: 444;
+            overflow: hidden;
+            margin-top: 0;
+            padding-top: 5px;
+            &.active{
+                width:220px;
+                height:37px;
+            }
+            .searchbar{
+                float:left;
+                width: 180px;
+                position: relative;
+                top: -5px;
+                opacity: 0;
+                .wp-block-search{
+                    .wp-block-search__input{
+                        font-size:12px;
+                        padding:5px;
+                        margin-right:0;
+                    }
+                }
+                &.active{
+                    /* top: 0px; *//* right: 40px; *//* margin-top:0; *//* width: 180px; *//* font-size: 0.8em; */
+                    .wp-block-search{
+                        .wp-block-search__input{
+                            height: 35px;padding:8px;font-size: 0.8em;
+                        }
+                    }
+                }
+            }
+        }
+        .search_btn{float:right;margin-top: -5px;}
     }
 }

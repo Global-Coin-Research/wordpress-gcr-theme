@@ -91,7 +91,12 @@
         background:$site-background;
         padding: 40px;
         padding-bottom: 80px;
-        .container{border-top: 2px solid $gray-dark;}
+        .container{
+            border-top: 2px solid $gray-dark;
+            .dark &{
+                border-color:$white;
+            }
+        }
         .footer-row{
             margin-top:80px;
         }
@@ -155,9 +160,30 @@
             }
         }
     }
-    .egg{
-        font-size: 27px;
-        padding-top: 4px;
+    
+    @include for-phone{
+        padding-bottom:0;        
+        .footer-bottom, .footer-large{
+            .logo-area, .widget{
+                width: 100% !important;
+                margin-right: 0;
+                margin-bottom: 50px;
+            }
+            .logo-area {
+                margin-bottom: 50px;
+            }
+        }
+        &.minimal{
+            padding:0;
+            padding-bottom:40px;
+            .logo-area{
+                width:100%;
+                margin-bottom:30px;
+            }
+            .bottom_links{
+                float:none;
+            }
+        }
     }
 }
 

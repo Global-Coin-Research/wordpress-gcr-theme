@@ -9,7 +9,7 @@ get_header();
 get_template_part('section/navigation-minimal');
 ?>
 
-<div class="slider-area slider-landing bg-dark-blue clearfix">
+<div class="header-banner bg-dark-blue clearfix">
     <div class="container clearfix overflow-hidden">
         <div class="header-text">
             <h2>Global Coin Research is a tokenized, decentralized community of learners and investors in <span class="blue">Web3.</span></h2>

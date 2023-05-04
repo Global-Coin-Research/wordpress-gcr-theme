@@ -1,14 +1,32 @@
-.container,
-.blog-wrap {
-    max-width: 1230px;
+.container{
     width: 100%;
     margin: 0 auto;
+    position: relative;
+    padding: 0 15px;
+    @include large-pc{
+        width: 1230px;
+    }
+    @include small-pc{
+        width:990px;
+    }
+    @include below-pc{
+        width:100%;
+        overflow-x: hidden;
+        .header-top &{
+            min-height: 46px;
+        }
+    }
+    @include for-phone{
+        width: 100%;
+        max-width: 680px;
+    }   
 }
 .site-content {
     width: 65%;
     float: left;
     margin-right: 4%;
 }
+
 
 .flexbox{
     display: flex;

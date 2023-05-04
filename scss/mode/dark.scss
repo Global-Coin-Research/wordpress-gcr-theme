@@ -95,7 +95,7 @@
                 li{
                     &>a{
                         border-color:#fff !important;
-                        @include bleow-pc{
+                        @include below-pc{
                             border:0;
                         }
                         color: #fff !important;
@@ -354,9 +354,6 @@
         background-color: $dm-darkblue;
         &.minimal{
             background:$blue;
-            .container{
-                border-color:$white;
-            }
             .logo-area{
                 .tag{
                     color:$white;

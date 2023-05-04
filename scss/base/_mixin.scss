@@ -1,5 +1,51 @@
-@mixin bleow-pc {
-    @media only screen and (max-width:1100px) {
+@mixin font($size, $line-height, $weight:400){
+    font-size:$size;
+    line-height:$line-height;
+    @if $weight!=400 {
+        font-weight: $weight;
+    }
+}
+
+@mixin large-pc {
+    @media only screen and (min-width:1260px) {
+        @content;
+    }
+}
+@mixin small-pc {
+    @media only screen and (min-width:992px) and (max-width:1260px) {
+        @content;
+    }
+}
+@mixin from-pc {
+    @media only screen and (min-width:991px) {
+        @content;
+    }
+}
+@mixin below-pc {
+    @media only screen and (max-width:991px) {
+        @content;
+    }
+}
+
+@mixin for-tablet {
+    @media only screen and (min-width:768px) and (max-width:991px) {
+        @content;
+    }
+}
+
+@mixin tablet-to-pc{
+    @media only screen and (min-width:768px) and (max-width:1199px){
+        @content;
+    }
+}
+
+@mixin for-phone {
+    @media only screen and (max-width:767px) {
+        @content;
+    }
+}
+@mixin small-phone {
+    @media only screen and (max-width:440px) {
         @content;
     }
 }

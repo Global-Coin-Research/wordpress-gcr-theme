@@ -1,5 +1,5 @@
-<div class="slider-area slider-content bg-blue clearfix">
-    <div class="slider-container">
+<div class="header-banner bg-blue clearfix">
+    <div class="container slider-area slider-content">
         <div id="slider-content" class="slider clearfix">
             <?php 
                 $the_query = new WP_Query( array(
@@ -12,8 +12,6 @@
             <?php endwhile; ?>
             <?php wp_reset_postdata(); ?>
         </div>
-    </div>
-    <div class="container">
         <div class="slider-nav">
             <ul>
                 <li><span class="prev"><i class="icon icon-left-open"></i></span></li>

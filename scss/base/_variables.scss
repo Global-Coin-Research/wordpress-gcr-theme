@@ -35,19 +35,3 @@ $scroll-track-color: #c0c0ff;
 $scroll-thumb-color: #4646e3;
 $scroll-hover-color: #3a3aab;
 
-
-
-// mixin area
-@mixin for-phone {
-    @media only screen and (max-width:767px) {
-        @content;
-    }
-}
-
-@mixin font($size, $line-height, $weight:400){
-    font-size:$size;
-    line-height:$line-height;
-    @if $weight!=400 {
-        font-weight: $weight;
-    }
-}

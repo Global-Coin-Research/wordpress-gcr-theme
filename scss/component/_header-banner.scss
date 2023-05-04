@@ -1,0 +1,259 @@
+.header-banner{
+    padding:30px 0;
+    .header-text, .slider-landing{
+        @include large-pc{
+            height: 448px;
+        }
+        @include small-pc{
+            height: 351px;
+        }
+    }
+    
+    .slider-area {
+        /* padding-top: 20px; */
+        position: relative;
+        overflow: hidden;
+        min-height: 150px;    
+        
+        
+    
+        .slider-nav {
+            li {
+                display: inline-block;
+                float: left;
+            }
+    
+            span {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                border: 1px solid $white;
+                border-radius: 50px;
+                text-align: center;
+                line-height: 50px;
+                position: relative;
+                color: $blue;
+                background: $white;
+    
+                &.next {
+                    margin-left: 15px;
+                }
+    
+                &:hover {
+                    background: $blue-dark;
+                    border-color: $blue-dark;
+                    color: $white;
+                    cursor: pointer;
+                }
+            }
+        }
+    
+        
+    
+        
+        
+        @include for-phone{
+            overflow: hidden;
+            z-index: 333;
+            position: relative;
+            .slide-nav {
+                bottom: 15px;
+                left: 50%;
+                margin-left: -57px;
+                width: 116px;
+            }
+            
+            &.slider-content{
+                .slide {
+                    overflow: hidden;
+                    .container{
+                        padding:0;
+                    }
+                    .slide-img {
+                        width: 85%;
+                        margin: 10px auto 23px;
+                        float: none;
+                    }
+                    .slide-text {
+                        width: 100%;
+                        padding: 0;
+                        h2 {
+                            font-size: 1.8em;
+                            margin-bottom: 20px;
+                        }
+                        p {
+                            font-size: 1.2em;
+                            display: block;
+                            &.tag {
+                                margin-bottom: 10px;
+                            }
+                        }
+                        .meta-data {
+                            margin-top: 20px;
+                            margin-bottom: 0;
+                            width: 100%;
+                            text-align: left;
+                        }
+                        a{
+                            color:white;
+                        }
+                    }
+                }
+                .slider-nav{
+                    bottom:20px;
+                }
+            }
+        }
+    
+    }
+    
+    
+    .header-text{
+        @include large-pc{
+            width: 42%;
+            float:left;
+            margin-right: 3%;
+        }
+        @include small-pc{
+            width: 42%;
+            float:left;
+            margin-right: 3%;
+        }
+        @include below-pc{
+            text-align: center;
+        }
+        color:$white;
+        
+        h2{
+            font-family:"gilroybold";
+            font-size: 40px;
+            line-height: 120%;
+            color: $white;
+            margin-bottom: 20px;
+            @include small-pc{
+                font-size: 28px;
+            }
+            @include for-phone{
+                font-size: 28px;
+            }
+            span{
+                background-color: #fff;
+                padding:0 3px;
+            }
+        }
+        p{
+            font-size:23px;
+            line-height:120%;
+            margin-bottom:30px;
+        }
+        .button-area{
+            margin: 20px 0;
+        }
+        @import "testimonial_slideshow";
+    }
+    .slider-landing {
+        position: relative;
+        @include large-pc{
+            width: 55%;
+            float: left;
+        }
+        padding-top: 0;
+        .slider {
+            @include below-pc{
+                // margin-top:20px;
+            }
+            .slick-list {
+                max-height: 100%;
+                overflow: hidden;
+            }
+        }
+
+        .slick-arrow {
+            display: none !important;
+        }
+
+        .slider-nav {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            width: 115px;
+            margin-left: -50px;
+            display: none;
+        }
+
+        &:hover {
+            .slider-nav {
+                display: block;
+            }
+        }
+    }
+    
+    .slider-content {
+        position: relative;
+        a {
+            color: $white;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        .slide {
+            .slide-img {
+                width: 45%;
+                float: left;
+                margin-right: 5%;
+            }
+
+            .slide-text {
+                width: 50%;
+                float: left;
+
+                .tag {
+                    text-transform: uppercase;
+                    margin-bottom: 25px;
+                    font-size: 14px;
+                }
+
+                h2 {
+                    font-size: 2.8em;
+                    line-height: 1.2em;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                    font-family: $gilroybold;
+                }
+
+                p {
+                    font-size: 1.3em;
+                    line-height: 1.5em;
+                    font-weight: 300;
+
+                    &.date {
+                        font-size: 1em;
+                    }
+                }
+            }
+
+            .meta-data {
+                margin-top: 30px;
+
+                .meta-text {
+                    .date {
+                        color: $gray-light;
+                    }
+                }
+            }
+        }
+
+        .slider-nav {
+            margin-top:20px;
+            @include from-pc{
+                position: absolute;
+                bottom: 0px;
+                right: 15px;
+            }
+        }
+    }
+    
+    
+}

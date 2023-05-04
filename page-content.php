@@ -9,7 +9,7 @@ get_header();
 <?php get_template_part('section/navigation-main') ?>
 
 
-<?php get_template_part('section/slider') ?>
+<?php get_template_part('section/slider-content') ?>
 
 <?php get_template_part('section/latest-posts-new') ?>
 
