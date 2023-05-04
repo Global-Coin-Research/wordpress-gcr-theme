@@ -89,8 +89,14 @@
     .text{
         min-height:280px;
         position:relative;
+        @include for-phone{
+            min-height: 0 !important;
+        }
         .details{
             margin-bottom:15px;
+            @include for-phone{
+                display: none;
+            }
             p{
                 color:$gray-mid;
                 font-size:14px;

@@ -5,6 +5,9 @@
         .sorting{
             margin-bottom:30px;
             float:left;
+            @include for-phone{
+                margin-bottom:15px;
+            }
         }
         .portsort{
             // padding:5px 15px;
@@ -32,10 +35,17 @@
         }
         .links{
             float:right;
+            @include for-phone{
+                float:left;
+            }
             ul{
                 li{
                     display: inline;
                     margin-left:20px;
+                    @include for-phone{
+                        float:right;
+                        margin-left:0;
+                    }
                     a{
                         color:rgba(#000,0.5);
                         .dark & {
@@ -72,20 +82,25 @@
     }
     
     .portfolios{
-        // display: flex;
-        // justify-content: flex-start;
-        // align-items: stretch;
-        // flex-wrap: wrap;
-        // flex-direction: row;
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-gap: 30px;
+        @include upto-pc{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @include for-phone{
+            grid-template-columns: 1fr 1fr;
+        }
         .item{
             flex-basis: 25%;
             text-align: center;
             margin-bottom:85px;
-            padding: 0 4rem;
+            padding: 0 2.5rem;
             box-sizing: border-box;
+            
+            @include for-phone{
+                padding: 0 3rem;
+            }
             p{
                 margin-top:5px;
                 display: block;

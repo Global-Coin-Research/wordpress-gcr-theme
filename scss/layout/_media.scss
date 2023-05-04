@@ -125,14 +125,6 @@
             }
         }
     }
-    .flagship-section{
-        .four-flagship{
-            width:90%;
-            .flagship{
-                width:45%;
-            }
-        }
-    }
     .tier-area {
         display: flex;
         flex-direction: column;
@@ -246,17 +238,6 @@
         /* top: 0; */
     }
     .sub_gcr{position:relative;margin:0;}
-     
-
-    .portfolio-section {
-        .portfolios{
-            .item{
-                flex-basis:33%;
-                padding: 0 3rem;
-                margin-bottom:30px;
-            }
-        }
-    }
 } /* media end */
     
 @media only screen and (min-width:901px){
@@ -264,11 +245,6 @@
     .header-1 .sub-menu{
         border:1px solid $blue;
         border-top:0;
-    }
-    .four-flagship{
-        .flagship{
-            max-width:45%;
-        }
     }
 }
     
@@ -518,27 +494,6 @@
         width:100%;padding-top:0;
         h2{font-size:2em;}
     }
-    
-    .flagship-section{
-        padding-bottom:30px;
-        .four-flagship{
-            padding: 0;
-            width:100%;
-            margin: 0;
-            .flagship{
-                width:100%;
-                flex: 100%;
-                float:none;
-                margin: 40px auto;
-                max-width: 350px;
-                .title{
-                    .larger{
-                        font-size:2.4em;
-                    }
-                }
-            }
-        }
-    }
     .tier-area{
         width:100%;
         padding:0px;
@@ -578,30 +533,4 @@
             }
         }
     }
-    .portfolio-section {
-        .portfolios{
-            grid-template-columns: 1fr 1fr;
-            .item{
-                // flex-basis:40%;
-                padding: 10px;
-            }
-        }
-        .linking-area {
-            .sorting{
-                margin-bottom:15px;
-            }
-            .links{
-                float:left;
-                ul{
-                    li{
-                        float:right;
-                        margin-left:0;
-                        // margin-right:20px;
-                    }
-                }
-            }
-        }
-    } 
-    
-
 } /* media end */

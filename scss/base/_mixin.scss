@@ -26,6 +26,11 @@
         @content;
     }
 }
+@mixin upto-pc {
+    @media only screen and (max-width:1199px) {
+        @content;
+    }
+}
 
 
 @mixin for-tablet {

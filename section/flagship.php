@@ -5,7 +5,7 @@
 				<h2>Our Community</h2>
                 <p class="section-moto">$GCR is the native token of the community. By holding a set number of $GCR in your cryptowallet, community members are able to enjoy and participate in various events, deals and resources.</p>
 			</div>
-            <div class="four-flagship clearfix">
+            <div class="four-flagship">
                 <?php 
                     // if(is_active_sidebar('community_widget_1' )){ dynamic_sidebar('community_widget_1'); }else{ 
                 ?>
