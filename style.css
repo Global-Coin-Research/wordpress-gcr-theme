@@ -1815,7 +1815,7 @@ a.logolink.blacklogo {
     left: 15%;
     top: 0;
     padding: 0 5px;
-    height: 100px;
+    min-height: 50px;
   }
   .header-banner .header-text .testimonial-slideshow .slide .testimonial p {
     font-size: 12px !important;
