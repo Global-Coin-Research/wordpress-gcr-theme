@@ -35,8 +35,8 @@ jQuery(document).ready(function($){
     
     
     
-    $('.prev').click(function(){$('.slick-prev').click();});
-    $('.next').click(function(){$('.slick-next').click();});
+    $('.prev').click(function(){$('.slider .slick-prev').click();});
+    $('.next').click(function(){$('.slider .slick-next').click();});
     
     $('body').on( 'click', '#menu', function () {
         
