@@ -29,13 +29,13 @@
 
 
 @mixin for-tablet {
-    @media only screen and (min-width:768px) and (max-width:991px) {
+    @media only screen and (min-width:767px) and (max-width:991px) {
         @content;
     }
 }
 
 @mixin tablet-to-pc{
-    @media only screen and (min-width:768px) and (max-width:1259px){
+    @media only screen and (min-width:767px) and (max-width:1259px){
         @content;
     }
 }
