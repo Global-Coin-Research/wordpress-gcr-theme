@@ -8,7 +8,7 @@ get_template_part('section/navigation-main');
 ?>
 
 <div class="testimonial-section">
-    <div class="container clearfix">
+    <div class="clearfix">
         <div class="row clearfix">
             <div class="section-text">
                 <p>This is what our partners and community members said about us</p>

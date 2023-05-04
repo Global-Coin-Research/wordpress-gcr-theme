@@ -1680,11 +1680,9 @@ a.logolink.blacklogo {
 }
 .header-banner .header-text .testimonial-slideshow {
   overflow: hidden;
-  padding: 5px;
 }
 @media only screen and (min-width: 991px) {
   .header-banner .header-text .testimonial-slideshow {
-    background: #272827;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1696,7 +1694,7 @@ a.logolink.blacklogo {
 @media only screen and (min-width: 992px) and (max-width: 1260px) {
   .header-banner .header-text .testimonial-slideshow {
     display: block;
-    height: 129px;
+    height: 139px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -1782,14 +1780,14 @@ a.logolink.blacklogo {
   .header-banner .header-text .testimonial-slideshow .slide {
     -ms-grid-columns: 11fr 25fr 64fr;
     grid-template-columns: 11fr 25fr 64fr;
-    height: 147px;
+    height: 157px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1260px) {
+@media only screen and (min-width: 768px) and (max-width: 1259px) {
   .header-banner .header-text .testimonial-slideshow .slide {
     display: block !important;
     width: 100%;
-    height: 119px;
+    height: 129px;
     margin-bottom: 15px;
     position: relative;
   }
@@ -1814,14 +1812,14 @@ a.logolink.blacklogo {
     position: absolute;
     left: 15%;
     top: 0;
-    padding: 0 5px;
+    padding: 0 0 0 3%;
     min-height: 50px;
   }
   .header-banner .header-text .testimonial-slideshow .slide .testimonial p {
     font-size: 12px !important;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
   .header-banner .header-text .testimonial-slideshow .slide {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
