@@ -99,3 +99,16 @@
         }
     }
 }
+.tag-cloud-container{
+    margin:0 auto 60px;
+    width:100%;
+    max-width: 1000px;
+    #tag-cloud {
+        text-align: center;
+    }
+    svg{
+        @include for-phone{
+            height:400px;
+        }
+    }
+}

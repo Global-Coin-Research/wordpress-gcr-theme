@@ -33,51 +33,32 @@ jQuery(document).ready(function($){
         autoplaySpeed: 3000
     });
     
-    var entries = [ 
-
-        { image: '../img/clouds/cloud-1.png', width: '150', height: '50', url: '#', target: '_top' },
-        { image: '../img/clouds/cloud-2.png', width: '150', height: '50', url: '#', target: '_top' },
-        { image: '../img/clouds/cloud-3.png', width: '150', height: '50', url: '#', target: '_top' },
-        { image: '../img/clouds/cloud-4.png', width: '150', height: '50', url: '#', target: '_top' },
-        { image: '../img/clouds/cloud-5.png', width: '150', height: '50', url: '#', target: '_top' },
-   
-    ];
     
+    // tag cloud setting
+    if( $(window).width() < 768 ){
+        var wd = 400;
+        var ht = 400;
+    }else if( $(window).width() < 1200 && $(window).width() > 768 ){
+        var wd = 740;
+        var ht = 700;
+    }else{
+        var wd = 1000;
+        var ht = 800; 
+    }
     var settings = {
-
         entries: entries,
-        width: 880,
-        height: 880,
+        width: wd,
+        height: ht,
         radius: '65%',
         radiusMin: 75,
         bgDraw: true,
-        bgColor: '#fff',
+        bgColor: 'transparent',
         opacityOver: 1.00,
         opacityOut: 0.05,
         opacitySpeed: 6,
         fov: 800,
-        speed: 2,
-        fontFamily: 'Oswald, Arial, sans-serif',
-        fontSize: '15',
-        fontColor: '#fff',
-        fontWeight: 'normal',//bold
-        fontStyle: 'normal',//italic 
-        fontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
-        fontToUpperCase: true,
-        tooltipFontFamily: 'Oswald, Arial, sans-serif',
-        tooltipFontSize: '11',
-        tooltipFontColor: '#fff',
-        tooltipFontWeight: 'normal',//bold
-        tooltipFontStyle: 'normal',//italic 
-        tooltipFontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
-        tooltipFontToUpperCase: false,
-        tooltipTextAnchor: 'left',
-        tooltipDiffX: 0,
-        tooltipDiffY: 10
-
+        speed: 1,
     };
-
-    
     $('#tag-cloud').svg3DTagCloud(settings);
     
     
