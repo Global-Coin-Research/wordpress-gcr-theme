@@ -57,7 +57,7 @@ jQuery(document).ready(function($){
         opacityOut: 0.05,
         opacitySpeed: 6,
         fov: 800,
-        speed: 1,
+        speed: 0.2,
     };
     $('#tag-cloud').svg3DTagCloud(settings);
     
