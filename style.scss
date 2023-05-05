@@ -23,6 +23,7 @@ Tags: responsive, bluish, custom, gcr
 @import "scss/component/navigations";
 @import "scss/layout/header";
 @import "scss/plugin/slick";
+@import "scss/component/form";
 @import "scss/component/header-banner";
 @import "scss/component/portfolio-logo-slider";
 @import "scss/component/flagship"; // for flagship butotn area 
@@ -45,6 +46,8 @@ Tags: responsive, bluish, custom, gcr
 // @import "scss/plugin/iconfont";
 @import "scss/plugin/fontello";
 @import "scss/plugin/widgets";
+
+@import "scss/plugin/BubbleCloud3D.scss";
 
 
 @import "scss/component/tiers";

@@ -15,7 +15,7 @@
     }
     .slide{
         margin-bottom:20px;
-        @include from-pc{
+        @include from-tablet{
             display: grid !important;
             align-items: center;
             grid-column-gap: 15px;
@@ -87,10 +87,7 @@
         @include small-pc{
             height:119px;
         }
-        @include for-tablet{
-            height:75px;
-            margin-top: 15px;
-        }
+        
         @include tablet-to-pc{
             display: block !important;
             width:100%;
@@ -107,7 +104,7 @@
                 right:0;
                 bottom:0;
                 width:32%;
-                transform:scale(0.9);
+                // transform:scale(0.9);
                 text-align: right;
                 h4{
                     font-size:14px;
@@ -126,6 +123,27 @@
             }
         }
         
+        @include for-tablet{
+            display: flex !important;
+            height:58px;
+            margin-top: 15px;
+            .user-info{
+                left:60px;
+                top:0;
+                width: 120px;
+            }
+            .testimonial{
+                width:calc(100% - 195px);
+                left:190px;
+                min-height:40px;
+                display: flex;
+                align-items: center;
+                p{
+                    font-size:14px !important;
+                }
+            }
+        }
+        
         @include for-phone{
             grid-template-columns: 1fr;
             .user-image{
@@ -133,13 +151,13 @@
             }
             .user-info{
                 margin:10px 0;
+                
             }
             .testimonial{
                 border-left:0;
                 padding-left:0;
                 text-align: center;
             }
-            
         }
     }
     .slick-dots{

@@ -44,7 +44,17 @@
         @content;
     }
 }
+@mixin tablet-to-small-pc{
+    @media only screen and (min-width:767px) and (max-width:1199px){
+        @content;
+    }
+}
 
+@mixin from-tablet {
+    @media only screen and (min-width:767px) {
+        @content;
+    }
+}
 @mixin for-phone {
     @media only screen and (max-width:767px) {
         @content;

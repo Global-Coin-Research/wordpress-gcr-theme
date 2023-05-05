@@ -33,6 +33,52 @@ jQuery(document).ready(function($){
         autoplaySpeed: 3000
     });
     
+    var entries = [ 
+
+        { image: '../img/clouds/cloud-1.png', width: '150', height: '50', url: '#', target: '_top' },
+        { image: '../img/clouds/cloud-2.png', width: '150', height: '50', url: '#', target: '_top' },
+        { image: '../img/clouds/cloud-3.png', width: '150', height: '50', url: '#', target: '_top' },
+        { image: '../img/clouds/cloud-4.png', width: '150', height: '50', url: '#', target: '_top' },
+        { image: '../img/clouds/cloud-5.png', width: '150', height: '50', url: '#', target: '_top' },
+   
+    ];
+    
+    var settings = {
+
+        entries: entries,
+        width: 880,
+        height: 880,
+        radius: '65%',
+        radiusMin: 75,
+        bgDraw: true,
+        bgColor: '#fff',
+        opacityOver: 1.00,
+        opacityOut: 0.05,
+        opacitySpeed: 6,
+        fov: 800,
+        speed: 2,
+        fontFamily: 'Oswald, Arial, sans-serif',
+        fontSize: '15',
+        fontColor: '#fff',
+        fontWeight: 'normal',//bold
+        fontStyle: 'normal',//italic 
+        fontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+        fontToUpperCase: true,
+        tooltipFontFamily: 'Oswald, Arial, sans-serif',
+        tooltipFontSize: '11',
+        tooltipFontColor: '#fff',
+        tooltipFontWeight: 'normal',//bold
+        tooltipFontStyle: 'normal',//italic 
+        tooltipFontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+        tooltipFontToUpperCase: false,
+        tooltipTextAnchor: 'left',
+        tooltipDiffX: 0,
+        tooltipDiffY: 10
+
+    };
+
+    
+    $('#tag-cloud').svg3DTagCloud(settings);
     
     
     $('.prev').click(function(){$('.slider .slick-prev').click();});

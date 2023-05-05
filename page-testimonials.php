@@ -46,4 +46,10 @@ get_template_part('section/navigation-main');
     </div>
 </div>
 
+<div class="tag-cloud-section">
+    <div class="container">
+        <div id="tag-cloud"></div>
+    </div>
+</div>
+
 <?php get_footer(); ?>

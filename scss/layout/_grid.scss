@@ -52,6 +52,9 @@
     .column{
         flex:0 0 32%;
         margin-right:2%;
+        @include tablet-to-small-pc{
+            flex:32%;
+        }
         &:nth-child(3n) {
             margin-right: 0;
         }
@@ -66,3 +69,11 @@
     }
 }
 
+@include for-phone{
+    .column {
+        flex:100% !important;
+        width: 100% !important;
+        margin-right: 0 !important;
+        margin-bottom: 30px !important;
+    }
+}

@@ -1,7 +1,12 @@
 .testimonial-section {
     margin: 50px auto 60px;
     max-width: 900px;
+    
     font-family: $gilroy;
+    
+    @include upto-pc{
+        width:90%;
+    }
     .section-text {
         text-align: center;
         font-size: 28px;
