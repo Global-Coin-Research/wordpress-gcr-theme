@@ -1,5 +1,12 @@
 .testimonial-slideshow{
     overflow:hidden;
+    opacity: 0;
+    transition:opacity 1s fade;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
     @include from-pc{
         display: flex;
         align-items: center;
@@ -183,4 +190,9 @@
             }
         }
     }
+}
+
+@keyframes appear {
+    from {opacity:0}
+    to {opacity:1}
 }
