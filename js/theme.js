@@ -38,12 +38,12 @@ jQuery(document).ready(function($){
     if( $(window).width() < 768 ){
         var wd = 400;
         var ht = 400;
-    }else if( $(window).width() < 1200 && $(window).width() > 768 ){
+    }else if($(window).width() > 768 && $(window).width() < 1200   ){
         var wd = 740;
         var ht = 700;
     }else{
         var wd = 1000;
-        var ht = 800; 
+        var ht = 1000; 
     }
     var settings = {
         entries: entries,
@@ -57,7 +57,7 @@ jQuery(document).ready(function($){
         opacityOut: 0.05,
         opacitySpeed: 6,
         fov: 800,
-        speed: 0.2,
+        speed: 0.1,
     };
     $('#tag-cloud').svg3DTagCloud(settings);
     
