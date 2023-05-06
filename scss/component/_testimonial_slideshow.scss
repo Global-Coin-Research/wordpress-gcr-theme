@@ -1,24 +1,29 @@
+#loading{
+    width:40px;
+    margin:50px auto 30px;
+}
 .testimonial-slideshow{
     overflow:hidden;
-    opacity: 0;
-    transition:opacity 1s fade;
+    display: none;
     animation-name: appear;
     animation-duration: 1s;
-    animation-delay: 2s;
+    // animation-delay: 3s;
     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     animation-timing-function: linear;
-    @include from-pc{
-        display: flex;
-        align-items: center;
-    }
-    @include small-pc{
-        display:block;
-        height:139px;
-    }
-    @include below-pc{
-        display:block;
-        margin: 0 auto 20px;
-        height:auto;
+    &.show{
+        display: block;
+        @include from-pc{
+            align-items: center;
+        }
+        @include small-pc{
+            height:139px;
+        }
+        @include below-pc{
+            margin: 0 auto 20px;
+            height:auto;
+        }
+        
     }
     .slide{
         margin-bottom:20px;

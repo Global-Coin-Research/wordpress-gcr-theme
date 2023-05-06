@@ -17,8 +17,10 @@ get_template_part('section/navigation-minimal');
                 <a class="btn btn-primary" href="http://eepurl.com/dvD3FH">Subscribe to GCR Weekly</a>
                 <a class="btn btn-white" href="https://discord.gg/globalcoinresearch">Join the Community</a>
             </div>
+            <div id="loading">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/loading.gif" alt="">
+            </div>
             <div id="testimonial-slideshow" class="testimonial-slideshow clearfix">
-                
                 <?php
                 // add the portfolio list from the external data file
                 require_once('data/all-testimonials.php');
