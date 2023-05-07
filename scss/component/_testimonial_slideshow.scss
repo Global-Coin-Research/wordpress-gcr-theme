@@ -105,7 +105,6 @@
             @include tablet-to-pc{
                 display: block !important;
                 width:100%;
-                
                 margin-bottom: 15px;
                 position: relative;
                 .user-image{
@@ -152,8 +151,6 @@
                     width:calc(100% - 195px);
                     left:190px;
                     min-height:40px;
-                    display: flex;
-                    align-items: center;
                     p{
                         font-size:14px !important;
                     }
