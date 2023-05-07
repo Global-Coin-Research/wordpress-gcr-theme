@@ -126,12 +126,9 @@ jQuery(document).ready(function($){
     });
     
     // tag cloud setting
-    if( $(window).width() < 768 ){
-        var wd = 400;
-        var ht = 400;
-    }else if($(window).width() > 768 && $(window).width() < 1200   ){
-        var wd = 740;
-        var ht = 700;
+    if($(window).width() > 768 && $(window).width() < 1200   ){
+        var wd = 760;
+        var ht = 800;
     }else{ 
         var wd = 1000;
         var ht = 1000; 
@@ -150,6 +147,8 @@ jQuery(document).ready(function($){
         fov: 800,
         speed: 0.1,
     };
-    $('#tag-cloud').svg3DTagCloud(settings);
+    if($(window).width() > 768){
+        $('#tag-cloud').svg3DTagCloud(settings);
+    }
 });
 

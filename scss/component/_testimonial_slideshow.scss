@@ -27,64 +27,155 @@
     }
     .slide{
         margin-bottom:20px;
-        @include from-tablet{
-            display: grid !important;
-            align-items: center;
-            grid-column-gap: 15px;
-            margin-bottom:0;
-        }
-
-        .user-image{
-            background: #fff;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            img{
-                width:50px;
-                height:50px;
-                border-radius:50%;
-            }
-        }
-        .user-info{
-            text-align:right;
-            @include below-pc{
-                text-align:center;
-            }
-            h4{
-                font-family:"gilroybold";
-                margin-bottom:0;
-                font-size:16px;
-                color:#fff;
-                font-weight:700;
-            }
-            p{
-                font-style: italic;
-                font-size:12px;
-                font-family: $gilroy;
-                color:#a7a7a7;
+        display:block;
+        .sized{
+            width:100%;
+            @include from-tablet{
+                display: grid !important;
+                align-items: center;
+                grid-column-gap: 15px;
                 margin-bottom:0;
             }
-        }
-        .testimonial{
-            // border-left: 2px solid #434343;
-            border-left: 2px solid #f0f0f0;
-            padding-left:15px;
-            font-family: $gilroy;
-            text-align: left;
-            p{
-                font-family: $gilroy;
-                font-size:14px;
-                margin-bottom:0;
-                color:#fff;
-                &:after, &:before{
-                    content:'"';
-                    display:inline;
+            .user-image{
+                background: #fff;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                img{
+                    width:50px;
+                    height:50px;
+                    border-radius:50%;
                 }
-                &:after{
-                    margin-left:2px;
+            }
+            .user-info{
+                text-align:right;
+                @include below-pc{
+                    text-align:center;
                 }
-                &:before{
-                    margin-right:2px;
+                h4{
+                    font-family:"gilroybold";
+                    margin-bottom:0;
+                    font-size:16px;
+                    color:#fff;
+                    font-weight:700;
+                }
+                p{
+                    font-style: italic;
+                    font-size:12px;
+                    font-family: $gilroy;
+                    color:#a7a7a7;
+                    margin-bottom:0;
+                }
+            }
+            .testimonial{
+                // border-left: 2px solid #434343;
+                border-left: 2px solid #f0f0f0;
+                padding-left:15px;
+                font-family: $gilroy;
+                text-align: left;
+                p{
+                    font-family: $gilroy;
+                    font-size:14px;
+                    margin-bottom:0;
+                    color:#fff;
+                    &:after, &:before{
+                        content:'"';
+                        display:inline;
+                    }
+                    &:after{
+                        margin-left:2px;
+                    }
+                    &:before{
+                        margin-right:2px;
+                    }
+                }
+            }
+            &.small{
+                max-width: 400px;
+                margin:0 auto;
+            }
+            @include large-pc{
+                grid-template-columns: 11fr 25fr 64fr;
+                height:157px;
+            }
+            @include small-pc{
+                height:119px;
+            }
+            
+            @include tablet-to-pc{
+                display: block !important;
+                width:100%;
+                
+                margin-bottom: 15px;
+                position: relative;
+                .user-image{
+                    position:absolute;
+                    left:0;
+                    top:0;
+                }
+                .user-info{
+                    position: absolute;
+                    right:0;
+                    bottom:0;
+                    width:32%;
+                    // transform:scale(0.9);
+                    text-align: right;
+                    h4{
+                        font-size:14px;
+                    }
+                }
+                .testimonial{
+                    width:calc(100% - 71px);
+                    position: absolute;
+                    left:60px;
+                    top:0;
+                    padding:0 0 0 10px;
+                    min-height:50px;
+                    display: grid;
+                    align-items: center;
+                    p{
+                        font-size:12px !important;
+                    }
+                }
+            }
+            
+            @include for-tablet{
+                display: flex !important;
+                height:58px;
+                margin-top: 15px;
+                .user-info{
+                    left:60px;
+                    top:0;
+                    width: 120px;
+                }
+                .testimonial{
+                    width:calc(100% - 195px);
+                    left:190px;
+                    min-height:40px;
+                    display: flex;
+                    align-items: center;
+                    p{
+                        font-size:14px !important;
+                    }
+                }
+            }
+            
+            @include for-phone{
+                grid-template-columns: 1fr;
+                &.small{
+                    max-width: 100%;
+                }
+                .user-image{
+                    margin:0 auto;
+                }
+                .user-info{
+                    margin:10px 0;
+                    
+                }
+                .testimonial{
+                    border-left:0;
+                    padding-left:0;
+                    text-align: center;
                 }
             }
         }
@@ -92,85 +183,7 @@
         &:hover{
             text-decoration: none;
         }
-        @include large-pc{
-            grid-template-columns: 11fr 25fr 64fr;
-            height:157px;
-        }
-        @include small-pc{
-            height:119px;
-        }
         
-        @include tablet-to-pc{
-            display: block !important;
-            width:100%;
-            
-            margin-bottom: 15px;
-            position: relative;
-            .user-image{
-                position:absolute;
-                left:0;
-                top:0;
-            }
-            .user-info{
-                position: absolute;
-                right:0;
-                bottom:0;
-                width:32%;
-                // transform:scale(0.9);
-                text-align: right;
-                h4{
-                    font-size:14px;
-                }
-            }
-            .testimonial{
-                width:calc(100% - 71px);
-                position: absolute;
-                left:60px;
-                top:0;
-                padding:0 0 0 10px;
-                min-height:50px;
-                p{
-                    font-size:12px !important;
-                }
-            }
-        }
-        
-        @include for-tablet{
-            display: flex !important;
-            height:58px;
-            margin-top: 15px;
-            .user-info{
-                left:60px;
-                top:0;
-                width: 120px;
-            }
-            .testimonial{
-                width:calc(100% - 195px);
-                left:190px;
-                min-height:40px;
-                display: flex;
-                align-items: center;
-                p{
-                    font-size:14px !important;
-                }
-            }
-        }
-        
-        @include for-phone{
-            grid-template-columns: 1fr;
-            .user-image{
-                margin:0 auto;
-            }
-            .user-info{
-                margin:10px 0;
-                
-            }
-            .testimonial{
-                border-left:0;
-                padding-left:0;
-                text-align: center;
-            }
-        }
     }
     .slick-dots{
         text-align: center;

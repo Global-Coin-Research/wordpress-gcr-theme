@@ -11,6 +11,7 @@ $testimonials = [
         'showable'=>true,
         'logo_link' => 'https://joinshare.xyz/',
         'author_link' => 'https://twitter.com/bigimot5824',
+        'size'=>'large',
     ],
     [
         'text'  => 'We&apos;re grateful to have GCR in our corner - their dedication to staying ahead of the curve in the investment space is impressive, and they&apos;ve helped us with tons of awesome product feedback. Their insights have helped us develop a more sophisticated payroll platform that meets the needs of the Web3 community.',
@@ -22,6 +23,7 @@ $testimonials = [
         'showable'=>true,
         'logo_link' => 'https://utopialabs.com/',
         'author_link' => 'https://twitter.com/0xkaito',
+        'size'=>'large',
     ],
     [
         'text'  => 'GCR came out of SC02 and has been a great alum and a valuable partner for us at Seed Club. We look forward to having them continuing pushing the forefront of investment DAOs.',
@@ -33,6 +35,7 @@ $testimonials = [
         'showable'=>true,
         'logo_link' => 'https://seedclub.xyz/',
         'author_link' => 'https://twitter.com/thattallguy',
+        'size'=>'large',
     ],
     [
         'text'  => '@Globalcoinrsrch has been really helpful as an investor!',
@@ -44,7 +47,8 @@ $testimonials = [
         'logo_link' => 'https://sweatco.in/',
         'author_link' => 'https://sweatco.in/',
         'showable'=>true,
-        'note' => 'PortCo Since 2021'
+        'note' => 'PortCo Since 2021',
+        'size'=>'small',
     ],
     [
         'text'  => 'GCR is the Web3 version of added-value investors, they just get the new Internet, what Talent Protocol is all about and help us hit our goals.',
@@ -56,6 +60,7 @@ $testimonials = [
         'showable'=>true,
         'logo_link' => 'https://talentprotocol.com/',
         'author_link' => 'https://twitter.com/pcbo',
+        'size'=>'large',
     ],
     [
         'text' => 'I was researching different DAOs and got introduced to GCR. I&apos;d love to contribute as a core contributor, as well as an Ambassador/Evangelist for GCR in the future.',
@@ -65,6 +70,7 @@ $testimonials = [
         'type' => 'person',
         'logo_link' => '#',
         'author_link' => '#',
+        'size'=>'large',
     ],
     [
         'text'  => 'My current experience with the GCR DAO has been great as the overall organization has been welcoming and helpful. Relevant current affiliation is with another DAO, Standard DAO, which is a community-backed treasury containing diversified assets focused on ESG investing.',
@@ -74,6 +80,7 @@ $testimonials = [
         'type' => 'person',
         'logo_link' => '#',
         'author_link' => '#',
+        'size'=>'large',
     ],
     [
         'text'  => "I now actively trade cryptos and NFTs while also spending time being involved in and contributing work to DAOs and Web3 communities. I&apos;m basically a &ldquo;Web3 grinder&rdquo;  🙂 I have so far very much enjoyed hanging out in the GCR Discord and think the GCR community is a great one.",
@@ -83,6 +90,7 @@ $testimonials = [
         'type' => 'person',
         'logo_link' => '#',
         'author_link' => '#',
+        'size'=>'large',
     ],
     
 ]

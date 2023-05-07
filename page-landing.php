@@ -27,20 +27,23 @@ get_template_part('section/navigation-minimal');
                 shuffle($testimonials);
                 foreach ($testimonials as $testimonial) {
                     $type = $testimonial['type'];
+                    $size = $testimonial['size'];
                     $showable = isset($testimonial['showable']) ? true : false;
                     if ($type == "company" && $showable) {
                 ?>
                     <a class="slide" href="https://globalcoinresearch.com/partners/">
-                        <div class="user-image">
-                            <img class="lazy" src="<?php echo get_template_directory_uri(); ?>/img/partners/square/<?php echo $testimonial['image']; ?>" alt="" />
+                        <div class="sized <?php echo $size; ?>">
+                            <div class="user-image">
+                                <img class="lazy" src="<?php echo get_template_directory_uri(); ?>/img/partners/square/<?php echo $testimonial['image']; ?>" alt="" />
+                            </div>
+                            <div class="user-info">
+                                <h4><?php echo $testimonial['author_short'] ?></h4>
+                                <p>PortCo Since 2021</p>
+                            </div>
+                            <blockquote class="testimonial">
+                                <p><?php echo $testimonial['text'] ?></p>
+                            </blockquote>
                         </div>
-                        <div class="user-info">
-                            <h4><?php echo $testimonial['author_short'] ?></h4>
-                            <p>PortCo Since 2021</p>
-                        </div>
-                        <blockquote class="testimonial">
-                            <p><?php echo $testimonial['text'] ?></p>
-                        </blockquote>
                     </a>
                 <?php
                     }
