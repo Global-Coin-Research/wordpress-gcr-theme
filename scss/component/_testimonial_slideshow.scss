@@ -55,13 +55,13 @@
                 h4{
                     font-family:"gilroybold";
                     margin-bottom:0;
-                    font-size:16px;
+                    font-size:14px;
                     color:#fff;
                     font-weight:700;
                 }
                 p{
                     font-style: italic;
-                    font-size:12px;
+                    font-size:11px;
                     font-family: $gilroy;
                     color:#a7a7a7;
                     margin-bottom:0;
@@ -95,7 +95,7 @@
                 margin:0 auto;
             }
             @include large-pc{
-                grid-template-columns: 11fr 25fr 64fr;
+                grid-template-columns: 11fr 27fr 62fr;
                 height:157px;
             }
             @include small-pc{

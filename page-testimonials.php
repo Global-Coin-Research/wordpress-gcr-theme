@@ -23,10 +23,12 @@ get_template_part('section/navigation-main');
                 foreach ($testimonials as $testimonial) {
                     $type = $testimonial['type'];
                     $logo = "<img src='".get_template_directory_uri()."/img/partners/".$testimonial['image']."' alt=''>";
+                    $logo_link = $testimonial['logo_link'];
+                    $author_link = $testimonial['author_link'];
                 ?>
                     <div class="item">
-                        <?php if($type=="company"){ ?>
-                            <a class="image" href="<?php echo $testimonial['logo_link']; ?>" target="_blank"><?php echo $logo; ?></a>
+                        <?php if($logo_link){ ?>
+                            <a class="image" href="<?php echo $logo_link; ?>" target="_blank"><?php echo $logo; ?></a>
                         <?php }else{ ?>
                             <div class="image"><?php echo $logo; ?></div>
                         <?php } ?>
@@ -34,7 +36,12 @@ get_template_part('section/navigation-main');
                         <div class="text">
                             <blockquote><?php echo $testimonial['text'] ?></blockquote>
                             <div class="author">
-                                <a href="<?php echo $testimonial['author_link']; ?>" class="name" target="_blank"><?php echo $testimonial['author'] ?></a>
+                                <?php if($author_link){ ?>
+                                    <a href="<?php echo $testimonial['author_link']; ?>" class="name" target="_blank"><?php echo $testimonial['author'] ?></a>
+                                <?php }else{ ?>
+                                    <span class="name"><?php echo $testimonial['author'] ?></span>
+                                <?php } ?>
+                                
                             </div>
                         </div>
                     </div>

@@ -1785,13 +1785,13 @@ a.logolink.blacklogo {
 .header-banner .header-text .testimonial-slideshow .slide .sized .user-info h4 {
   font-family: "gilroybold";
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
   font-weight: 700;
 }
 .header-banner .header-text .testimonial-slideshow .slide .sized .user-info p {
   font-style: italic;
-  font-size: 12px;
+  font-size: 11px;
   font-family: "gilroy", Arial, sans-serif;
   color: #a7a7a7;
   margin-bottom: 0;
@@ -1824,8 +1824,8 @@ a.logolink.blacklogo {
 }
 @media only screen and (min-width: 1260px) {
   .header-banner .header-text .testimonial-slideshow .slide .sized {
-    -ms-grid-columns: 11fr 25fr 64fr;
-    grid-template-columns: 11fr 25fr 64fr;
+    -ms-grid-columns: 11fr 27fr 62fr;
+    grid-template-columns: 11fr 27fr 62fr;
     height: 157px;
   }
 }
