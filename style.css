@@ -2581,16 +2581,22 @@ a.logolink.blacklogo {
 .post-details h1 {
   font-size: 34px !important;
 }
-.post-details h1 {
+.post-details h2 {
   font-size: 32px !important;
 }
 .post-details h3 {
-  font-size: 30px !important;
+  font-size: 28px !important;
 }
 .post-details h4 {
-  font-size: 26px !important;
+  font-size: 24px !important;
 }
-.post-details h1, .post-details h2, .post-details h3, .post-details h4 {
+.post-details h5 {
+  font-size: 20px !important;
+}
+.post-details h6 {
+  font-size: 16px !important;
+}
+.post-details h1, .post-details h2, .post-details h3, .post-details h4, .post-details h5, .post-details h6 {
   font-weight: 700;
   line-height: 1.6em;
   margin-bottom: 15px;
