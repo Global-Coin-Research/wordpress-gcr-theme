@@ -9,13 +9,13 @@
     <link rel="icon" href="<?php echo get_template_directory_uri() ?>/img/favicon-day.ico" type="image/x-icon">
     
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8LLL33NXW"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTLNZHLK62"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-Y8LLL33NXW');
+    gtag('config', 'G-HTLNZHLK62');
     </script>
     <?php wp_head(); ?>
 </head>
