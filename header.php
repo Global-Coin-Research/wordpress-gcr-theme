@@ -9,15 +9,7 @@
     <link rel="icon" href="<?php echo get_template_directory_uri() ?>/img/favicon-day.ico" type="image/x-icon">
     
     
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VP9LKKG4GN"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-VP9LKKG4GN');
-    </script>
+    <?php get_template_part('section/scripts/google-tag-manager'); ?>
 
     <?php wp_head(); ?>
 </head>
