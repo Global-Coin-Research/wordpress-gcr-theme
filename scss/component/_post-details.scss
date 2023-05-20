@@ -50,6 +50,9 @@
         width:30px; 
         float:left; 
         margin-right:10px;
+        &+h2,&+h3, &+h4{
+            margin-top:0;
+        }
     }
     .post-meta {
         margin-bottom: 20px;
