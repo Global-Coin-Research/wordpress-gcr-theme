@@ -46,6 +46,11 @@
     .header, .post-header {
         
     }
+    figure.icon-image, img.icon-image{
+        width:30px; 
+        float:left; 
+        margin-right:10px;
+    }
     .post-meta {
         margin-bottom: 20px;
         .meta-data {
