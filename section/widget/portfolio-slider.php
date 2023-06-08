@@ -7,7 +7,7 @@
             <div class="logo-slider">
                 <ul class="logo-track">
                     <?php
-                    $images = ['aurora', 'scroll', 'gnosis-safe', 'sui', 'layerzero', 'magic-eden', 'sweat-economy', 'decrypt', 'syndicate'];
+                    $images = ['aurora', 'scroll', 'gnosis-safe', 'sui', 'layerzero', 'magic-eden', 'sweat-economy', 'decrypt', 'syndicate','lens'];
                     $slider_images = array_merge($images,$images);
                     foreach ($slider_images as $image) {
                     ?>

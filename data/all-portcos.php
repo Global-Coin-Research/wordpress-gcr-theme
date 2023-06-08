@@ -433,6 +433,13 @@ $portfolios = [
         'link'  => 'https://scroll.io/',
         'image' => 'scroll.png'
     ],
+    [
+        'brand' => 'Lens',
+        'id'    => 'scroll',
+        'cat'   => 'infrastructure',
+        'link'  => 'https://www.lens.xyz',
+        'image' => 'lens.png'
+    ],
     
 ];
 ?>
