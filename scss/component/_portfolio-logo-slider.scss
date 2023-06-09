@@ -90,7 +90,7 @@ $logo_image_height:100px;
         content: "";
         height: $logo_image_height;
         position: absolute;
-        width: $logo_image_width;
+        width: $logo_image_width/2;
         z-index: 2;
         @include for-phone{
             width:50px;
