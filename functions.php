@@ -25,9 +25,9 @@ if ( ! function_exists( 'gcr_setup' ) ) {
 		
 		// add thumbnail
 		add_theme_support('post-thumbnails', array('slider','post','product'));
-		set_post_thumbnail_size( 740,500, true );
-		add_image_size('post-thumb',740,500,true);
-		add_image_size('post-thumb-small',540,580,true);
+		set_post_thumbnail_size( 555,375, true );
+		add_image_size('post-thumb',555,375,true);
+		add_image_size('post-thumb-small',405,435,true);
 		add_image_size('post-thumb-tall',410,640,true);
 		add_image_size('post-img-full', 2000, 1350, false );
 		
