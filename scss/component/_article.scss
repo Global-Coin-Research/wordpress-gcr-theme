@@ -1,6 +1,6 @@
 .article {
     overflow: hidden;
-	margin-bottom:30px;
+	margin-bottom:2%;
     transition:all 0.35s cubic-bezier(.77,0,.18,1);
     padding:20px;
     border: 1px solid lighten($gray-lighter,6%);
@@ -85,10 +85,13 @@
         // left: 10px;
         a {
             background: $blue;
+            .dark &{
+                background: $black;
+            }
             color: $white;
             display: inline-block;
-            padding: 2px 5px;
-            border: 1px solid $blue-border;
+            padding: 4px 7px 2px;
+            border: none;
             border-radius: 5px;
             margin-bottom: 5px;
             &:hover {
