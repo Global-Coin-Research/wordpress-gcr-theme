@@ -246,8 +246,9 @@
             margin-top:20px;
             @include from-pc{
                 position: absolute;
-                bottom: 0px;
+                bottom: 72px;
                 right: 15px;
+                margin-top:0;
             }
         }
     }
