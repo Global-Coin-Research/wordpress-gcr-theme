@@ -10,7 +10,7 @@
             <a href="<?php the_permalink(); ?>"><?php echo wp_trim_words( get_the_title(), 12, '' ); ?></a>
         </h3>
         <div class="details">
-            <p><?php echo wp_trim_words(get_the_content(), 40, ' ...' ) ?></p>
+            <p><?php echo wp_trim_words(get_the_excerpt(), 40, ' ...' ) ?></p>
         </div>
         <div class="meta-data">
             <div class="meta-text">
