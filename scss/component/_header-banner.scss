@@ -218,13 +218,18 @@
                     font-weight: 700;
                     margin-bottom: 30px;
                     font-family: $gilroybold;
+                    @include small-pc{
+                        font-size:30px;
+                    }
                 }
 
                 p {
                     font-size: 1.3em;
                     line-height: 1.5em;
                     font-weight: 300;
-
+                    @include small-pc{
+                        font-size:14px;
+                    }
                     &.date {
                         font-size: 1em;
                     }
