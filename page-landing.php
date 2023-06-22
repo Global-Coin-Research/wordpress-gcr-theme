@@ -12,7 +12,7 @@ get_template_part('section/navigation-minimal');
 <div class="header-banner bg-dark-blue clearfix">
     <div class="container clearfix overflow-hidden">
         <div class="header-text">
-            <h2>Global Coin Research is a tokenized, decentralized community of learners and investors in <span class="blue">Web3.</span></h2>
+            <h2>Global Coin Research is a community of Researchers and Investors in <span class="blue">Web3.</span></h2>
             <div class="button-area">
                 <a class="btn btn-primary" href="http://eepurl.com/dvD3FH">Subscribe to GCR Weekly</a>
                 <a class="btn btn-white" href="https://discord.gg/globalcoinresearch">Join the Community</a>
