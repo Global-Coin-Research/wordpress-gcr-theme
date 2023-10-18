@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="heading">
-                <h3>GCR has deployed $41M+ in community-sourced capital across 65+ projects to-date</h3>
+                <h3>GCR has deployed $41M+ in community-sourced capital across 70+ projects to-date</h3>
             </div>
             <div class="logo-slider">
                 <ul class="logo-track">
