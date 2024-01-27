@@ -440,6 +440,34 @@ $portfolios = [
         'link'  => 'https://www.lens.xyz',
         'image' => 'lens.png'
     ],
+    [
+        'brand' => 'Modulus Labs',
+        'id'    => '',
+        'cat'   => 'other',
+        'link'  => 'https://twitter.com/ModulusLabs',
+        'image' => 'modulus-lab.png'
+    ],
+    [
+        'brand' => 'Rooch',
+        'id'    => '',
+        'cat'   => 'other',
+        'link'  => 'https://twitter.com/RoochNetwork',
+        'image' => 'rooch.png'
+    ],
+    [
+        'brand' => 'Analog',
+        'id'    => '',
+        'cat'   => 'other',
+        'link'  => 'https://twitter.com/OneAnalog',
+        'image' => 'analog.png'
+    ],
+    [
+        'brand' => 'Circuit Trading',
+        'id'    => '',
+        'cat'   => 'other',
+        'link'  => 'https://twitter.com/CircuitTrading_',
+        'image' => 'circuit-trading.png'
+    ],
     
 ];
 ?>
