@@ -468,6 +468,28 @@ $portfolios = [
         'link'  => 'https://twitter.com/CircuitTrading_',
         'image' => 'circuit-trading.png'
     ],
+
+    [
+        'brand' => 'Nubit',
+        'id'    => '',
+        'cat'   => 'other',
+        'link'  => 'https://twitter.com/nubit_org',
+        'image' => 'nubit.png'
+    ],
+    [
+        'brand' => 'Berachain',
+        'id'    => '',
+        'cat'   => 'other',
+        'link'  => 'https://twitter.com/berachain',
+        'image' => 'berachain.png'
+    ],
+    [
+        'brand' => 'Oak Network',
+        'id'    => '',
+        'cat'   => 'other',
+        'link'  => 'https://twitter.com/oak_network',
+        'image' => 'oak-network.png'
+    ],
     
 ];
 ?>
