@@ -469,13 +469,13 @@ $portfolios = [
         'image' => 'circuit-trading.png'
     ],
 
-    [
-        'brand' => 'Nubit',
-        'id'    => '',
-        'cat'   => 'other',
-        'link'  => 'https://twitter.com/nubit_org',
-        'image' => 'nubit.png'
-    ],
+    // [
+    //     'brand' => 'Nubit',
+    //     'id'    => '',
+    //     'cat'   => 'other',
+    //     'link'  => 'https://twitter.com/nubit_org',
+    //     'image' => 'nubit.png'
+    // ],
     [
         'brand' => 'Berachain',
         'id'    => '',
@@ -489,6 +489,13 @@ $portfolios = [
         'cat'   => 'other',
         'link'  => 'https://twitter.com/oak_network',
         'image' => 'oak-network.png'
+    ],
+    [
+        'brand' => 'Bitlayer',
+        'id'    => '',
+        'cat'   => 'other',
+        'link'  => 'https://www.bitlayer.org/',
+        'image' => 'bitlayer.png'
     ],
     
 ];
