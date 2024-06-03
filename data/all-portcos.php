@@ -497,6 +497,13 @@ $portfolios = [
         'link'  => 'https://www.bitlayer.org/',
         'image' => 'bitlayer.png'
     ],
+    [
+        'brand' => 'Media Kit',
+        'id'    => '',
+        'cat'   => 'other',
+        'link'  => 'https://0g.ai/mediakit',
+        'image' => 'media-kit.png'
+    ],
     
 ];
 ?>
