@@ -498,11 +498,18 @@ $portfolios = [
         'image' => 'bitlayer.png'
     ],
     [
-        'brand' => 'Media Kit',
+        'brand' => 'OG',
         'id'    => '',
         'cat'   => 'other',
-        'link'  => 'https://0g.ai/mediakit',
+        'link'  => 'https://0g.ai/',
         'image' => 'media-kit.png'
+    ],
+    [
+        'brand' => 'Nubit',
+        'id'    => '',
+        'cat'   => 'other',
+        'link'  => 'https://www.nubit.org/',
+        'image' => 'nubit-2.png'
     ],
     
 ];
