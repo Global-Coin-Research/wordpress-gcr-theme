@@ -511,6 +511,13 @@ $portfolios = [
         'link'  => 'https://www.nubit.org/',
         'image' => 'nubit-2.png'
     ],
+    [
+        'brand' => 'Avail',
+        'id'    => '',
+        'cat'   => 'other',
+        'link'  => 'https://www.availproject.org/',
+        'image' => 'avail.png'
+    ],
     
 ];
 ?>
